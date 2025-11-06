@@ -1,4 +1,5 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform, SecurityContext } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 /**
  * Cache for storing lookup maps per options array reference.
@@ -9,7 +10,9 @@ const lookupCache = new WeakMap<any[], Map<string, Map<any, any>>>();
 
 @Pipe({ name: 'find' })
 export class FindPipe implements PipeTransform {
-  transform(value: any, options: any, key: string, property: string): any {
+  constructor(private sanitizer: DomSanitizer) {}
+
+  transform(value: any, options: any, key: string, property: string): SafeHtml | string {
     if (!options || !key || value === null || value === undefined) {
       return '';
     }
@@ -38,6 +41,13 @@ export class FindPipe implements PipeTransform {
 
     // O(1) lookup
     const optionFound = valueMap.get(value);
-    return optionFound ? (optionFound[property] ?? '') : '';
+    const result = optionFound ? (optionFound[property] ?? '') : '';
+
+    // Sanitize string results to prevent XSS
+    if (typeof result === 'string') {
+      return this.sanitizer.sanitize(SecurityContext.HTML, result) || '';
+    }
+
+    return String(result || '');
   }
 }
