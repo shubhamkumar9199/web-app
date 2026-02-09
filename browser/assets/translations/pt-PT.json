@@ -347,6 +347,7 @@
       "Attach Meeting": "Anexar reunião",
       "Attendance": "Comparecimento",
       "Back": "Voltar",
+      "Back to Account": "Voltar para a Conta",
       "Bar Chart": "Gráfico de barras",
       "Browse": "Navegar",
       "Bulk JLG Loan Application": "Solicitação de empréstimo JLG em massa",
@@ -548,6 +549,7 @@
       "View Journal Entries": "Ver lançamentos contábeis manuais",
       "View Standing Instructions": "Ver instruções permanentes",
       "View Transactions History": "Ver histórico de transações",
+      "View Transactions": "Ver transações",
       "Waive": "Renunciar",
       "Waive Charge": "Isenção de cobrança",
       "Week": "Semana",
@@ -555,7 +557,10 @@
       "View Active Charges": "Ver cobranças ativas",
       "View Inactive Charges": "Ver cobranças inativas",
       "Yes": "Sim",
-      "Is Self Service": "É autoatendimento"
+      "Is Self Service": "É autoatendimento",
+      "Advanced Search": "Pesquisa avançada",
+      "Show advanced search": "Mostrar pesquisa avançada",
+      "Hide advanced search": "Ocultar pesquisa avançada"
     },
     "catalogs": {
       "Interest payment waiver": "Isenção de pagamento de juros",
@@ -924,6 +929,8 @@
       "Assets / Liability": "Ativos/Passivos",
       "Audit Trails": "Trilhas de auditoria",
       "Balance": "Equilíbrio",
+      "Beneficiary": "Beneficiário",
+      "Beneficiary Selection": "Seleção de Beneficiário",
       "Block Savings Account": "Bloquear conta poupança",
       "Bulk Import": "Importação em massa",
       "Bulk Loan Reassignment": "Reatribuição de empréstimo em massa",
@@ -1228,6 +1235,10 @@
       "Transaction Reverted": "Transação revertida",
       "Transactions": "Transações",
       "Transfer Details": "Detalhes da transferência",
+      "Transfer Failed": "Transferência falhou",
+      "Transfer Status": "Status da transferência",
+      "Transfer Successful": "Transferência bem-sucedida",
+      "Transfer Summary": "Resumo da transferência",
       "Transferred From": "Transferido de",
       "Transferred To": "Transferido para",
       "Transferring From Details": "Transferindo de detalhes",
@@ -1282,7 +1293,8 @@
       "Important Dates": "Datas Importantes",
       "Contact Information": "Informações de Contato",
       "Classification": "Classificação",
-      "Status": "Status"
+      "Status": "Status",
+      "Pending Tasks": "Tarefas Pendentes"
     },
     "inputs": {
       "Terms": "Termos",
@@ -1836,6 +1848,7 @@
       "Hook Template": "Modelo de gancho",
       "Host": "Hospedar",
       "Host Name": "Nome de anfitrião",
+      "Hour": "Hora",
       "ID": "EU IA",
       "INTEREST RATE CHART": "TABELA DE TAXAS DE JUROS",
       "Id": "Eu ia",
@@ -2070,6 +2083,7 @@
       "Minimum Value": "Valor Mínimo",
       "Minimum days between disbursal and first repayment date": "Dias mínimos entre o desembolso e a data do primeiro reembolso",
       "Minimum gap between Installments": "Intervalo mínimo entre parcelas",
+      "Minute": "Minuto",
       "Mobile": "Móvel",
       "Mobile Banking App": "Aplicativo de banco móvel",
       "Mobile No": "Celular Não",
@@ -2646,7 +2660,12 @@
       "Income from Buy down fees": "Receita com taxas de recompra",
       "Buy down fee Expense": "Despesa com taxas de recompra",
       "Skip Interest Refund Transaction Posting": "Ignorar o lançamento do reembolso de juros",
-      "Available Disbursement Amount (with Over Applied)": "Valor de desembolso disponível (com sobreaplicação)"
+      "Available Disbursement Amount (with Over Applied)": "Valor de desembolso disponível (com sobreaplicação)",
+      "From date": "Data de início",
+      "Resource id": "ID do recurso",
+      "To date": "Data de fim",
+      "Select action": "Selecionar ação",
+      "Select entity": "Selecionar entidade"
     },
     "links": {
       "Community": "Comunidade",
@@ -2780,7 +2799,8 @@
       "Apply Additional Shares": "Aplicar Adicional",
       "Redeem Shares": "Resgatar Ações",
       "Approve Additional Shares": "Aprovar ações adicionais",
-      "Reject Additional Shares": "Rejeitar compartilhamentos adicionais"
+      "Reject Additional Shares": "Rejeitar compartilhamentos adicionais",
+      "Tasks": "Tarefas"
     },
     "placeholders": {
       "Add new server": "Adicionar novo servidor",

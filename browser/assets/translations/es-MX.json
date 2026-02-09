@@ -347,6 +347,7 @@
       "Attach Meeting": "Adjuntar reunión",
       "Attendance": "Asistencia",
       "Back": "Atrás",
+      "Back to Account": "Volver a la Cuenta",
       "Bar Chart": "Gráfico de barras",
       "Browse": "Buscar",
       "Bulk JLG Loan Application": "Solicitud de Crédito JLG a granel",
@@ -548,6 +549,7 @@
       "View Journal Entries": "Ver entradas de diario",
       "View Standing Instructions": "Ver instrucciones permanentes",
       "View Transactions History": "Ver historial de transacciones",
+      "View Transactions": "Ver transacciones",
       "Waive": "Renunciar",
       "Waive Charge": "Renunciar a Comisión",
       "Week": "Semana",
@@ -555,7 +557,10 @@
       "View Active Charges": "Ver Comisiones Activas",
       "View Inactive Charges": "Ver Comisiones inactivas",
       "Yes": "Sí",
-      "Is Self Service": "Es autoservicio"
+      "Is Self Service": "Es autoservicio",
+      "Advanced Search": "Búsqueda avanzada",
+      "Show advanced search": "Mostrar búsqueda avanzada",
+      "Hide advanced search": "Ocultar búsqueda avanzada"
     },
     "catalogs": {
       "Interest payment waiver": "Exención de pago de intereses",
@@ -870,9 +875,9 @@
       "Must be at least": "Debe ser al menos",
       "Must be less or equal to": "Debe ser menor o igual a",
       "must be after or equal to start date": "debe ser posterior o igual a la fecha de inicio",
-      "No classification data available": "No hay datos de clasificaci\u00f3n disponibles",
+      "No classification data available": "No hay datos de clasificación disponibles",
       "No": "No",
-      "Yes": "S\u00ed"
+      "Yes": "Sí"
     },
     "passwordPreferences": {
       "Password most be at least 1 character and not more that 50 characters long": "La contraseña debe tener al menos 1 carácter y no más de 50 caracteres",
@@ -923,6 +928,8 @@
       "Assets / Liability": "Activo / Pasivo",
       "Audit Trails": "Pistas de auditoría",
       "Balance": "Saldo",
+      "Beneficiary": "Beneficiario",
+      "Beneficiary Selection": "Selección de Beneficiario",
       "Block Savings Account": "Bloquear Cuenta de Ahorros",
       "Bulk Import": "Importación masiva",
       "Bulk Loan Reassignment": "Reasignación de Créditos másiva",
@@ -1228,6 +1235,10 @@
       "Transaction Reverted": "Transacción revertida",
       "Transactions": "Transacciones",
       "Transfer Details": "Detalles de la transferencia",
+      "Transfer Failed": "Transferencia fallida",
+      "Transfer Status": "Estado de la transferencia",
+      "Transfer Successful": "Transferencia exitosa",
+      "Transfer Summary": "Resumen de la transferencia",
       "Transferred From": "Transferido desde",
       "Transferred To": "Transferido a",
       "Transferring From Details": "Transferir desde detalles",
@@ -1275,14 +1286,15 @@
       "Secure & Reliable": "Seguro y Confiable",
       "Community Driven": "Impulsado por la Comunidad",
       "Global Impact": "Impacto Global",
-      "Personal Information": "Informaci\u00f3n Personal",
-      "Account Information": "Informaci\u00f3n de la Cuenta",
+      "Personal Information": "Información Personal",
+      "Account Information": "Información de la Cuenta",
       "Entity Details": "Detalles de la Entidad",
-      "Group Membership": "Membres\u00eda del Grupo",
+      "Group Membership": "Membresía del Grupo",
       "Important Dates": "Fechas Importantes",
-      "Contact Information": "Informaci\u00f3n de Contacto",
-      "Classification": "Clasificaci\u00f3n",
-      "Status": "Estado"
+      "Contact Information": "Información de Contacto",
+      "Classification": "Clasificación",
+      "Status": "Estado",
+      "Pending Tasks": "Tareas pendientes"
     },
     "inputs": {
       "Terms": "Términos",
@@ -1837,6 +1849,7 @@
       "Hook Template": "Plantilla de gancho",
       "Host": "Anfitrión",
       "Host Name": "Nombre del anfitrión",
+      "Hour": "Hora",
       "ID": "IDENTIFICACIÓN",
       "INTEREST RATE CHART": "TABLA DE TIPOS DE INTERÉS",
       "Id": "Id",
@@ -2071,6 +2084,7 @@
       "Minimum Value": "Valor mínimo",
       "Minimum days between disbursal and first repayment date": "Días mínimos entre el desembolso y la primera fecha de amortización",
       "Minimum gap between Installments": "Brecha mínima entre Cuotas",
+      "Minute": "Minuto",
       "Mobile": "Móvil",
       "Mobile Banking App": "Aplicación de banca móvil",
       "Mobile No": "Teléfono móvil",
@@ -2651,7 +2665,12 @@
       "Incorporation Date": "Fecha de Constitución",
       "Available Disbursement Amount (with Over Applied)": "Monto disponible para desembolso (con sobreaplicación)",
       "Overdue": "Vencido",
-      "Overdue Fees": "Cargos vencidos"
+      "Overdue Fees": "Cargos vencidos",
+      "From date": "Desde fecha",
+      "Resource id": "ID de recurso",
+      "To date": "Hasta fecha",
+      "Select action": "Seleccionar acción",
+      "Select entity": "Seleccionar entidad"
     },
     "links": {
       "Community": "Comunidad",
@@ -2785,7 +2804,8 @@
       "Apply Additional Shares": "Adicionar Acciones",
       "Redeem Shares": "Canjear acciones",
       "Approve Additional Shares": "Aprobar acciones adicionales",
-      "Reject Additional Shares": "Rechazar acciones adicionales"
+      "Reject Additional Shares": "Rechazar acciones adicionales",
+      "Tasks": "Tareas"
     },
     "placeholders": {
       "Add new server": "Agregar nuevo servidor",

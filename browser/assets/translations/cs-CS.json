@@ -347,6 +347,7 @@
       "Attach Meeting": "Připojit schůzku",
       "Attendance": "Účast",
       "Back": "Zadní",
+      "Back to Account": "Zpět na účet",
       "Bar Chart": "Sloupcový graf",
       "Browse": "Procházet",
       "Bulk JLG Loan Application": "Hromadná žádost o půjčku JLG",
@@ -548,6 +549,7 @@
       "View Journal Entries": "Zobrazit záznamy deníku",
       "View Standing Instructions": "Prohlédněte si stálé pokyny",
       "View Transactions History": "Zobrazit historii transakcí",
+      "View Transactions": "Zobrazit transakce",
       "Waive": "vzdát se",
       "Waive Charge": "Zřeknutí se poplatku",
       "Week": "Týden",
@@ -555,7 +557,10 @@
       "View Active Charges": "Zobrazit aktivní poplatky",
       "View Inactive Charges": "Zobrazit neaktivní poplatky",
       "Yes": "Ano",
-      "Is Self Service": "Je samoobsluha"
+      "Is Self Service": "Je samoobsluha",
+      "Advanced Search": "Rozšířené vyhledávání",
+      "Show advanced search": "Zobrazit rozšířené vyhledávání",
+      "Hide advanced search": "Skrýt rozšířené vyhledávání"
     },
     "catalogs": {
       "Interest payment waiver": "Prominutí platby úroků",
@@ -923,6 +928,8 @@
       "Assets / Liability": "Aktiva / pasiva",
       "Audit Trails": "Audit Trails",
       "Balance": "Zůstatek",
+      "Beneficiary": "Příjemce",
+      "Beneficiary Selection": "Výběr příjemce",
       "Block Savings Account": "Blokovat spořicí účet",
       "Bulk Import": "Hromadný import",
       "Bulk Loan Reassignment": "Hromadné přeřazení půjčky",
@@ -1228,6 +1235,10 @@
       "Transaction Reverted": "Transakce vrácena",
       "Transactions": "Transakce",
       "Transfer Details": "Podrobnosti o převodu",
+      "Transfer Failed": "Převod se nezdařil",
+      "Transfer Status": "Stav převodu",
+      "Transfer Successful": "Převod úspěšný",
+      "Transfer Summary": "Souhrn převodu",
       "Transferred From": "Převedeno z",
       "Transferred To": "Převeden k",
       "Transferring From Details": "Přenos z podrobností",
@@ -1282,7 +1293,8 @@
       "Important Dates": "Důležitá data",
       "Contact Information": "Kontaktní informace",
       "Classification": "Klasifikace",
-      "Status": "Stav"
+      "Status": "Stav",
+      "Pending Tasks": "Čekající úkoly"
     },
     "inputs": {
       "Terms": "Podmínky",
@@ -1836,6 +1848,7 @@
       "Hook Template": "Šablona háčku",
       "Host": "Hostitel",
       "Host Name": "Název hostitele",
+      "Hour": "Hodina",
       "ID": "ID",
       "INTEREST RATE CHART": "TABULKA ÚROKOVÝCH SAZEB",
       "Id": "Id",
@@ -2070,6 +2083,7 @@
       "Minimum Value": "Minimální hodnota",
       "Minimum days between disbursal and first repayment date": "Minimální dny mezi výplatou a datem první splátky",
       "Minimum gap between Installments": "Minimální mezera mezi splátkami",
+      "Minute": "Minuta",
       "Mobile": "mobilní, pohybliví",
       "Mobile Banking App": "Aplikace pro mobilní bankovnictví",
       "Mobile No": "Mobil č",
@@ -2648,7 +2662,12 @@
       "Skip Interest Refund Transaction Posting": "Přeskočit zaúčtování vrácení úroků",
       "Available Disbursement Amount (with Over Applied)": "Dostupná částka k výplatě (s přeplatkem)",
       "Overdue": "Po splatnosti",
-      "Overdue Fees": "Poplatky po splatnosti"
+      "Overdue Fees": "Poplatky po splatnosti",
+      "From date": "Datum od",
+      "Resource id": "ID zdroje",
+      "To date": "Datum do",
+      "Select action": "Vybrat akci",
+      "Select entity": "Vybrat entitu"
     },
     "links": {
       "Community": "Společenství",
@@ -2782,7 +2801,8 @@
       "Apply Additional Shares": "Použít další",
       "Redeem Shares": "Uplatnit akcie",
       "Approve Additional Shares": "Schválit další akcie",
-      "Reject Additional Shares": "Odmítnout další akcie"
+      "Reject Additional Shares": "Odmítnout další akcie",
+      "Tasks": "Úkoly"
     },
     "placeholders": {
       "Add new server": "Přidat nový server",

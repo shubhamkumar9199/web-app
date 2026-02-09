@@ -347,6 +347,7 @@
       "Attach Meeting": "Pridėti susitikimą",
       "Attendance": "Lankomumas",
       "Back": "Atgal",
+      "Back to Account": "Grįžti į sąskaitą",
       "Bar Chart": "Juostinė diagrama",
       "Browse": "Naršyti",
       "Bulk JLG Loan Application": "Masinės JLG paskolos paraiška",
@@ -548,6 +549,7 @@
       "View Journal Entries": "Peržiūrėkite žurnalo įrašus",
       "View Standing Instructions": "Peržiūrėkite nuolatines instrukcijas",
       "View Transactions History": "Peržiūrėkite operacijų istoriją",
+      "View Transactions": "Peržiūrėti operacijas",
       "Waive": "Atsisakyti",
       "Waive Charge": "Atsisakyti mokesčio",
       "Week": "Savaitė",
@@ -555,7 +557,10 @@
       "View Active Charges": "Peržiūrėti aktyvius mokesčius",
       "View Inactive Charges": "Peržiūrėkite neaktyvius mokesčius",
       "Yes": "Taip",
-      "Is Self Service": "Savitarna"
+      "Is Self Service": "Savitarna",
+      "Advanced Search": "Išplėstinė paieška",
+      "Show advanced search": "Rodyti išplėstinę paiešką",
+      "Hide advanced search": "Slėpti išplėstinę paiešką"
     },
     "catalogs": {
       "Interest payment waiver": "Palūkanų mokėjimo atsisakymas",
@@ -922,6 +927,8 @@
       "Assets / Liability": "Turtas / įsipareigojimai",
       "Audit Trails": "Audito takai",
       "Balance": "Balansas",
+      "Beneficiary": "Gavėjas",
+      "Beneficiary Selection": "Gavėjo pasirinkimas",
       "Block Savings Account": "Blokuoti taupomąją sąskaitą",
       "Bulk Import": "Masinis importas",
       "Bulk Loan Reassignment": "Masinės paskolos perskirstymas",
@@ -1227,6 +1234,10 @@
       "Transaction Reverted": "Sandoris grąžintas",
       "Transactions": "Sandoriai",
       "Transfer Details": "Pervedimo informacija",
+      "Transfer Failed": "Pervedimas nepavyko",
+      "Transfer Status": "Pervedimo būsena",
+      "Transfer Successful": "Pervedimas sėkmingas",
+      "Transfer Summary": "Pervedimo santrauka",
       "Transferred From": "Perkelta iš",
       "Transferred To": "Perkelta į",
       "Transferring From Details": "Perkėlimas iš detalių",
@@ -1281,7 +1292,8 @@
       "Important Dates": "Svarbios datos",
       "Contact Information": "Kontaktinė informacija",
       "Classification": "Klasifikacija",
-      "Status": "Statusas"
+      "Status": "Statusas",
+      "Pending Tasks": "Laukiamos užduotys"
     },
     "inputs": {
       "Terms": "Sąlygos",
@@ -1835,6 +1847,7 @@
       "Hook Template": "Kabliuko šablonas",
       "Host": "Šeimininkas",
       "Host Name": "Pagrindinio kompiuterio pavadinimas",
+      "Hour": "Valanda",
       "ID": "ID",
       "INTEREST RATE CHART": "PALŪKANŲ NORMOS SCHEMA",
       "Id": "Id",
@@ -2069,6 +2082,7 @@
       "Minimum Value": "Minimali vertė",
       "Minimum days between disbursal and first repayment date": "Minimalios dienos nuo išmokėjimo iki pirmojo grąžinimo datos",
       "Minimum gap between Installments": "Minimalus tarpas tarp įmokų",
+      "Minute": "Minutė",
       "Mobile": "Mobilusis",
       "Mobile Banking App": "Mobiliosios bankininkystės programa",
       "Mobile No": "Mobiliojo Nr",
@@ -2647,7 +2661,12 @@
       "Available Disbursement Amount (with Over Applied)": "Galimas išmokėjimo kiekis (su pertekliumi)",
       "Waive Penalties": "Atsisakyti delspinigių",
       "Overdue": "Pradelstas",
-      "Overdue Fees": "Delspinigiai"
+      "Overdue Fees": "Vėluojantys mokesčiai",
+      "From date": "Nuo datos",
+      "Resource id": "Resurso identifikatorius",
+      "To date": "Iki datos",
+      "Select action": "Pasirinkite veiksmą",
+      "Select entity": "Pasirinkite objektą"
     },
     "links": {
       "Community": "bendruomenė",
@@ -2781,7 +2800,8 @@
       "Apply Additional Shares": "Taikyti Papildomą",
       "Redeem Shares": "Išpirkti akcijas",
       "Approve Additional Shares": "Patvirtinti papildomas akcijas",
-      "Reject Additional Shares": "Atmesti papildomas akcijas"
+      "Reject Additional Shares": "Atmesti papildomas akcijas",
+      "Tasks": "Užduotys"
     },
     "placeholders": {
       "Add new server": "Pridėti naują serverį",

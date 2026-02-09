@@ -347,6 +347,7 @@
       "Attach Meeting": "Ambatanisha Mkutano",
       "Attendance": "Mahudhurio",
       "Back": "Nyuma",
+      "Back to Account": "Rudi kwa Akaunti",
       "Bar Chart": "Chati ya Baa",
       "Browse": "Vinjari",
       "Bulk JLG Loan Application": "Maombi ya Mkopo wa Wingi wa JLG",
@@ -548,6 +549,7 @@
       "View Journal Entries": "Tazama Maingizo ya Jarida",
       "View Standing Instructions": "Tazama Maagizo ya Kudumu",
       "View Transactions History": "Tazama Historia ya Shughuli",
+      "View Transactions": "Tazama Shughuli",
       "Waive": "Acha",
       "Waive Charge": "Kuondoa Malipo",
       "Week": "Wiki",
@@ -555,7 +557,10 @@
       "View Active Charges": "Tazama Malipo Yanayotumika",
       "View Inactive Charges": "Tazama Gharama Isiyotumika",
       "Yes": "Ndiyo",
-      "Is Self Service": "Ni huduma binafsi"
+      "Is Self Service": "Ni huduma binafsi",
+      "Advanced Search": "Utafutaji wa Kina",
+      "Show advanced search": "Onyesha utafutaji wa kina",
+      "Hide advanced search": "Ficha utafutaji wa kina"
     },
     "catalogs": {
       "Interest payment waiver": "Msamaha wa Malipo ya Riba",
@@ -922,6 +927,8 @@
       "Assets / Liability": "Mali / Dhima",
       "Audit Trails": "Njia za Ukaguzi",
       "Balance": "Mizani",
+      "Beneficiary": "Mnufaika",
+      "Beneficiary Selection": "Uchaguzi wa Mnufaika",
       "Block Savings Account": "Zuia Akaunti ya Akiba",
       "Bulk Import": "Ingiza Wingi",
       "Bulk Loan Reassignment": "Ugawaji upya wa mkopo kwa wingi",
@@ -1225,6 +1232,11 @@
       "Transaction Details": "Maelezo ya Muamala",
       "Transaction Reverted": "Muamala Umerejeshwa",
       "Transactions": "Shughuli",
+      "Transfer Details": "Maelezo ya Uhamisho",
+      "Transfer Failed": "Uhamisho Umeshindwa",
+      "Transfer Status": "Hali ya Uhamisho",
+      "Transfer Successful": "Uhamisho Umefanikiwa",
+      "Transfer Summary": "Muhtasari wa Uhamisho",
       "Transferred From": "Imehamishwa Kutoka",
       "Transferred To": "Imehamishwa Kwa",
       "Transferring From Details": "Kuhamisha Kutoka kwa Maelezo",
@@ -1279,7 +1291,8 @@
       "Important Dates": "Tarehe Muhimu",
       "Contact Information": "Maelezo ya Mawasiliano",
       "Classification": "Uainishaji",
-      "Status": "Hali"
+      "Status": "Hali",
+      "Pending Tasks": "Kazi Zinazongoja"
     },
     "inputs": {
       "Terms": "Masharti",
@@ -1833,6 +1846,7 @@
       "Hook Template": "Kigezo cha ndoano",
       "Host": "Mwenyeji",
       "Host Name": "Jina la mwenyeji",
+      "Hour": "Saa",
       "ID": "ID",
       "INTEREST RATE CHART": "CHATI YA KIWANGO CHA RIBA",
       "Id": "Kitambulisho",
@@ -2067,6 +2081,7 @@
       "Minimum Value": "Thamani ya chini",
       "Minimum days between disbursal and first repayment date": "Siku chache kati ya malipo na tarehe ya malipo ya kwanza",
       "Minimum gap between Installments": "Pengo la chini kati ya Mikopo",
+      "Minute": "Dakika",
       "Mobile": "Rununu",
       "Mobile Banking App": "Programu ya Benki ya Simu ya Mkononi",
       "Mobile No": "Simu No",
@@ -2643,7 +2658,12 @@
       "Income from Buy down fees": "Mapato kutoka kwa ada ya Kununua",
       "Buy down fee Expense": "Kununua ada ya chini Gharama",
       "Skip Interest Refund Transaction Posting": "Ruka uchapishaji wa muamala wa kurejesha riba",
-      "Available Disbursement Amount (with Over Applied)": "Tillgängligt utbetalningsbelopp (med överbetalning)"
+      "Available Disbursement Amount (with Over Applied)": "Kiasi cha Utoaji Kinachopatikana (pamoja na Matumizi Zaidi)",
+      "From date": "Kutoka tarehe",
+      "Resource id": "Kitambulisho cha rasilimali",
+      "To date": "Hadi tarehe",
+      "Select action": "Chagua kitendo",
+      "Select entity": "Chagua huluki"
     },
     "links": {
       "Community": "Jumuiya",
@@ -2777,7 +2797,8 @@
       "Apply Additional Shares": "Omba Ziada",
       "Redeem Shares": "Komboa Hisa",
       "Approve Additional Shares": "Idhinisha Hisa za Ziada",
-      "Reject Additional Shares": "Kataa Hisa za Ziada"
+      "Reject Additional Shares": "Kataa Hisa za Ziada",
+      "Tasks": "Kazi"
     },
     "placeholders": {
       "Add new server": "Ongeza seva mpya",
