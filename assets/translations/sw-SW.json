@@ -607,7 +607,10 @@
       "Validate Recipient": "Thibitisha mpokeaji",
       "View Receipt": "Angalia risiti",
       "Add Entry": "Ongeza ingizo",
-      "Retry": "Jaribu tena"
+      "Retry": "Jaribu tena",
+      "PRINT": "Chapisha",
+      "DONE": "Imekamilika",
+      "Submitting": "Inatuma"
     },
     "catalogs": {
       "Interest payment waiver": "Msamaha wa Malipo ya Riba",
@@ -1286,7 +1289,6 @@
       "Term Variations": "Tofauti za Muda",
       "The Ecosystem": "Mfumo Ikolojia",
       "Total Withdrawals": "Jumla ya Pesa",
-      "Transaction Details": "Maelezo ya Muamala",
       "Transaction Reverted": "Muamala Umerejeshwa",
       "Transactions": "Shughuli",
       "Transfer Details": "Maelezo ya Uhamisho",
@@ -1322,6 +1324,10 @@
       "You can drag and drop the rows to set a Payment Allocations order": "Unaweza kuburuta na kudondosha safu mlalo ili kuweka agizo la Ugawaji wa Malipo",
       "successfully select option": "kwa mafanikio. Tafadhali chagua kutoka kwa chaguo zilizo hapa chini ili kuendelea zaidi.",
       "Map Charge-off reasons to Expense accounts": "Sababu za Kutozwa kwa Ramani kwa akaunti za Gharama",
+      "Transaction Details": "Maelezo ya Muamala",
+      "Confirm Transaction Details": "Thibitisha Maelezo ya Muamala",
+      "Transaction Complete": "Muamala Umekamilika",
+      "Transaction Successful": "Muamala Umefanikiwa",
       "Interest Rate From Installment": "Kiwango cha Riba Kutoka kwa Awamu",
       "Due Date": "Tarehe ya Mwisho",
       "Delete Installment": "Futa Ufungaji",
@@ -3695,6 +3701,7 @@
       "Failed to assign payout. Please try again.": "Imeshindwa kuweka malipo. Tafadhali jaribu tena.",
       "Remittance not found. Please check the reference number and try again.": "Uhawilishaji haujapatikana. Angalia nambari ya kumbukumbu na ujaribu tena.",
       "Unable to load vendors. Please check your connection and try again.": "Haiwezi kupakia wauzaji. Angalia muunganisho wako na ujaribu tena.",
+      "Failed to update payment type. Please try again.": "Imeshindwa kusasisha aina ya malipo. Tafadhali jaribu tena.",
       "Search and assign this beneficiary to an existing Mifos client account": "Tafuta na uweke mpokeaji huyu kwenye akaunti ya mteja wa Mifos iliyopo",
       "Failed to search clients. Please try again.": "Imeshindwa kutafuta wateja. Tafadhali jaribu tena.",
       "Process Remittance": "Chakata uhawilishaji"

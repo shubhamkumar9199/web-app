@@ -607,7 +607,10 @@
       "Validate Recipient": "Pārbaudīt saņēmēju",
       "View Receipt": "Skatīt kvīti",
       "Add Entry": "Pievienot ierakstu",
-      "Retry": "Mēģināt vēlreiz"
+      "Retry": "Mēģināt vēlreiz",
+      "PRINT": "Drukāt",
+      "DONE": "Gatavs",
+      "Submitting": "Iesniedz"
     },
     "catalogs": {
       "Interest payment waiver": "Atteikšanās no procentu maksājumiem",
@@ -1289,7 +1292,6 @@
       "Term Variations": "Terminu variācijas",
       "The Ecosystem": "Ekosistēma",
       "Total Withdrawals": "Kopējā izņemšana",
-      "Transaction Details": "Darījuma informācija",
       "Transaction Reverted": "Darījums ir atsaukts",
       "Transactions": "Darījumi",
       "Transfer Details": "Pārskaitījuma informācija",
@@ -1325,6 +1327,11 @@
       "You can drag and drop the rows to set a Payment Allocations order": "Varat vilkt un nomest rindas, lai iestatītu maksājumu piešķiršanas pasūtījumu",
       "successfully select option": "veiksmīgi. Lūdzu, atlasiet kādu no tālāk norādītajām opcijām, lai turpinātu.",
       "Map Charge-off reasons to Expense accounts": "Izmaksas iemeslu kartēšana izdevumu kontiem",
+      "Transaction Details": "Darījuma detaļas",
+      "Confirm Transaction Details": "Apstiprināt darījuma detaļas",
+      "Transaction Complete": "Darījums Pabeigts",
+      "Transaction Successful": "Darījums Veiksmīgs",
+      "Id": "Id",
       "Interest Rate From Installment": "Procentu likme no nomaksas",
       "Due Date": "Izpildes datums",
       "Delete Installment": "Dzēst iemaksu",
@@ -3697,6 +3704,7 @@
       "Failed to assign payout. Please try again.": "Neizdevās piešķirt izmaksu. Lūdzu, mēģiniet vēlreiz.",
       "Remittance not found. Please check the reference number and try again.": "Pārvedums nav atrasts. Pārbaudiet atsauces numuru un mēģiniet vēlreiz.",
       "Unable to load vendors. Please check your connection and try again.": "Nevar ielādēt pakalpojumu sniedzējus. Pārbaudiet savienojumu un mēģiniet vēlreiz.",
+      "Failed to update payment type. Please try again.": "Neizdevās atjaunināt maksājuma veidu. Lūdzu, mēģiniet vēlreiz.",
       "Search and assign this beneficiary to an existing Mifos client account": "Meklējiet un piešķiriet šo saņēmēju esošam Mifos klienta kontam",
       "Failed to search clients. Please try again.": "Neizdevās meklēt klientus. Lūdzu, mēģiniet vēlreiz.",
       "Process Remittance": "Apstrādāt pārvedumu"

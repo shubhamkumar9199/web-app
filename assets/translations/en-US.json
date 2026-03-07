@@ -608,7 +608,10 @@
       "Print Receipt": "Print Receipt",
       "Validate Recipient": "Validate Recipient",
       "View Receipt": "View Receipt",
-      "Add Entry": "Add Entry"
+      "Add Entry": "Add Entry",
+      "PRINT": "Print",
+      "DONE": "Done",
+      "Submitting": "Submitting"
     },
     "catalogs": {
       "Interest payment waiver": "Interest Payment Waiver",
@@ -1302,7 +1305,6 @@
       "Term Variations": "Term Variations",
       "The Ecosystem": "The Ecosystem",
       "Total Withdrawals": "Total Withdrawals",
-      "Transaction Details": "Transaction Details",
       "Transaction Reverted": "Transaction Reverted",
       "Transactions": "Transactions",
       "Transfer Details": "Transfer Details",
@@ -1338,6 +1340,11 @@
       "You can drag and drop the rows to set a Payment Allocations order": "You can drag and drop the rows to set a Payment Allocations order",
       "successfully select option": "successfully. Please select from the options below to proceed further.",
       "Map Charge-off reasons to Expense accounts": "Map Charge-off reasons to Expense accounts",
+      "Transaction Details": "Transaction Details",
+      "Confirm Transaction Details": "Confirm Transaction Details",
+      "Transaction Complete": "Transaction Complete",
+      "Transaction Successful": "Transaction Successful",
+      "Id": "Id",
       "Interest Rate From Installment": "Interest Rate From Installment",
       "Due Date": "Due Date",
       "Delete Installment": "Delete Installment",
@@ -3655,6 +3662,7 @@
       "Session timed out after a period of inactivity": "Session timed out after a period of inactivity",
       "Set or update office-level opening balances for GL accounts": "Set or update office-level opening balances for GL accounts",
       "Settings": "Settings",
+      "Settings saved successfully": "Settings saved successfully.",
       "Settle Cash": "Settle Cash",
       "Settlement Date From": "Settlement Date From",
       "Settlement Date To": "Settlement Date To",
@@ -3831,7 +3839,8 @@
       "Failed to confirm payment. Please try again or contact support.": "Failed to confirm payment. Please try again or contact support.",
       "Failed to assign payout. Please try again.": "Failed to assign payout. Please try again.",
       "Remittance not found. Please check the reference number and try again.": "Remittance not found. Please check the reference number and try again.",
-      "Unable to load vendors. Please check your connection and try again.": "Unable to load vendors. Please check your connection and try again."
+      "Unable to load vendors. Please check your connection and try again.": "Unable to load vendors. Please check your connection and try again.",
+      "Failed to update payment type. Please try again.": "Failed to update payment type. Please try again."
     },
     "auditTrail": {
       "actions": {

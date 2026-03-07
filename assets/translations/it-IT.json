@@ -606,7 +606,10 @@
       "Validate Recipient": "Convalida destinatario",
       "View Receipt": "Visualizza ricevuta",
       "Add Entry": "Aggiungi voce",
-      "Retry": "Riprova"
+      "Retry": "Riprova",
+      "PRINT": "Stampa",
+      "DONE": "Fatto",
+      "Submitting": "Invio in corso"
     },
     "catalogs": {
       "Interest payment waiver": "Rinuncia al pagamento degli interessi",
@@ -1288,7 +1291,6 @@
       "Term Variations": "Variazioni dei termini",
       "The Ecosystem": "L'Ecosistema",
       "Total Withdrawals": "Prelievi totali",
-      "Transaction Details": "Dettagli di Transazione",
       "Transaction Reverted": "Transazione annullata",
       "Transactions": "Transazioni",
       "Transfer Details": "Dettagli del trasferimento",
@@ -1324,6 +1326,11 @@
       "You can drag and drop the rows to set a Payment Allocations order": "Vous pouvez faire glisser et déposer les lignes pour définir un ordre de répartition des paiements",
       "successfully select option": "con successo. Seleziona una delle opzioni seguenti per procedere ulteriormente.",
       "Map Charge-off reasons to Expense accounts": "Associa i motivi di addebito ai conti spese",
+      "Transaction Details": "Dettagli transazione",
+      "Confirm Transaction Details": "Conferma dettagli transazione",
+      "Transaction Complete": "Transazione Completata",
+      "Transaction Successful": "Transazione Riuscita",
+      "Id": "Id",
       "Interest Rate From Installment": "Tasso di interesse dalla rata",
       "Due Date": "Scadenza",
       "Delete Installment": "Elimina rata",
@@ -3696,6 +3703,7 @@
       "Failed to assign payout. Please try again.": "Assegnazione del pagamento non riuscita. Si prega di riprovare.",
       "Remittance not found. Please check the reference number and try again.": "Rimessa non trovata. Verificare il numero di riferimento e riprovare.",
       "Unable to load vendors. Please check your connection and try again.": "Impossibile caricare i fornitori. Verificare la connessione e riprovare.",
+      "Failed to update payment type. Please try again.": "Aggiornamento del tipo di pagamento non riuscito. Si prega di riprovare.",
       "Search and assign this beneficiary to an existing Mifos client account": "Cerca e assegna questo beneficiario a un conto cliente Mifos esistente",
       "Failed to search clients. Please try again.": "Ricerca clienti non riuscita. Si prega di riprovare.",
       "Process Remittance": "Elabora rimessa"
