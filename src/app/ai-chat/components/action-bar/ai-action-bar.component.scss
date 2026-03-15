@@ -1,0 +1,157 @@
+// ═══════════════════════════════════════════
+// COMPONENT 3 — AI ACTION BAR
+// ═══════════════════════════════════════════
+// Sticky bar docked at the bottom of screen content
+// Shows AI-discovered actions available for current context
+
+@use '../styles/variables' as *;
+@use '../styles/animations' as *;
+
+.ai-action-bar {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+
+  background-color: var(--ai-dark-card);
+  border-radius: $ai-radius-card;
+  padding: $ai-space-4 $ai-space-7;
+  box-shadow: var(--ai-shadow-lg);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $ai-space-7;
+  min-width: 420px;
+  max-width: 90vw;
+
+  // Entrance animation
+  animation: slide-up 0.4s ease forwards;
+  opacity: 0;
+
+  // ─────────────────────────────────────────
+  // Left section: logo + text
+  // ─────────────────────────────────────────
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: $ai-space-4;
+  }
+
+  &__logo {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    background-color: var(--ai-primary);
+    border-radius: $ai-radius-button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // AI sparkle icon fallback
+    &::after {
+      content: '✦';
+      color: var(--ai-text-white);
+      font-size: $ai-font-sm;
+    }
+
+    svg,
+    .icon {
+      width: 14px;
+      height: 14px;
+      color: var(--ai-text-white);
+    }
+  }
+
+  &__text {
+    font-family: $ai-font-family;
+    font-size: $ai-font-base;
+    font-weight: $ai-weight-regular;
+    color: var(--ai-primary-muted);
+  }
+
+  // ─────────────────────────────────────────
+  // Center: count badge
+  // ─────────────────────────────────────────
+  &__badge {
+    background-color: var(--ai-primary);
+    color: var(--ai-text-white);
+    font-family: $ai-font-family;
+    font-size: $ai-font-sm;
+    font-weight: $ai-weight-bold;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 $ai-space-3;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // ─────────────────────────────────────────
+  // Right: action button
+  // ─────────────────────────────────────────
+  &__btn {
+    background-color: var(--ai-dark-card-light);
+    color: var(--ai-primary-muted);
+    border: none;
+    border-radius: $ai-radius-button;
+    padding: $ai-space-3 $ai-space-5;
+    font-family: $ai-font-family;
+    font-size: $ai-font-xs;
+    font-weight: $ai-weight-semibold;
+    cursor: pointer;
+    transition: all $ai-transition-fast;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    gap: $ai-space-2;
+
+    &:hover {
+      background-color: lighten(#252540, 8%);
+      color: var(--ai-text-white);
+    }
+
+    &__arrow {
+      font-size: $ai-font-sm;
+      transition: transform $ai-transition-fast;
+    }
+
+    &:hover &__arrow {
+      transform: translateY(-2px);
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Expanded state (shows action cards)
+  // ─────────────────────────────────────────
+  &--expanded {
+    flex-direction: column;
+    align-items: stretch;
+    padding: $ai-space-7;
+    min-width: 460px;
+
+    .ai-action-bar__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: $ai-space-5;
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Minimized state (just the badge)
+  // ─────────────────────────────────────────
+  &--minimized {
+    min-width: auto;
+    padding: $ai-space-3 $ai-space-5;
+    gap: $ai-space-3;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten(#1a1a2e, 5%);
+    }
+  }
+}

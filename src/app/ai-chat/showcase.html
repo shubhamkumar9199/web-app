@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Overlay Design System — Mifos X</title>
+  <style>
+    /* ═══════════════════════════════════════════
+       CSS VARIABLES
+       ═══════════════════════════════════════════ */
+    :root {
+      --ai-dark-card: #1a1a2e;
+      --ai-dark-card-light: #252540;
+      --ai-primary: #534AB7;
+      --ai-primary-light: #EEEDFE;
+      --ai-primary-muted: #9090b0;
+      --ai-success: #1D9E75;
+      --ai-success-light: #e8f5e9;
+      --ai-warning: #e65100;
+      --ai-warning-light: #fff3e0;
+      --ai-gold: #c9a84c;
+      --ai-text-dark: #1a1a2e;
+      --ai-text-muted: #888;
+      --ai-text-white: #ffffff;
+      --ai-border: #e8e8e8;
+      --ai-page-bg: #f0f2f7;
+      --ai-card-bg: #ffffff;
+      --ai-tag-ready-bg: #e8f5e9;
+      --ai-tag-ready-text: #2e7d32;
+      --ai-tag-suggested-bg: #e8eaff;
+      --ai-tag-suggested-text: #3451b2;
+    }
+
+    /* ═══════════════════════════════════════════
+       KEYFRAME ANIMATIONS
+       ═══════════════════════════════════════════ */
+    @keyframes pulse-ring {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(2.2); opacity: 0; }
+    }
+    @keyframes pulse-ring-outer {
+      0% { transform: scale(1); opacity: 0.5; }
+      100% { transform: scale(2.8); opacity: 0; }
+    }
+    @keyframes slide-up {
+      0% { transform: translateY(12px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fade-in {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes bar-grow {
+      0% { width: 0; }
+      100% { width: var(--bar-width, 0%); }
+    }
+    @keyframes toast-lifecycle {
+      0% { transform: translateY(20px) translateX(-50%); opacity: 0; }
+      10% { transform: translateY(0) translateX(-50%); opacity: 1; }
+      85% { transform: translateY(0) translateX(-50%); opacity: 1; }
+      100% { transform: translateY(20px) translateX(-50%); opacity: 0; }
+    }
+    @keyframes progress-shrink {
+      0% { width: 100%; }
+      100% { width: 0%; }
+    }
+
+    /* ═══════════════════════════════════════════
+       BASE STYLES
+       ═══════════════════════════════════════════ */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--ai-page-bg);
+      min-height: 100vh;
+      padding: 40px;
+    }
+    .showcase {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .showcase__title {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ai-text-dark);
+      margin-bottom: 8px;
+    }
+    .showcase__subtitle {
+      font-size: 14px;
+      color: var(--ai-text-muted);
+      margin-bottom: 40px;
+    }
+    .showcase__section {
+      margin-bottom: 48px;
+    }
+    .showcase__label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--ai-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+    }
+    .showcase__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .showcase__item {
+      background: var(--ai-card-bg);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .showcase__item--dark {
+      background: #2a2a3e;
+      padding: 32px;
+    }
+    .showcase__item--full {
+      grid-column: 1 / -1;
+    }
+
+    /* ═══════════════════════════════════════════
+       COMPONENT 1: HOTSPOT
+       ═══════════════════════════════════════════ */
+    .ai-hotspot {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+    .ai-hotspot__dot {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px; height: 24px;
+      background: var(--ai-primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      box-shadow: 0 2px 8px rgba(83, 74, 183, 0.4);
+    }
+    .ai-hotspot__dot::after {
+      content: '!';
+      color: var(--ai-text-white);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .ai-hotspot__ring {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      border: 2px solid var(--ai-primary);
+    }
+    .ai-hotspot__ring--inner {
+      animation: pulse-ring 1.8s ease-out infinite;
+    }
+    .ai-hotspot__ring--outer {
+      animation: pulse-ring-outer 1.8s ease-out 0.4s infinite;
+    }
+
+    /* ═══════════════════════════════════════════
+       COMPONENT 2: INSIGHT CARD
+       ═══════════════════════════════════════════ */
+    .ai-insight-card {
+      width: 200px;
+      background: var(--ai-dark-card);
+      border-radius: 14px;
+      padding: 14px 16px;
+      animation: slide-up 0.35s ease forwards;
+    }
+    .ai-insight-card__header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .ai-insight-card__icon-box {
+      width: 22px; height: 22px;
+      background: var(--ai-primary);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ai-insight-card__icon-box::after {
+      content: '✦';
+      color: var(--ai-text-white);
+      font-size: 10px;
+    }
+    .ai-insight-card__title {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--ai-text-white);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .ai-insight-card__body {
+      font-size: 10px;
+      color: var(--ai-primary-muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .ai-insight-card__highlight {
+      color: var(--ai-gold);
+      font-weight: 600;
+    }
+    .ai-insight-card__actions {
+      display: flex;
+      gap: 6px;
+    }
+    .ai-insight-card__btn {
+      flex: 1;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .ai-insight-card__btn--primary {
+      background: var(--ai-primary);
+      color: var(--ai-text-white);
+    }
+    .ai-insight-card__btn--secondary {
+      background: var(--ai-dark-card-light);
+      color: var(--ai-primary-muted);
+    }
+
+    /* ═══════════════════════════════════════════
+       COMPONENT 3: ACTION BAR
+       ═══════════════════════════════════════════ */
+    .ai-action-bar {
+      background: var(--ai-dark-card);
+      border-radius: 12px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      animation: slide-up 0.4s ease forwards;
+    }
+    .ai-action-bar__left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ai-action-bar__logo {
+      width: 26px; height: 26px;
+      background: var(--ai-primary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ai-action-bar__logo::after {
+      content: '✦';
+      color: var(--ai-text-white);
+      font-size: 11px;
+    }
+    .ai-action-bar__text {
+      font-size: 12px;
+      color: var(--ai-primary-muted);
+    }
+    .ai-action-bar__badge {
+      background: var(--ai-primary);
+      color: var(--ai-text-white);
+      font-size: 11px;
+      font-weight: 700;
+      min-width: 22px; height: 22px;
+      padding: 0 8px;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ai-action-bar__btn {
+      background: var(--ai-dark-card-light);
+      color: var(--ai-primary-muted);
+      border: none;
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .ai-action-bar__btn:hover {
+      background: #353550;
+      color: var(--ai-text-white);
+    }
+
+    /* ═══════════════════════════════════════════
+       COMPONENT 4: ACTION CARDS
+       ═══════════════════════════════════════════ */
+    .ai-action-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .ai-action-card {
+      background: var(--ai-card-bg);
+      border: 0.5px solid var(--ai-border);
+      border-radius: 10px;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      animation: slide-up 0.35s ease forwards;
+    }
+    .ai-action-card:nth-child(2) { animation-delay: 0.08s; }
+    .ai-action-card:nth-child(3) { animation-delay: 0.16s; }
+    .ai-action-card:hover {
+      border-color: var(--ai-primary);
+    }
+    .ai-action-card__header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .ai-action-card__icon {
+      width: 22px; height: 22px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ai-action-card__icon--approve { background: var(--ai-success); }
+    .ai-action-card__icon--approve::after { content: '✓'; color: #fff; font-size: 10px; font-weight: 700; }
+    .ai-action-card__icon--alert { background: var(--ai-warning); }
+    .ai-action-card__icon--alert::after { content: '!'; color: #fff; font-size: 10px; font-weight: 700; }
+    .ai-action-card__icon--disburse { background: var(--ai-primary); }
+    .ai-action-card__icon--disburse::after { content: '↗'; color: #fff; font-size: 10px; }
+    .ai-action-card__name {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--ai-text-dark);
+    }
+    .ai-action-card__desc {
+      font-size: 10px;
+      color: var(--ai-text-muted);
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .ai-action-card__tag {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .ai-action-card__tag--urgent { background: var(--ai-warning-light); color: var(--ai-warning); }
+    .ai-action-card__tag--ready { background: var(--ai-tag-ready-bg); color: var(--ai-tag-ready-text); }
+    .ai-action-card__tag--suggested { background: var(--ai-tag-suggested-bg); color: var(--ai-tag-suggested-text); }
+
+    /* ═══════════════════════════════════════════
+       COMPONENT 5: CONFIRM OVERLAY
+       ═══════════════════════════════════════════ */
+    .ai-confirm-overlay__modal {
+      background: var(--ai-card-bg);
+      border-radius: 14px;
+      padding: 18px;
+      width: 220px;
+      text-align: center;
+      animation: slide-up 0.3s ease forwards;
+    }
+    .ai-confirm-overlay__icon-box {
+      width: 36px; height: 36px;
+      margin: 0 auto 12px;
+      background: var(--ai-warning-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ai-confirm-overlay__icon-box::after {
+      content: '⚠';
+      color: var(--ai-warning);
+      font-size: 14px;
+    }
+    .ai-confirm-overlay__title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ai-text-dark);
+      margin-bottom: 8px;
+    }
+    .ai-confirm-overlay__desc {
+      font-size: 11px;
+      color: var(--ai-text-muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .ai-confirm-overlay__amount {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ai-text-dark);
+      margin-bottom: 14px;
+    }
+    .ai-confirm-overlay__actions {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .ai-confirm-overlay__btn {
+      width: 100%;
+      padding: 10px 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .ai-confirm-overlay__btn--confirm { background: var(--ai-success); color: #fff; }
+    .ai-confirm-overlay__btn--cancel { background: #f5f5f5; color: var(--ai-text-muted); }
+
+    /* ═══════════════════════════════════════════
+       COMPONENT 6: TOAST
+       ═══════════════════════════════════════════ */
+    .ai-toast {
+      background: var(--ai-dark-card);
+      border-radius: 10px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 320px;
+      position: relative;
+      animation: slide-up 0.35s ease forwards;
+    }
+    .ai-toast__icon {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ai-toast__icon--success { background: var(--ai-success); }
+    .ai-toast__icon--success::after { content: '✓'; color: #fff; font-size: 12px; font-weight: 700; }
+    .ai-toast__content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .ai-toast__title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ai-text-white);
+    }
+    .ai-toast__subtitle {
+      font-size: 10px;
+      color: var(--ai-primary-muted);
+    }
+    .ai-toast__txn-id {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--ai-gold);
+    }
+    .ai-toast__progress {
+      position: absolute;
+      bottom: 0;
+      left: 10px; right: 10px;
+      height: 2px;
+      background: var(--ai-dark-card-light);
+      border-radius: 1px;
+      overflow: hidden;
+    }
+    .ai-toast__progress::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%;
+      width: 65%;
+      background: var(--ai-success);
+    }
+
+    /* ═══════════════════════════════════════════
+       COMPONENT 7: RISK PANEL
+       ═══════════════════════════════════════════ */
+    .ai-risk-panel {
+      background: var(--ai-card-bg);
+      border-radius: 12px;
+      padding: 14px;
+      animation: slide-up 0.35s ease forwards;
+    }
+    .ai-risk-panel__title {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--ai-text-dark);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .ai-risk-panel__title__icon {
+      width: 18px; height: 18px;
+      background: var(--ai-primary);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ai-risk-panel__title__icon::after {
+      content: '◎';
+      color: #fff;
+      font-size: 10px;
+    }
+    .ai-risk-panel__rows {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .ai-risk-panel__row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .ai-risk-panel__label {
+      width: 80px;
+      font-size: 10px;
+      color: var(--ai-text-muted);
+    }
+    .ai-risk-panel__track {
+      flex: 1;
+      height: 6px;
+      background: #f0f0f0;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .ai-risk-panel__fill {
+      height: 100%;
+      border-radius: 3px;
+      animation: bar-grow 1s ease forwards;
+    }
+    .ai-risk-panel__fill--success { background: var(--ai-success); }
+    .ai-risk-panel__fill--primary { background: var(--ai-primary); }
+    .ai-risk-panel__fill--warning { background: var(--ai-warning); }
+    .ai-risk-panel__fill--gold { background: var(--ai-gold); }
+    .ai-risk-panel__value {
+      width: 30px;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--ai-text-dark);
+      text-align: right;
+    }
+    .ai-risk-panel__score {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--ai-border);
+    }
+    .ai-risk-panel__score__label {
+      font-size: 10px;
+      color: var(--ai-text-muted);
+    }
+    .ai-risk-panel__score__value {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ai-text-dark);
+    }
+    .ai-risk-panel__score__badge {
+      display: inline-block;
+      margin-left: 6px;
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: var(--ai-tag-ready-bg);
+      color: var(--ai-tag-ready-text);
+    }
+  </style>
+</head>
+<body>
+  <div class="showcase">
+    <h1 class="showcase__title">AI Overlay Design System</h1>
+    <p class="showcase__subtitle">Smart contextual overlay components for Mifos X banking assistant</p>
+
+    <!-- HOTSPOT -->
+    <div class="showcase__section">
+      <div class="showcase__label">Component 1 — Pulsing Hotspot</div>
+      <div class="showcase__item" style="display: flex; gap: 48px; align-items: center;">
+        <div class="ai-hotspot">
+          <div class="ai-hotspot__ring ai-hotspot__ring--inner"></div>
+          <div class="ai-hotspot__ring ai-hotspot__ring--outer"></div>
+          <div class="ai-hotspot__dot"></div>
+        </div>
+        <span style="font-size: 12px; color: var(--ai-text-muted);">← Appears on UI elements with AI insights</span>
+      </div>
+    </div>
+
+    <!-- INSIGHT CARD -->
+    <div class="showcase__section">
+      <div class="showcase__label">Component 2 — Insight Card</div>
+      <div class="showcase__item showcase__item--dark">
+        <div class="ai-insight-card">
+          <div class="ai-insight-card__header">
+            <div class="ai-insight-card__icon-box"></div>
+            <span class="ai-insight-card__title">AI Insight</span>
+          </div>
+          <p class="ai-insight-card__body">
+            This client has <span class="ai-insight-card__highlight">₹12,500</span>
+            pending dues and excellent repayment history. Consider offering
+            <span class="ai-insight-card__highlight">top-up loan</span>.
+          </p>
+          <div class="ai-insight-card__actions">
+            <button class="ai-insight-card__btn ai-insight-card__btn--primary">Review & act</button>
+            <button class="ai-insight-card__btn ai-insight-card__btn--secondary">Dismiss</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACTION BAR -->
+    <div class="showcase__section">
+      <div class="showcase__label">Component 3 — AI Action Bar</div>
+      <div class="showcase__item showcase__item--full showcase__item--dark">
+        <div class="ai-action-bar">
+          <div class="ai-action-bar__left">
+            <div class="ai-action-bar__logo"></div>
+            <span class="ai-action-bar__text">AI found actions for this client</span>
+          </div>
+          <span class="ai-action-bar__badge">3</span>
+          <button class="ai-action-bar__btn">Show actions <span>↑</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACTION CARDS -->
+    <div class="showcase__section">
+      <div class="showcase__label">Component 4 — Action Cards Row</div>
+      <div class="showcase__item showcase__item--full">
+        <div class="ai-action-cards">
+          <div class="ai-action-card">
+            <div class="ai-action-card__header">
+              <div class="ai-action-card__icon ai-action-card__icon--approve"></div>
+              <span class="ai-action-card__name">Approve Loan</span>
+            </div>
+            <p class="ai-action-card__desc">Loan #4521 is ready for approval. All documents verified.</p>
+            <span class="ai-action-card__tag ai-action-card__tag--ready">Ready</span>
+          </div>
+          <div class="ai-action-card">
+            <div class="ai-action-card__header">
+              <div class="ai-action-card__icon ai-action-card__icon--alert"></div>
+              <span class="ai-action-card__name">Collect Payment</span>
+            </div>
+            <p class="ai-action-card__desc">EMI of ₹3,500 is overdue by 5 days. Last reminder sent.</p>
+            <span class="ai-action-card__tag ai-action-card__tag--urgent">Urgent</span>
+          </div>
+          <div class="ai-action-card">
+            <div class="ai-action-card__header">
+              <div class="ai-action-card__icon ai-action-card__icon--disburse"></div>
+              <span class="ai-action-card__name">Offer Top-up</span>
+            </div>
+            <p class="ai-action-card__desc">Client eligible for ₹25,000 top-up based on history.</p>
+            <span class="ai-action-card__tag ai-action-card__tag--suggested">Suggested</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONFIRM + TOAST + RISK -->
+    <div class="showcase__section">
+      <div class="showcase__label">Components 5, 6, 7 — Confirm, Toast, Risk Panel</div>
+      <div class="showcase__grid">
+        <!-- Confirm -->
+        <div class="showcase__item">
+          <div class="ai-confirm-overlay__modal">
+            <div class="ai-confirm-overlay__icon-box"></div>
+            <h3 class="ai-confirm-overlay__title">Disburse Loan?</h3>
+            <p class="ai-confirm-overlay__desc">This will transfer funds to the client's linked bank account.</p>
+            <div class="ai-confirm-overlay__amount">₹50,000</div>
+            <div class="ai-confirm-overlay__actions">
+              <button class="ai-confirm-overlay__btn ai-confirm-overlay__btn--confirm">Confirm Disbursement</button>
+              <button class="ai-confirm-overlay__btn ai-confirm-overlay__btn--cancel">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toast -->
+        <div class="showcase__item showcase__item--dark" style="display: flex; align-items: center; justify-content: center;">
+          <div class="ai-toast">
+            <div class="ai-toast__icon ai-toast__icon--success"></div>
+            <div class="ai-toast__content">
+              <span class="ai-toast__title">Loan approved and disbursed</span>
+              <span class="ai-toast__subtitle">Ramesh Kumar · ₹50,000 sent</span>
+            </div>
+            <span class="ai-toast__txn-id">TXN-849271</span>
+            <div class="ai-toast__progress"></div>
+          </div>
+        </div>
+
+        <!-- Risk Panel -->
+        <div class="showcase__item">
+          <div class="ai-risk-panel">
+            <div class="ai-risk-panel__title">
+              <span class="ai-risk-panel__title__icon"></span>
+              AI Risk Profile
+            </div>
+            <div class="ai-risk-panel__rows">
+              <div class="ai-risk-panel__row">
+                <span class="ai-risk-panel__label">Repayment</span>
+                <div class="ai-risk-panel__track">
+                  <div class="ai-risk-panel__fill ai-risk-panel__fill--success" style="--bar-width: 78%;"></div>
+                </div>
+                <span class="ai-risk-panel__value">78%</span>
+              </div>
+              <div class="ai-risk-panel__row">
+                <span class="ai-risk-panel__label">Credit</span>
+                <div class="ai-risk-panel__track">
+                  <div class="ai-risk-panel__fill ai-risk-panel__fill--primary" style="--bar-width: 72%;"></div>
+                </div>
+                <span class="ai-risk-panel__value">72%</span>
+              </div>
+              <div class="ai-risk-panel__row">
+                <span class="ai-risk-panel__label">Overdue</span>
+                <div class="ai-risk-panel__track">
+                  <div class="ai-risk-panel__fill ai-risk-panel__fill--warning" style="--bar-width: 35%;"></div>
+                </div>
+                <span class="ai-risk-panel__value">35%</span>
+              </div>
+              <div class="ai-risk-panel__row">
+                <span class="ai-risk-panel__label">Savings</span>
+                <div class="ai-risk-panel__track">
+                  <div class="ai-risk-panel__fill ai-risk-panel__fill--gold" style="--bar-width: 85%;"></div>
+                </div>
+                <span class="ai-risk-panel__value">85%</span>
+              </div>
+            </div>
+            <div class="ai-risk-panel__score">
+              <span class="ai-risk-panel__score__label">Overall Score</span>
+              <span class="ai-risk-panel__score__value">68 <span class="ai-risk-panel__score__badge">Good</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

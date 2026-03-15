@@ -132,6 +132,13 @@ export const environment = {
   productionModeEnableRBAC:
     loadedEnv.productionModeEnableRBAC === 'true' || loadedEnv.productionModeEnableRBAC === true || false,
 
+  /** AI Chat Assistant */
+  aiAssistant: {
+    enabled: true,
+    groqApiKey: loadedEnv.aiAssistantGroqApiKey || '',
+    mcpServerUrl: loadedEnv.aiAssistantMcpServerUrl || 'https://ai.mifos.community',
+  },
+
   OIDC: {
     // Support legacy FINERACT_PLUGIN_OIDC_* variable names for backward compatibility
     oidcServerEnabled:

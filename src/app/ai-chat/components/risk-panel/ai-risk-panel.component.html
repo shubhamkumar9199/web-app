@@ -1,0 +1,97 @@
+<!--
+  COMPONENT 7 — AI RISK BARS
+  Animated risk profile visualization
+-->
+<div class="ai-risk-panel">
+  <!-- Title -->
+  <div class="ai-risk-panel__title">
+    <span class="ai-risk-panel__title__icon"></span>
+    AI Risk Profile
+  </div>
+
+  <!-- Risk Bars -->
+  <div class="ai-risk-panel__rows">
+
+    <!-- Repayment: 78% (success color) -->
+    <div class="ai-risk-panel__row">
+      <span class="ai-risk-panel__label">Repayment</span>
+      <div class="ai-risk-panel__track">
+        <div class="ai-risk-panel__fill ai-risk-panel__fill--success"
+             style="--bar-width: 78%;"></div>
+      </div>
+      <span class="ai-risk-panel__value">78%</span>
+    </div>
+
+    <!-- Credit: 72% (primary color) -->
+    <div class="ai-risk-panel__row">
+      <span class="ai-risk-panel__label">Credit</span>
+      <div class="ai-risk-panel__track">
+        <div class="ai-risk-panel__fill ai-risk-panel__fill--primary"
+             style="--bar-width: 72%;"></div>
+      </div>
+      <span class="ai-risk-panel__value">72%</span>
+    </div>
+
+    <!-- Overdue: 35% (warning color) -->
+    <div class="ai-risk-panel__row">
+      <span class="ai-risk-panel__label">Overdue</span>
+      <div class="ai-risk-panel__track">
+        <div class="ai-risk-panel__fill ai-risk-panel__fill--warning"
+             style="--bar-width: 35%;"></div>
+      </div>
+      <span class="ai-risk-panel__value">35%</span>
+    </div>
+
+    <!-- Savings: 85% (gold color) -->
+    <div class="ai-risk-panel__row">
+      <span class="ai-risk-panel__label">Savings</span>
+      <div class="ai-risk-panel__track">
+        <div class="ai-risk-panel__fill ai-risk-panel__fill--gold"
+             style="--bar-width: 85%;"></div>
+      </div>
+      <span class="ai-risk-panel__value">85%</span>
+    </div>
+
+  </div>
+
+  <!-- Overall Score -->
+  <div class="ai-risk-panel__score">
+    <span class="ai-risk-panel__score__label">Overall Score</span>
+    <span class="ai-risk-panel__score__value">
+      68
+      <span class="ai-risk-panel__score__badge ai-risk-panel__score__badge--good">
+        Good
+      </span>
+    </span>
+  </div>
+</div>
+
+
+<!--
+  VARIANT: Compact Risk Panel
+-->
+<div class="ai-risk-panel ai-risk-panel--compact">
+  <div class="ai-risk-panel__title">
+    <span class="ai-risk-panel__title__icon"></span>
+    Quick Score
+  </div>
+
+  <div class="ai-risk-panel__rows">
+    <div class="ai-risk-panel__row">
+      <span class="ai-risk-panel__label">Repayment</span>
+      <div class="ai-risk-panel__track">
+        <div class="ai-risk-panel__fill ai-risk-panel__fill--success"
+             style="--bar-width: 78%;"></div>
+      </div>
+      <span class="ai-risk-panel__value">78%</span>
+    </div>
+    <div class="ai-risk-panel__row">
+      <span class="ai-risk-panel__label">Credit</span>
+      <div class="ai-risk-panel__track">
+        <div class="ai-risk-panel__fill ai-risk-panel__fill--primary"
+             style="--bar-width: 72%;"></div>
+      </div>
+      <span class="ai-risk-panel__value">72%</span>
+    </div>
+  </div>
+</div>

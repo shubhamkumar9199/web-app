@@ -30,5 +30,8 @@ interface Window {
     mifosRemittanceEnabled?: boolean;
     mifosRemittanceApiKey?: string;
     minPasswordLength?: number;
+    aiAssistantEnabled?: string | boolean;
+    aiAssistantGroqApiKey?: string;
+    aiAssistantMcpServerUrl?: string;
   };
 }

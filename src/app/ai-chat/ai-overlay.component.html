@@ -1,0 +1,325 @@
+<!-- Mifos Intelligence Dashboard Panel -->
+<ng-container *ngIf="isEnabled">
+
+  <!-- ═══════════════════════════════════════════
+       FAB BUTTON (bottom-right, visible when panel closed)
+       ═══════════════════════════════════════════ -->
+  <button class="mi-fab" *ngIf="!panelOpen" (click)="openPanel()" title="Open Mifos Intelligence (⌘K)">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 3v3m0 12v3M3 12h3m12 0h3"/>
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1M5.6 18.4l2.1-2.1m8.6-8.6l2.1-2.1"/>
+    </svg>
+  </button>
+
+
+  <!-- ═══════════════════════════════════════════
+       DASHBOARD PANEL (slides up from bottom)
+       ═══════════════════════════════════════════ -->
+  <div class="mi-panel" [class.mi-panel--open]="panelOpen">
+
+    <!-- ─── ZONE 1: Identity Bar ─── -->
+    <div class="mi-zone1">
+      <div class="mi-zone1__left">
+        <div class="mi-zone1__logo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1074b9" stroke-width="2.5">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 3v3m0 12v3M3 12h3m12 0h3"/>
+            <path d="M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1M5.6 18.4l2.1-2.1m8.6-8.6l2.1-2.1"/>
+          </svg>
+        </div>
+        <div class="mi-zone1__title-group">
+          <span class="mi-zone1__title">Mifos Intelligence</span>
+          <span class="mi-zone1__subtitle">AI Co-pilot</span>
+        </div>
+      </div>
+
+      <div class="mi-zone1__center">
+        <div class="mi-zone1__client-avatar">{{ getClientInitials() }}</div>
+        <span class="mi-zone1__client-name">{{ clientName }}</span>
+        <span class="mi-zone1__client-meta">ID: {{ clientId }}</span>
+        <span class="mi-zone1__client-meta">{{ clientBranch }}</span>
+      </div>
+
+      <div class="mi-zone1__right">
+        <span class="mi-zone1__live-dot"></span>
+        <span class="mi-zone1__live-text">LIVE</span>
+        <button class="mi-zone1__close" (click)="closePanel()">×</button>
+      </div>
+    </div>
+
+
+    <!-- ─── ZONE 2: Main Content (two columns) ─── -->
+    <div class="mi-zone3">
+
+      <!-- LEFT: AI Intelligence Feed + Chat -->
+      <div class="mi-zone3__left">
+
+        <!-- Feed Header -->
+        <div class="mi-feed__header">
+          <span class="mi-feed__title">AI Intelligence Feed</span>
+          <span class="mi-feed__badge">{{ feedItems.length }}</span>
+        </div>
+
+        <!-- Feed Items -->
+        <div class="mi-feed__items">
+          <div class="mi-feed__item"
+               *ngFor="let item of feedItems; trackBy: trackByFeed"
+               [class.mi-feed__item--active]="item.isActive"
+               (click)="onFeedAction(item)">
+            <div class="mi-feed__icon" [attr.data-color]="item.iconColor">
+              {{ item.icon }}
+            </div>
+            <div class="mi-feed__content">
+              <span class="mi-feed__item-title">{{ item.title }}</span>
+              <span class="mi-feed__item-desc">{{ item.description }}</span>
+            </div>
+            <div class="mi-feed__right">
+              <span class="mi-feed__time">{{ item.timestamp }}</span>
+              <button class="mi-feed__action-btn">{{ item.actionLabel }}</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Messages -->
+        <div class="mi-chat" *ngIf="chatMessages.length > 0 || isAiTyping">
+          <div class="mi-chat__messages" #messagesContainer>
+            <div class="mi-chat__msg"
+                 *ngFor="let msg of chatMessages; trackBy: trackByMessage"
+                 [class.mi-chat__msg--user]="msg.role === 'user'"
+                 [class.mi-chat__msg--ai]="msg.role === 'assistant'">
+
+              <!-- AI avatar -->
+              <div class="mi-chat__avatar mi-chat__avatar--ai" *ngIf="msg.role === 'assistant'">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 5v2m0 10v2M5 12h2m10 0h2"/>
+                </svg>
+              </div>
+
+              <div class="mi-chat__bubble" [class.mi-chat__bubble--user]="msg.role === 'user'">
+                {{ msg.content }}
+              </div>
+
+              <!-- User avatar -->
+              <div class="mi-chat__avatar mi-chat__avatar--user" *ngIf="msg.role === 'user'">
+                {{ getClientInitials() }}
+              </div>
+            </div>
+
+            <!-- Typing indicator -->
+            <div class="mi-chat__msg mi-chat__msg--ai" *ngIf="isAiTyping">
+              <div class="mi-chat__avatar mi-chat__avatar--ai">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 5v2m0 10v2M5 12h2m10 0h2"/>
+                </svg>
+              </div>
+              <div class="mi-chat__bubble">
+                <div class="mi-typing-dots">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- RIGHT: Detail Panel -->
+      <div class="mi-zone3__right">
+        <!-- Loan Detail Header -->
+        <div class="mi-detail__header">
+          Loan #{{ loanId }} · <span class="mi-detail__status">{{ loanStatus }}</span>
+        </div>
+
+        <!-- Loan Data Card -->
+        <div class="mi-detail__card">
+          <div class="mi-detail__row" *ngFor="let item of loanData">
+            <span class="mi-detail__label">{{ item.label }}</span>
+            <span class="mi-detail__value"
+                  [class.mi-detail__value--gold]="item.color === 'gold'"
+                  [class.mi-detail__value--success]="item.color === 'success'"
+                  [class.mi-detail__value--warning]="item.color === 'warning'">
+              {{ item.value }}
+            </span>
+          </div>
+        </div>
+
+        <!-- Risk Profile -->
+        <div class="mi-risk" *ngIf="riskProfile">
+          <div class="mi-risk__title">Risk Profile</div>
+          <div class="mi-risk__bars">
+            <div class="mi-risk__row">
+              <span class="mi-risk__label">Repayment</span>
+              <div class="mi-risk__track">
+                <div class="mi-risk__fill mi-risk__fill--success"
+                     [style.width.%]="riskBarsAnimated ? riskProfile.repayment : 0"></div>
+              </div>
+              <span class="mi-risk__val">{{ riskProfile.repayment }}%</span>
+            </div>
+            <div class="mi-risk__row">
+              <span class="mi-risk__label">Credit</span>
+              <div class="mi-risk__track">
+                <div class="mi-risk__fill mi-risk__fill--primary"
+                     [style.width.%]="riskBarsAnimated ? riskProfile.credit : 0"></div>
+              </div>
+              <span class="mi-risk__val">{{ riskProfile.credit }}%</span>
+            </div>
+            <div class="mi-risk__row">
+              <span class="mi-risk__label">Overdue</span>
+              <div class="mi-risk__track">
+                <div class="mi-risk__fill mi-risk__fill--warning"
+                     [style.width.%]="riskBarsAnimated ? riskProfile.overdue : 0"></div>
+              </div>
+              <span class="mi-risk__val">{{ riskProfile.overdue }}%</span>
+            </div>
+            <div class="mi-risk__row">
+              <span class="mi-risk__label">Savings</span>
+              <div class="mi-risk__track">
+                <div class="mi-risk__fill mi-risk__fill--gold"
+                     [style.width.%]="riskBarsAnimated ? riskProfile.savings : 0"></div>
+              </div>
+              <span class="mi-risk__val">{{ riskProfile.savings }}%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons 2x2 -->
+        <div class="mi-actions-grid">
+          <button class="mi-action-btn mi-action-btn--approve" (click)="onLoanAction('approve')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Approve
+          </button>
+          <button class="mi-action-btn mi-action-btn--flag" (click)="onLoanAction('flag')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+              <line x1="4" y1="22" x2="4" y2="15"/>
+            </svg>
+            Flag Overdue
+          </button>
+          <button class="mi-action-btn mi-action-btn--disburse" (click)="onLoanAction('disburse')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="7" y1="17" x2="17" y2="7"/>
+              <polyline points="7 7 17 7 17 17"/>
+            </svg>
+            Disburse
+          </button>
+          <button class="mi-action-btn mi-action-btn--history">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            View History
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ─── ZONE 3: Command Bar ─── -->
+    <div class="mi-zone4">
+      <div class="mi-zone4__input-wrap">
+        <svg class="mi-zone4__wave-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M2 12h2l3-7 4 14 4-10 3 6h4"/>
+        </svg>
+        <input type="text"
+               #chatInput
+               class="mi-zone4__input"
+               [(ngModel)]="chatInput$"
+               (keydown)="onChatKeydown($event)"
+               placeholder="Command the AI — approve loan, send reminder..."
+               [disabled]="isAiTyping" />
+        <span class="mi-zone4__shortcut">⌘K</span>
+      </div>
+      <button class="mi-zone4__send" (click)="sendMessage()" [disabled]="!chatInput$.trim() || isAiTyping">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+      <button class="mi-zone4__mic">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+          <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+        </svg>
+      </button>
+    </div>
+
+
+    <!-- ─── ZONE 4: Chips Row ─── -->
+    <div class="mi-zone5">
+      <div class="mi-zone5__scroll">
+        <button class="mi-chip"
+                *ngFor="let chip of quickChips"
+                [class.mi-chip--active]="chip.isActive"
+                (click)="sendChipMessage(chip)">
+          {{ chip.label }}
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       CONFIRMATION OVERLAY (reused from old)
+       ═══════════════════════════════════════════ -->
+  <div class="mi-confirm-overlay" *ngIf="confirmation">
+    <div class="mi-confirm-overlay__backdrop" (click)="onCancel()"></div>
+    <div class="mi-confirm-overlay__modal">
+      <div class="mi-confirm-overlay__icon-box"
+           [class.mi-confirm-overlay__icon-box--danger]="confirmation.type === 'danger'">
+      </div>
+      <h3 class="mi-confirm-overlay__title">{{ confirmation.title }}</h3>
+      <p class="mi-confirm-overlay__desc">{{ confirmation.description }}</p>
+      <div class="mi-confirm-overlay__amount" *ngIf="confirmation.amount">
+        {{ confirmation.amount }}
+      </div>
+      <div class="mi-confirm-overlay__details" *ngIf="confirmation.details?.length">
+        <div class="mi-confirm-overlay__detail-row" *ngFor="let d of confirmation.details">
+          <span class="mi-confirm-overlay__detail-label">{{ d.label }}</span>
+          <span class="mi-confirm-overlay__detail-value">{{ d.value }}</span>
+        </div>
+      </div>
+      <div class="mi-confirm-overlay__actions">
+        <button class="mi-confirm-overlay__btn"
+                [class.mi-confirm-overlay__btn--confirm]="confirmation.type === 'confirm'"
+                [class.mi-confirm-overlay__btn--danger]="confirmation.type === 'danger'"
+                (click)="onConfirm()">
+          {{ confirmation.confirmLabel }}
+        </button>
+        <button class="mi-confirm-overlay__btn mi-confirm-overlay__btn--cancel" (click)="onCancel()">
+          {{ confirmation.cancelLabel }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       TOAST NOTIFICATIONS
+       ═══════════════════════════════════════════ -->
+  <div class="mi-toast-container">
+    <div class="mi-toast"
+         *ngFor="let toast of toasts; trackBy: trackByToast"
+         [class.mi-toast--success]="toast.type === 'success'"
+         [class.mi-toast--error]="toast.type === 'error'"
+         [class.mi-toast--info]="toast.type === 'info'">
+      <div class="mi-toast__icon"
+           [class.mi-toast__icon--success]="toast.type === 'success'"
+           [class.mi-toast__icon--error]="toast.type === 'error'"
+           [class.mi-toast__icon--info]="toast.type === 'info'">
+      </div>
+      <div class="mi-toast__content">
+        <span class="mi-toast__title">{{ toast.title }}</span>
+        <span class="mi-toast__subtitle" *ngIf="toast.subtitle">{{ toast.subtitle }}</span>
+      </div>
+      <span class="mi-toast__txn" *ngIf="toast.txnId">{{ toast.txnId }}</span>
+      <button class="mi-toast__close" (click)="removeToast(toast.id)">×</button>
+      <div class="mi-toast__progress" *ngIf="toast.autoDismiss !== false"></div>
+    </div>
+  </div>
+
+</ng-container>

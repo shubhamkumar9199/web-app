@@ -1,0 +1,105 @@
+// ═══════════════════════════════════════════
+// AI OVERLAY DESIGN SYSTEM — VARIABLES
+// ═══════════════════════════════════════════
+
+:root {
+  // Core palette
+  --ai-dark-card: #1a1a2e;
+  --ai-dark-card-light: #252540;
+  --ai-primary: #534AB7;
+  --ai-primary-light: #EEEDFE;
+  --ai-primary-muted: #9090b0;
+
+  // Semantic colors
+  --ai-success: #1D9E75;
+  --ai-success-light: #e8f5e9;
+  --ai-warning: #e65100;
+  --ai-warning-light: #fff3e0;
+  --ai-gold: #c9a84c;
+
+  // Text colors
+  --ai-text-dark: #1a1a2e;
+  --ai-text-muted: #888;
+  --ai-text-white: #ffffff;
+
+  // Borders & backgrounds
+  --ai-border: #e8e8e8;
+  --ai-page-bg: #f0f2f7;
+  --ai-card-bg: #ffffff;
+
+  // Tag colors
+  --ai-tag-ready-bg: #e8f5e9;
+  --ai-tag-ready-text: #2e7d32;
+  --ai-tag-suggested-bg: #e8eaff;
+  --ai-tag-suggested-text: #3451b2;
+
+  // Shadows
+  --ai-shadow-sm: 0 2px 8px rgba(26, 26, 46, 0.08);
+  --ai-shadow-md: 0 4px 16px rgba(26, 26, 46, 0.12);
+  --ai-shadow-lg: 0 8px 32px rgba(26, 26, 46, 0.16);
+  --ai-shadow-overlay: 0 12px 40px rgba(26, 26, 46, 0.24);
+}
+
+// ═══════════════════════════════════════════
+// TYPOGRAPHY
+// ═══════════════════════════════════════════
+
+$ai-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+
+// Font sizes (minimum 10px)
+$ai-font-xs: 10px;
+$ai-font-sm: 11px;
+$ai-font-base: 12px;
+$ai-font-md: 13px;
+$ai-font-lg: 14px;
+$ai-font-xl: 18px;
+
+// Font weights
+$ai-weight-regular: 400;
+$ai-weight-semibold: 600;
+$ai-weight-bold: 700;
+
+// Line heights
+$ai-lh-tight: 1.0;
+$ai-lh-normal: 1.4;
+$ai-lh-relaxed: 1.5;
+
+// Letter spacing for labels
+$ai-tracking-wide: 0.04em;
+
+// ═══════════════════════════════════════════
+// SPACING (8px base grid)
+// ═══════════════════════════════════════════
+
+$ai-space-1: 4px;
+$ai-space-2: 6px;
+$ai-space-3: 8px;
+$ai-space-4: 10px;
+$ai-space-5: 12px;
+$ai-space-6: 14px;
+$ai-space-7: 16px;
+$ai-space-8: 18px;
+
+// Gaps
+$ai-gap-buttons: 6px;
+$ai-gap-cards: 8px;
+$ai-gap-rows: 10px;
+
+// ═══════════════════════════════════════════
+// BORDER RADIUS SCALE
+// ═══════════════════════════════════════════
+
+$ai-radius-pill: 6px;
+$ai-radius-button: 8px;
+$ai-radius-card-sm: 10px;
+$ai-radius-card: 12px;
+$ai-radius-modal: 14px;
+$ai-radius-circle: 50%;
+
+// ═══════════════════════════════════════════
+// TIMING
+// ═══════════════════════════════════════════
+
+$ai-transition-fast: 0.15s ease;
+$ai-transition-base: 0.2s ease;
+$ai-transition-slow: 0.35s ease;

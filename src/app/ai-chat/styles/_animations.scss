@@ -1,0 +1,198 @@
+// ═══════════════════════════════════════════
+// AI OVERLAY DESIGN SYSTEM — ANIMATIONS
+// ═══════════════════════════════════════════
+
+// ─────────────────────────────────────────
+// PULSE ANIMATIONS (for hotspot)
+// ─────────────────────────────────────────
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-ring-outer {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
+// ─────────────────────────────────────────
+// ENTRANCE ANIMATIONS
+// ─────────────────────────────────────────
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// ─────────────────────────────────────────
+// BAR GROW (for risk bars)
+// ─────────────────────────────────────────
+
+@keyframes bar-grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--bar-width, 0%);
+  }
+}
+
+// ─────────────────────────────────────────
+// SHIMMER (for loading states)
+// ─────────────────────────────────────────
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+// ─────────────────────────────────────────
+// TOAST AUTO-DISMISS
+// ─────────────────────────────────────────
+
+@keyframes toast-lifecycle {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  85% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+// ─────────────────────────────────────────
+// OVERLAY FADE
+// ─────────────────────────────────────────
+
+@keyframes overlay-fade-in {
+  0% {
+    background-color: rgba(26, 26, 46, 0);
+  }
+  100% {
+    background-color: rgba(26, 26, 46, 0.55);
+  }
+}
+
+// ─────────────────────────────────────────
+// SUBTLE FLOAT (for insight cards)
+// ─────────────────────────────────────────
+
+@keyframes subtle-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+// ─────────────────────────────────────────
+// MIXINS FOR APPLYING ANIMATIONS
+// ─────────────────────────────────────────
+
+@mixin animate-slide-up($duration: 0.35s, $delay: 0s) {
+  animation: slide-up $duration ease $delay forwards;
+  opacity: 0;
+}
+
+@mixin animate-fade-in($duration: 0.25s, $delay: 0s) {
+  animation: fade-in $duration ease $delay forwards;
+  opacity: 0;
+}
+
+@mixin animate-scale-in($duration: 0.3s, $delay: 0s) {
+  animation: scale-in $duration ease $delay forwards;
+  opacity: 0;
+}
+
+@mixin animate-bar-grow($duration: 1s, $delay: 0s) {
+  animation: bar-grow $duration ease $delay forwards;
+}
+
+@mixin pulse-effect {
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: $ai-radius-circle;
+    border: 2px solid var(--ai-primary);
+  }
+
+  &::before {
+    animation: pulse-ring 1.8s ease-out infinite;
+  }
+
+  &::after {
+    animation: pulse-ring-outer 1.8s ease-out 0.4s infinite;
+  }
+}

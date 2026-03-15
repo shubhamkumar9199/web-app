@@ -1,0 +1,75 @@
+<!--
+  COMPONENT 5 — CONFIRM OVERLAY
+  Full screen confirmation modal for banking actions
+-->
+<div class="ai-confirm-overlay">
+  <div class="ai-confirm-overlay__backdrop"></div>
+
+  <div class="ai-confirm-overlay__modal">
+    <!-- Warning Icon -->
+    <div class="ai-confirm-overlay__icon-box"></div>
+
+    <!-- Title -->
+    <h3 class="ai-confirm-overlay__title">Disburse Loan?</h3>
+
+    <!-- Description -->
+    <p class="ai-confirm-overlay__desc">
+      This will transfer funds to the client's linked bank account.
+    </p>
+
+    <!-- Amount Display -->
+    <div class="ai-confirm-overlay__amount">₹50,000</div>
+
+    <!-- Details (optional) -->
+    <div class="ai-confirm-overlay__details">
+      <div class="ai-confirm-overlay__detail-row">
+        <span class="ai-confirm-overlay__detail-row__label">Client</span>
+        <span class="ai-confirm-overlay__detail-row__value">Ramesh Kumar</span>
+      </div>
+      <div class="ai-confirm-overlay__detail-row">
+        <span class="ai-confirm-overlay__detail-row__label">Loan ID</span>
+        <span class="ai-confirm-overlay__detail-row__value">#4521</span>
+      </div>
+      <div class="ai-confirm-overlay__detail-row">
+        <span class="ai-confirm-overlay__detail-row__label">Account</span>
+        <span class="ai-confirm-overlay__detail-row__value">XXXX-1234</span>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="ai-confirm-overlay__actions">
+      <button class="ai-confirm-overlay__btn ai-confirm-overlay__btn--confirm">
+        Confirm Disbursement
+      </button>
+      <button class="ai-confirm-overlay__btn ai-confirm-overlay__btn--cancel">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!--
+  VARIANT: Danger confirmation (e.g., reject loan)
+-->
+<div class="ai-confirm-overlay">
+  <div class="ai-confirm-overlay__backdrop"></div>
+
+  <div class="ai-confirm-overlay__modal">
+    <div class="ai-confirm-overlay__icon-box"></div>
+    <h3 class="ai-confirm-overlay__title">Reject Loan?</h3>
+    <p class="ai-confirm-overlay__desc">
+      This action cannot be undone. The client will be notified.
+    </p>
+    <div class="ai-confirm-overlay__amount">₹50,000</div>
+
+    <div class="ai-confirm-overlay__actions">
+      <button class="ai-confirm-overlay__btn ai-confirm-overlay__btn--danger">
+        Reject Loan
+      </button>
+      <button class="ai-confirm-overlay__btn ai-confirm-overlay__btn--cancel">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,216 @@
+// ═══════════════════════════════════════════
+// COMPONENT 6 — SUCCESS TOAST
+// ═══════════════════════════════════════════
+// Appears at bottom after action completes
+// Auto-dismisses after 4 seconds with fade out
+
+@use '../styles/variables' as *;
+@use '../styles/animations' as *;
+
+.ai-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2001;
+
+  background-color: var(--ai-dark-card);
+  border-radius: $ai-radius-card-sm;
+  padding: $ai-space-4 $ai-space-7;
+  box-shadow: var(--ai-shadow-lg);
+
+  display: flex;
+  align-items: center;
+  gap: $ai-space-5;
+  min-width: 320px;
+  max-width: 90vw;
+
+  // Auto-dismiss animation (4 seconds total)
+  animation: toast-lifecycle 4s ease forwards;
+
+  // ─────────────────────────────────────────
+  // Status icon (left)
+  // ─────────────────────────────────────────
+  &__icon {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-radius: $ai-radius-circle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg,
+    .icon {
+      width: 14px;
+      height: 14px;
+      color: var(--ai-text-white);
+    }
+
+    &--success {
+      background-color: var(--ai-success);
+
+      &::after {
+        content: '✓';
+        color: var(--ai-text-white);
+        font-size: $ai-font-base;
+        font-weight: $ai-weight-bold;
+      }
+    }
+
+    &--error {
+      background-color: var(--ai-warning);
+
+      &::after {
+        content: '✕';
+        color: var(--ai-text-white);
+        font-size: $ai-font-base;
+        font-weight: $ai-weight-bold;
+      }
+    }
+
+    &--info {
+      background-color: var(--ai-primary);
+
+      &::after {
+        content: 'i';
+        color: var(--ai-text-white);
+        font-size: $ai-font-base;
+        font-weight: $ai-weight-bold;
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Content (middle)
+  // ─────────────────────────────────────────
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__title {
+    font-family: $ai-font-family;
+    font-size: $ai-font-base;
+    font-weight: $ai-weight-semibold;
+    color: var(--ai-text-white);
+    line-height: $ai-lh-tight;
+  }
+
+  &__subtitle {
+    font-family: $ai-font-family;
+    font-size: $ai-font-xs;
+    font-weight: $ai-weight-regular;
+    color: var(--ai-primary-muted);
+    line-height: $ai-lh-tight;
+  }
+
+  // ─────────────────────────────────────────
+  // Transaction ID (right)
+  // ─────────────────────────────────────────
+  &__txn-id {
+    font-family: $ai-font-family;
+    font-size: $ai-font-xs;
+    font-weight: $ai-weight-semibold;
+    color: var(--ai-gold);
+    white-space: nowrap;
+  }
+
+  // ─────────────────────────────────────────
+  // Close button (optional)
+  // ─────────────────────────────────────────
+  &__close {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background: none;
+    border: none;
+    border-radius: $ai-radius-circle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--ai-primary-muted);
+    transition: all $ai-transition-fast;
+
+    &::after {
+      content: '✕';
+      font-size: $ai-font-xs;
+    }
+
+    &:hover {
+      background-color: var(--ai-dark-card-light);
+      color: var(--ai-text-white);
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Progress bar (shows time remaining)
+  // ─────────────────────────────────────────
+  &__progress {
+    position: absolute;
+    bottom: 0;
+    left: $ai-space-4;
+    right: $ai-space-4;
+    height: 2px;
+    background-color: var(--ai-dark-card-light);
+    border-radius: 1px;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: var(--ai-success);
+      animation: progress-shrink 4s linear forwards;
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Variant: persistent (no auto-dismiss)
+  // ─────────────────────────────────────────
+  &--persistent {
+    animation: slide-up 0.35s ease forwards;
+
+    .ai-toast__progress {
+      display: none;
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Variant: compact
+  // ─────────────────────────────────────────
+  &--compact {
+    padding: $ai-space-3 $ai-space-5;
+    gap: $ai-space-3;
+    min-width: auto;
+
+    .ai-toast__icon {
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+
+      &::after {
+        font-size: $ai-font-xs;
+      }
+    }
+
+    .ai-toast__title {
+      font-size: $ai-font-sm;
+    }
+  }
+}
+
+// Progress bar shrink animation
+@keyframes progress-shrink {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}

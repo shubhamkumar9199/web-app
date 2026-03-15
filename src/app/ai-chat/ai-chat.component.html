@@ -1,0 +1,180 @@
+<!-- FAB Button -->
+<button *ngIf="isEnabled && !isOpen"
+        mat-fab
+        class="ai-fab"
+        matTooltip="AI Assistant"
+        (click)="togglePanel()">
+  <mat-icon>smart_toy</mat-icon>
+</button>
+
+<!-- Chat Panel -->
+<div *ngIf="isEnabled && isOpen" class="ai-panel" [@panelSlide]>
+
+  <!-- Header -->
+  <div class="ai-panel__header">
+    <div class="ai-panel__header-left">
+      <mat-icon class="ai-panel__icon">smart_toy</mat-icon>
+      <div class="ai-panel__title">
+        <span class="ai-panel__name">AI Assistant</span>
+        <span *ngIf="contextHeader" class="ai-panel__context">{{ contextHeader }}</span>
+      </div>
+    </div>
+    <div class="ai-panel__header-actions">
+      <button mat-icon-button matTooltip="Clear chat" (click)="clearChat()">
+        <mat-icon>delete_outline</mat-icon>
+      </button>
+      <button mat-icon-button matTooltip="Close" (click)="togglePanel()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <!-- Screen badge -->
+  <div *ngIf="screenLabel" class="ai-panel__screen-badge">
+    <mat-icon>location_on</mat-icon>
+    <span>{{ screenLabel }}</span>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <!-- Messages -->
+  <div class="ai-panel__messages" #messageContainer>
+
+    <!-- Empty state -->
+    <div *ngIf="messages.length === 0" class="ai-panel__empty">
+      <mat-icon class="ai-panel__empty-icon">forum</mat-icon>
+      <p class="ai-panel__empty-text">How can I help you today?</p>
+      <div class="ai-panel__chips">
+        <mat-chip-set>
+          <mat-chip *ngFor="let prompt of suggestedPrompts"
+                    (click)="sendPrompt(prompt)">
+            {{ prompt }}
+          </mat-chip>
+        </mat-chip-set>
+      </div>
+    </div>
+
+    <!-- Message list -->
+    <div *ngFor="let msg of messages; trackBy: trackByMessageId"
+         class="ai-panel__msg"
+         [class.ai-panel__msg--user]="msg.role === 'user'"
+         [class.ai-panel__msg--assistant]="msg.role === 'assistant'">
+
+      <!-- Avatar -->
+      <div class="ai-panel__avatar">
+        <mat-icon *ngIf="msg.role === 'assistant'">smart_toy</mat-icon>
+        <mat-icon *ngIf="msg.role === 'user'">person</mat-icon>
+      </div>
+
+      <div class="ai-panel__bubble">
+        <!-- Text content -->
+        <div class="ai-panel__text">
+          {{ msg.content }}
+          <span *ngIf="msg.isStreaming" class="ai-panel__cursor">|</span>
+        </div>
+
+        <!-- Action cards -->
+        <div *ngIf="msg.actionCards?.length" class="ai-panel__cards">
+          <mat-card *ngFor="let card of msg.actionCards"
+                    class="ai-panel__action-card"
+                    [class.ai-panel__action-card--warn]="card.type === 'confirmation'">
+
+            <mat-card-content>
+              <div class="ai-panel__card-title">
+                <mat-icon *ngIf="card.type === 'confirmation'">warning_amber</mat-icon>
+                <strong>{{ card.title }}</strong>
+              </div>
+
+              <!-- Data fields -->
+              <div class="ai-panel__card-data">
+                <div *ngFor="let entry of card.data | keyvalue" class="ai-panel__card-row">
+                  <span class="ai-panel__card-label">{{ entry.key }}</span>
+                  <span class="ai-panel__card-value">{{ entry.value }}</span>
+                </div>
+              </div>
+            </mat-card-content>
+
+            <!-- Card action buttons -->
+            <mat-card-actions *ngIf="card.actions?.length" align="end">
+              <ng-container *ngFor="let btn of card.actions">
+                <button *ngIf="btn.route"
+                        mat-stroked-button
+                        [color]="btn.style"
+                        (click)="onRouteClick(btn.route!)">
+                  {{ btn.label }}
+                </button>
+                <button *ngIf="btn.action"
+                        mat-flat-button
+                        [color]="btn.style"
+                        (click)="onActionClick(card, btn.action!)">
+                  {{ btn.label }}
+                </button>
+              </ng-container>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+
+        <!-- Suggested next prompts (after AI replies) -->
+        <div *ngIf="msg.suggestedPrompts?.length && !msg.isStreaming" class="ai-panel__suggestions">
+          <mat-chip-set>
+            <mat-chip *ngFor="let prompt of msg.suggestedPrompts"
+                      (click)="sendPrompt(prompt)">
+              {{ prompt }}
+            </mat-chip>
+          </mat-chip-set>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typing indicator -->
+    <div *ngIf="isStreaming && messages.length > 0 && !messages[messages.length - 1]?.content"
+         class="ai-panel__typing">
+      <div class="ai-panel__avatar">
+        <mat-icon>smart_toy</mat-icon>
+      </div>
+      <div class="ai-panel__dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirmation bar -->
+  <div *ngIf="pendingConfirmation" class="ai-panel__confirm-bar">
+    <mat-icon color="warn">warning</mat-icon>
+    <span>Confirm <strong>{{ pendingConfirmation.action }}</strong>?</span>
+    <button mat-flat-button color="warn" (click)="confirmAction()">Confirm</button>
+    <button mat-stroked-button (click)="cancelConfirmation()">Cancel</button>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <!-- Input area -->
+  <div class="ai-panel__input-area">
+    <mat-form-field class="ai-panel__input-field" appearance="outline">
+      <input matInput
+             #messageInput
+             [(ngModel)]="userInput"
+             (keydown)="onKeyDown($event)"
+             placeholder="Ask about this client, loan..."
+             [disabled]="isStreaming"
+             autocomplete="off" />
+    </mat-form-field>
+
+    <button *ngIf="!isStreaming"
+            mat-icon-button
+            color="primary"
+            [disabled]="!userInput.trim()"
+            (click)="sendMessage()"
+            matTooltip="Send">
+      <mat-icon>send</mat-icon>
+    </button>
+
+    <button *ngIf="isStreaming"
+            mat-icon-button
+            color="warn"
+            (click)="stopStreaming()"
+            matTooltip="Stop">
+      <mat-icon>stop_circle</mat-icon>
+    </button>
+  </div>
+</div>

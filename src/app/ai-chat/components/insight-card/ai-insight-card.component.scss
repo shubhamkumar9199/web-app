@@ -1,0 +1,153 @@
+// ═══════════════════════════════════════════
+// COMPONENT 2 — INSIGHT CARD
+// ═══════════════════════════════════════════
+// Dark floating card that shows AI-generated insights
+// Appears near hotspots with contextual banking information
+
+@use '../styles/variables' as *;
+@use '../styles/animations' as *;
+
+.ai-insight-card {
+  position: absolute;
+  width: 200px;
+  background-color: var(--ai-dark-card);
+  border-radius: $ai-radius-modal;
+  padding: $ai-space-6 $ai-space-7;
+  box-shadow: var(--ai-shadow-overlay);
+  z-index: 1001;
+
+  // Entrance animation
+  animation: slide-up 0.35s ease forwards;
+  opacity: 0;
+
+  // ─────────────────────────────────────────
+  // Header row
+  // ─────────────────────────────────────────
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: $ai-space-3;
+    margin-bottom: $ai-space-4;
+  }
+
+  &__icon-box {
+    width: 22px;
+    height: 22px;
+    background-color: var(--ai-primary);
+    border-radius: $ai-radius-pill;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg,
+    .icon {
+      width: 12px;
+      height: 12px;
+      color: var(--ai-text-white);
+    }
+
+    // Sparkle icon fallback
+    &::after {
+      content: '✦';
+      color: var(--ai-text-white);
+      font-size: $ai-font-xs;
+    }
+  }
+
+  &__title {
+    font-family: $ai-font-family;
+    font-size: $ai-font-sm;
+    font-weight: $ai-weight-semibold;
+    color: var(--ai-text-white);
+    text-transform: uppercase;
+    letter-spacing: $ai-tracking-wide;
+  }
+
+  // ─────────────────────────────────────────
+  // Body text
+  // ─────────────────────────────────────────
+  &__body {
+    font-family: $ai-font-family;
+    font-size: $ai-font-xs;
+    font-weight: $ai-weight-regular;
+    color: var(--ai-primary-muted);
+    line-height: $ai-lh-relaxed;
+    margin-bottom: $ai-space-5;
+  }
+
+  &__highlight {
+    color: var(--ai-gold);
+    font-weight: $ai-weight-semibold;
+  }
+
+  // ─────────────────────────────────────────
+  // Action buttons
+  // ─────────────────────────────────────────
+  &__actions {
+    display: flex;
+    gap: $ai-gap-buttons;
+  }
+
+  &__btn {
+    flex: 1;
+    padding: 5px 10px;
+    border: none;
+    border-radius: $ai-radius-pill;
+    font-family: $ai-font-family;
+    font-size: $ai-font-xs;
+    font-weight: $ai-weight-semibold;
+    cursor: pointer;
+    transition: all $ai-transition-fast;
+    text-align: center;
+
+    &--primary {
+      background-color: var(--ai-primary);
+      color: var(--ai-text-white);
+
+      &:hover {
+        filter: brightness(1.1);
+      }
+    }
+
+    &--secondary {
+      background-color: var(--ai-dark-card-light);
+      color: var(--ai-primary-muted);
+
+      &:hover {
+        background-color: lighten(#252540, 5%);
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Arrow pointer (optional)
+  // ─────────────────────────────────────────
+  &--with-arrow {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 20px;
+      border: 8px solid transparent;
+      border-bottom-color: var(--ai-dark-card);
+    }
+  }
+
+  &--arrow-right {
+    &::before {
+      left: auto;
+      right: 20px;
+    }
+  }
+
+  &--arrow-left-side {
+    &::before {
+      bottom: auto;
+      top: 20px;
+      left: auto;
+      right: 100%;
+      border: 8px solid transparent;
+      border-right-color: var(--ai-dark-card);
+    }
+  }
+}

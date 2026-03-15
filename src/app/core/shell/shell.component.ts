@@ -23,6 +23,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from '../../shared/footer/footer.component';
+import { AIChatComponent } from '../../ai-chat/ai-chat.component';
+import { AiIntelligencePanelComponent } from '../../ai-chat/ai-intelligence-panel.component';
 import { STANDALONE_SHARED_IMPORTS } from 'app/standalone-shared.module';
 
 /**
@@ -43,7 +45,9 @@ import { STANDALONE_SHARED_IMPORTS } from 'app/standalone-shared.module';
     BreadcrumbComponent,
     ContentComponent,
     FooterComponent,
-    AsyncPipe
+    AsyncPipe,
+    AIChatComponent,
+    AiIntelligencePanelComponent
   ]
 })
 export class ShellComponent implements OnInit, OnDestroy {

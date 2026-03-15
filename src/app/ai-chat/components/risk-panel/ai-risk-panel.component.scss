@@ -1,0 +1,202 @@
+// ═══════════════════════════════════════════
+// COMPONENT 7 — AI RISK BARS
+// ═══════════════════════════════════════════
+// White card showing animated risk profile bars
+// Each bar grows from 0 to final width with animation
+
+@use '../styles/variables' as *;
+@use '../styles/animations' as *;
+
+.ai-risk-panel {
+  background-color: var(--ai-card-bg);
+  border-radius: $ai-radius-card;
+  padding: $ai-space-6;
+  box-shadow: var(--ai-shadow-sm);
+
+  // Entrance animation
+  animation: slide-up 0.35s ease forwards;
+  opacity: 0;
+
+  // ─────────────────────────────────────────
+  // Title
+  // ─────────────────────────────────────────
+  &__title {
+    font-family: $ai-font-family;
+    font-size: $ai-font-sm;
+    font-weight: $ai-weight-semibold;
+    color: var(--ai-text-dark);
+    margin-bottom: $ai-space-5;
+    display: flex;
+    align-items: center;
+    gap: $ai-space-3;
+
+    &__icon {
+      width: 18px;
+      height: 18px;
+      background-color: var(--ai-primary);
+      border-radius: $ai-radius-pill;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        content: '◎';
+        color: var(--ai-text-white);
+        font-size: 10px;
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Risk rows container
+  // ─────────────────────────────────────────
+  &__rows {
+    display: flex;
+    flex-direction: column;
+    gap: $ai-gap-rows;
+  }
+
+  // ─────────────────────────────────────────
+  // Individual risk row
+  // ─────────────────────────────────────────
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: $ai-space-3;
+  }
+
+  &__label {
+    width: 80px;
+    min-width: 80px;
+    font-family: $ai-font-family;
+    font-size: $ai-font-xs;
+    font-weight: $ai-weight-regular;
+    color: var(--ai-text-muted);
+  }
+
+  &__track {
+    flex: 1;
+    height: 6px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  &__fill {
+    height: 100%;
+    border-radius: 3px;
+    width: 0;
+    animation: bar-grow 1s ease forwards;
+
+    // Color variants
+    &--success {
+      background-color: var(--ai-success);
+    }
+
+    &--primary {
+      background-color: var(--ai-primary);
+    }
+
+    &--warning {
+      background-color: var(--ai-warning);
+    }
+
+    &--gold {
+      background-color: var(--ai-gold);
+    }
+
+    // Staggered animation delays
+    &:nth-child(1) { animation-delay: 0.1s; }
+    &:nth-child(2) { animation-delay: 0.2s; }
+    &:nth-child(3) { animation-delay: 0.3s; }
+    &:nth-child(4) { animation-delay: 0.4s; }
+  }
+
+  &__value {
+    width: 30px;
+    min-width: 30px;
+    font-family: $ai-font-family;
+    font-size: $ai-font-xs;
+    font-weight: $ai-weight-semibold;
+    color: var(--ai-text-dark);
+    text-align: right;
+  }
+
+  // ─────────────────────────────────────────
+  // Overall score (optional)
+  // ─────────────────────────────────────────
+  &__score {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: $ai-space-5;
+    padding-top: $ai-space-5;
+    border-top: 1px solid var(--ai-border);
+
+    &__label {
+      font-family: $ai-font-family;
+      font-size: $ai-font-xs;
+      font-weight: $ai-weight-regular;
+      color: var(--ai-text-muted);
+    }
+
+    &__value {
+      font-family: $ai-font-family;
+      font-size: $ai-font-lg;
+      font-weight: $ai-weight-bold;
+      color: var(--ai-text-dark);
+    }
+
+    &__badge {
+      display: inline-block;
+      padding: 2px 6px;
+      margin-left: $ai-space-2;
+      border-radius: 5px;
+      font-size: 9px;
+      font-weight: $ai-weight-semibold;
+      text-transform: uppercase;
+      letter-spacing: $ai-tracking-wide;
+
+      &--good {
+        background-color: var(--ai-success-light);
+        color: var(--ai-tag-ready-text);
+      }
+
+      &--average {
+        background-color: var(--ai-warning-light);
+        color: var(--ai-warning);
+      }
+
+      &--poor {
+        background-color: #ffebee;
+        color: #c62828;
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Compact variant
+  // ─────────────────────────────────────────
+  &--compact {
+    padding: $ai-space-4 $ai-space-5;
+
+    .ai-risk-panel__title {
+      font-size: $ai-font-xs;
+      margin-bottom: $ai-space-4;
+    }
+
+    .ai-risk-panel__label {
+      width: 60px;
+      min-width: 60px;
+      font-size: 9px;
+    }
+
+    .ai-risk-panel__track {
+      height: 4px;
+    }
+
+    .ai-risk-panel__value {
+      font-size: 9px;
+    }
+  }
+}

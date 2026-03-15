@@ -1,0 +1,119 @@
+// ═══════════════════════════════════════════
+// COMPONENT 1 — PULSING HOTSPOT
+// ═══════════════════════════════════════════
+// A small purple dot that appears on top of screen elements
+// with two animated pulse rings expanding outward
+
+@use '../styles/variables' as *;
+@use '../styles/animations' as *;
+
+.ai-hotspot {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  z-index: 1000;
+  cursor: pointer;
+
+  // ─────────────────────────────────────────
+  // Center dot
+  // ─────────────────────────────────────────
+  &__dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background-color: var(--ai-primary);
+    border-radius: $ai-radius-circle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--ai-shadow-md);
+    z-index: 3;
+
+    // White exclamation icon
+    &::after {
+      content: '!';
+      color: var(--ai-text-white);
+      font-family: $ai-font-family;
+      font-size: $ai-font-base;
+      font-weight: $ai-weight-bold;
+      line-height: $ai-lh-tight;
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Pulse rings
+  // ─────────────────────────────────────────
+  &__ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    border-radius: $ai-radius-circle;
+    border: 2px solid var(--ai-primary);
+    z-index: 1;
+
+    &--inner {
+      animation: pulse-ring 1.8s ease-out infinite;
+    }
+
+    &--outer {
+      animation: pulse-ring-outer 1.8s ease-out 0.4s infinite;
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Hover state
+  // ─────────────────────────────────────────
+  &:hover {
+    .ai-hotspot__dot {
+      transform: translate(-50%, -50%) scale(1.1);
+      transition: transform $ai-transition-fast;
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Size variants
+  // ─────────────────────────────────────────
+  &--small {
+    width: 18px;
+    height: 18px;
+
+    .ai-hotspot__dot {
+      width: 18px;
+      height: 18px;
+
+      &::after {
+        font-size: $ai-font-xs;
+      }
+    }
+
+    .ai-hotspot__ring {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &--large {
+    width: 32px;
+    height: 32px;
+
+    .ai-hotspot__dot {
+      width: 32px;
+      height: 32px;
+
+      &::after {
+        font-size: $ai-font-lg;
+      }
+    }
+
+    .ai-hotspot__ring {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

@@ -1,0 +1,192 @@
+// ═══════════════════════════════════════════
+// COMPONENT 4 — ACTION CARDS ROW
+// ═══════════════════════════════════════════
+// Three cards side by side showing AI-suggested actions
+// Each card has icon, name, description, and status tag
+
+@use '../styles/variables' as *;
+@use '../styles/animations' as *;
+
+.ai-action-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $ai-gap-cards;
+
+  // ─────────────────────────────────────────
+  // Individual action card
+  // ─────────────────────────────────────────
+  .ai-action-card {
+    background-color: var(--ai-card-bg);
+    border: 0.5px solid var(--ai-border);
+    border-radius: $ai-radius-card-sm;
+    padding: $ai-space-4 $ai-space-5;
+    cursor: pointer;
+    transition: all $ai-transition-base;
+
+    // Staggered entrance animation
+    animation: slide-up 0.35s ease forwards;
+    opacity: 0;
+
+    &:nth-child(1) { animation-delay: 0s; }
+    &:nth-child(2) { animation-delay: 0.08s; }
+    &:nth-child(3) { animation-delay: 0.16s; }
+
+    &:hover {
+      border-color: var(--ai-primary);
+      box-shadow: var(--ai-shadow-sm);
+    }
+
+    // ─────────────────────────────────────────
+    // Top row: icon + name
+    // ─────────────────────────────────────────
+    &__header {
+      display: flex;
+      align-items: center;
+      gap: $ai-space-3;
+      margin-bottom: $ai-space-3;
+    }
+
+    &__icon {
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      border-radius: $ai-radius-pill;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg,
+      .icon {
+        width: 12px;
+        height: 12px;
+        color: var(--ai-text-white);
+      }
+
+      // Icon type variants
+      &--approve {
+        background-color: var(--ai-success);
+
+        &::after {
+          content: '✓';
+          color: var(--ai-text-white);
+          font-size: $ai-font-xs;
+          font-weight: $ai-weight-bold;
+        }
+      }
+
+      &--disburse {
+        background-color: var(--ai-primary);
+
+        &::after {
+          content: '↗';
+          color: var(--ai-text-white);
+          font-size: $ai-font-xs;
+        }
+      }
+
+      &--alert {
+        background-color: var(--ai-warning);
+
+        &::after {
+          content: '!';
+          color: var(--ai-text-white);
+          font-size: $ai-font-xs;
+          font-weight: $ai-weight-bold;
+        }
+      }
+
+      &--savings {
+        background-color: var(--ai-gold);
+
+        &::after {
+          content: '$';
+          color: var(--ai-text-white);
+          font-size: $ai-font-xs;
+          font-weight: $ai-weight-bold;
+        }
+      }
+
+      &--loan {
+        background-color: #5c6bc0;
+
+        &::after {
+          content: '◎';
+          color: var(--ai-text-white);
+          font-size: $ai-font-xs;
+        }
+      }
+    }
+
+    &__name {
+      font-family: $ai-font-family;
+      font-size: $ai-font-sm;
+      font-weight: $ai-weight-semibold;
+      color: var(--ai-text-dark);
+      line-height: $ai-lh-tight;
+    }
+
+    // ─────────────────────────────────────────
+    // Description text
+    // ─────────────────────────────────────────
+    &__desc {
+      font-family: $ai-font-family;
+      font-size: $ai-font-xs;
+      font-weight: $ai-weight-regular;
+      color: var(--ai-text-muted);
+      line-height: $ai-lh-normal;
+      margin-bottom: $ai-space-3;
+    }
+
+    // ─────────────────────────────────────────
+    // Status tag
+    // ─────────────────────────────────────────
+    &__tag {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-family: $ai-font-family;
+      font-size: 9px;
+      font-weight: $ai-weight-semibold;
+      text-transform: uppercase;
+      letter-spacing: $ai-tracking-wide;
+
+      &--urgent {
+        background-color: var(--ai-warning-light);
+        color: var(--ai-warning);
+      }
+
+      &--ready {
+        background-color: var(--ai-tag-ready-bg);
+        color: var(--ai-tag-ready-text);
+      }
+
+      &--suggested {
+        background-color: var(--ai-tag-suggested-bg);
+        color: var(--ai-tag-suggested-text);
+      }
+    }
+
+    // ─────────────────────────────────────────
+    // Selected state
+    // ─────────────────────────────────────────
+    &--selected {
+      border-color: var(--ai-primary);
+      background-color: var(--ai-primary-light);
+    }
+
+    // ─────────────────────────────────────────
+    // Disabled state
+    // ─────────────────────────────────────────
+    &--disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  // ─────────────────────────────────────────
+  // Responsive: stack on mobile
+  // ─────────────────────────────────────────
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}

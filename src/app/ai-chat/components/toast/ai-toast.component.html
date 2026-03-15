@@ -1,0 +1,56 @@
+<!--
+  COMPONENT 6 — SUCCESS TOAST
+  Notification after action completes, auto-dismisses after 4s
+-->
+<div class="ai-toast">
+  <!-- Success Icon -->
+  <div class="ai-toast__icon ai-toast__icon--success"></div>
+
+  <!-- Content -->
+  <div class="ai-toast__content">
+    <span class="ai-toast__title">Loan approved and disbursed</span>
+    <span class="ai-toast__subtitle">Ramesh Kumar · ₹50,000 sent</span>
+  </div>
+
+  <!-- Transaction ID -->
+  <span class="ai-toast__txn-id">TXN-849271</span>
+
+  <!-- Progress bar -->
+  <div class="ai-toast__progress"></div>
+</div>
+
+
+<!--
+  VARIANT: Error Toast
+-->
+<div class="ai-toast">
+  <div class="ai-toast__icon ai-toast__icon--error"></div>
+  <div class="ai-toast__content">
+    <span class="ai-toast__title">Transaction failed</span>
+    <span class="ai-toast__subtitle">Insufficient balance in source account</span>
+  </div>
+  <button class="ai-toast__close"></button>
+  <div class="ai-toast__progress"></div>
+</div>
+
+
+<!--
+  VARIANT: Info Toast (persistent)
+-->
+<div class="ai-toast ai-toast--persistent">
+  <div class="ai-toast__icon ai-toast__icon--info"></div>
+  <div class="ai-toast__content">
+    <span class="ai-toast__title">Processing disbursement</span>
+    <span class="ai-toast__subtitle">This may take a few seconds...</span>
+  </div>
+</div>
+
+
+<!--
+  VARIANT: Compact Toast
+-->
+<div class="ai-toast ai-toast--compact">
+  <div class="ai-toast__icon ai-toast__icon--success"></div>
+  <span class="ai-toast__title">Payment received</span>
+  <div class="ai-toast__progress"></div>
+</div>
