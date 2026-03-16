@@ -288,6 +288,7 @@
     "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "O tipo de período de taxa de retirada é obrigatório."
   },
   "labels": {
+    "Mifos Reporting Plugin for Eclipse Birt": "Mifos Reporting Plugin for Eclipse Birt",
     "version": {
       "Tenant": "Inquilino",
       "Mifos WebApp": "Mifos® WebApp",
@@ -2525,6 +2526,7 @@
       "COMPLETE": "COMPLETO",
       "Screen Report": "Relatório de tela",
       "Search Journal Entries": "Pesquisar entradas de diário",
+      "Search Permissions": "Pesquisar permissões",
       "Select Action": "Selecionar ação",
       "Select Client Members for Transfer": "Selecione membros clientes para transferência",
       "Select Currency": "Escolha a moeda",
@@ -3028,6 +3030,7 @@
       "No repayment schedule available": "Nenhum cronograma de reembolso disponível",
       "About Us": "Sobre Nós",
       "A": "A",
+      "withoutCategory": "Sem categoria",
       "Account Transfers": "Transferências entre contas",
       "Ability to manage holidays for individual offices": "A capacidade de gerenciar feriados para escritórios individuais é uma ferramenta muito útil para uma organização que abrange vários locais. Use esta opção para personalizar feriados para cada escritório da sua organização.",
       "Account Detail": "Detalhes da conta",
@@ -3085,6 +3088,7 @@
       "Audit Trails": "Trilhas de auditoria",
       "Audit logs of all the activities": "Registros de auditoria de todas as atividades, como criação de cliente, desembolso de empréstimos, etc.",
       "Bar": "Bar",
+      "BIRT": "Mifos Reporting Plugin for Eclipse Birt",
       "Bulk Import": "Importação em massa",
       "Bulk Loan Reassignment": "Reatribuição de empréstimo em massa",
       "Bulk data import using excel spreadsheet templates": "Importação de dados em massa usando modelos de planilhas Excel para clientes, escritórios, etc.",
@@ -3450,6 +3454,7 @@
       "No checker inbox data available for this search": "Não há dados da caixa de entrada do verificador disponíveis para esta pesquisa.",
       "No client was found": "Nenhum cliente foi encontrado",
       "No data found": "Nenhum dado encontrado",
+      "No permissions found": "Nenhuma permissão encontrada",
       "No penalties found": "Nenhuma penalidade encontrada",
       "NoDocuments": "Nenhum documento disponível.",
       "NoFileSelected": "Nenhum arquivo selecionado",
@@ -3477,7 +3482,7 @@
       "Passwords": "Senhas",
       "Pay Charge": "Taxa de pagamento",
       "Payment Types": "Tipos de pagamento",
-      "Pentaho": "",
+      "Pentaho": "Mifos Reporting Plugin for Pentaho",
       "Periodic Accrual Accounting": "Contabilidade de acumulação periódica",
       "Pie": "Torta",
       "Please enter the OTP": "Por favor insira o OTP",

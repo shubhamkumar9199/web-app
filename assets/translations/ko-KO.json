@@ -288,6 +288,7 @@
     "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "출금 수수료 기간 유형은 필수입니다."
   },
   "labels": {
+    "Mifos Reporting Plugin for Eclipse Birt": "Mifos Reporting Plugin for Eclipse Birt",
     "version": {
       "Tenant": "임차인",
       "Mifos WebApp": "Mifos® WebApp",
@@ -2527,6 +2528,7 @@
       "COMPLETE": "완료",
       "Screen Report": "화면보고",
       "Search Journal Entries": "저널 항목 검색",
+      "Search Permissions": "권한 검색",
       "Select Action": "작업 선택",
       "Select Client Members for Transfer": "이전할 고객 구성원 선택",
       "Select Currency": "통화 선택",
@@ -3028,6 +3030,7 @@
       "No repayment schedule available": "상환 일정을 사용할 수 없습니다",
       "About Us": "회사 소개",
       "A": "ㅏ",
+      "withoutCategory": "카테고리 없음",
       "Account Transfers": "계좌 이체",
       "Ability to manage holidays for individual offices": "개별 사무실의 휴일을 관리하는 기능은 여러 위치에 걸쳐 있는 조직에 매우 유용한 도구입니다. 조직의 각 사무실에 대한 휴일을 사용자 정의하려면 이 옵션을 사용하십시오.",
       "Account Detail": "계정 세부정보",
@@ -3085,6 +3088,7 @@
       "Audit Trails": "감사 추적",
       "Audit logs of all the activities": "클라이언트 생성, 대출 지급 등과 같은 모든 활동에 대한 감사 로그",
       "Bar": "술집",
+      "BIRT": "Mifos Reporting Plugin for Eclipse Birt",
       "Bulk Import": "대량 가져오기",
       "Bulk Loan Reassignment": "대량대출 재할당",
       "Bulk data import using excel spreadsheet templates": "고객, 사무실 등을 위한 Excel 스프레드시트 템플릿을 사용하여 대량 데이터 가져오기",
@@ -3450,6 +3454,7 @@
       "No checker inbox data available for this search": "이 검색에 사용할 수 있는 검사기 받은 편지함 데이터가 없습니다.",
       "No client was found": "클라이언트를 찾을 수 없습니다.",
       "No data found": "데이터가 없습니다",
+      "No permissions found": "권한이 없습니다",
       "No penalties found": "패널티가 없습니다",
       "NoDocuments": "사용 가능한 문서가 없습니다.",
       "NoFileSelected": "선택된 파일 없음",
@@ -3477,7 +3482,7 @@
       "Passwords": "비밀번호",
       "Pay Charge": "요금 지불",
       "Payment Types": "결제 유형",
-      "Pentaho": "",
+      "Pentaho": "Mifos Reporting Plugin for Pentaho",
       "Periodic Accrual Accounting": "정기 발생회계",
       "Pie": "파이",
       "Please enter the OTP": "OTP를 입력해주세요",

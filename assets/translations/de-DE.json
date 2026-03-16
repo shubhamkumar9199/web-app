@@ -288,6 +288,7 @@
     "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "Der Zeitraumtyp der Auszahlungsgebühr ist obligatorisch."
   },
   "labels": {
+    "Mifos Reporting Plugin for Eclipse Birt": "Mifos Reporting Plugin for Eclipse Birt",
     "version": {
       "Tenant": "Mieter",
       "Mifos WebApp": "Mifos® WebApp",
@@ -2526,6 +2527,7 @@
       "COMPLETE": "VOLLSTÄNDIG",
       "Screen Report": "Bildschirmbericht",
       "Search Journal Entries": "Journaleinträge durchsuchen",
+      "Search Permissions": "Berechtigungen durchsuchen",
       "Select Action": "Aktion auswählen",
       "Select Client Members for Transfer": "Wählen Sie Kundenmitglieder zur Übertragung aus",
       "Select Currency": "Währung wählen",
@@ -3028,6 +3030,7 @@
     },
     "text": {
       "Loading data": "Daten werden geladen",
+      "withoutCategory": "Ohne Kategorie",
       "No repayment schedule available": "Kein Rückzahlungsplan verfügbar",
       "About Us": "Über Uns",
       "A": "A",
@@ -3088,6 +3091,7 @@
       "Audit Trails": "Buchungsprotokolle",
       "Audit logs of all the activities": "Prüfprotokolle aller Aktivitäten, z. B. Kunden erstellen, Kredite auszahlen usw",
       "Bar": "Bar",
+      "BIRT": "Mifos Reporting Plugin for Eclipse Birt",
       "Bulk Import": "Massenimport",
       "Bulk Loan Reassignment": "Neuzuweisung von Massenkrediten",
       "Bulk data import using excel spreadsheet templates": "Massendatenimport mithilfe von Excel-Tabellenvorlagen für Kunden, Büros usw.",
@@ -3451,6 +3455,7 @@
       "No checker inbox data available for this search": "Für diese Suche sind keine Checker-Posteingangsdaten verfügbar.",
       "No client was found": "Es wurde kein Kunde gefunden",
       "No data found": "Keine Daten gefunden",
+      "No permissions found": "Keine Berechtigungen gefunden",
       "No penalties found": "Keine Strafen gefunden",
       "NoDocuments": "Keine Dokumente verfügbar.",
       "NoFileSelected": "Keine Datei ausgewählt",
@@ -3478,7 +3483,7 @@
       "Passwords": "Passwörter",
       "Pay Charge": "Gebühr bezahlen",
       "Payment Types": "Bezahlmöglichkeiten",
-      "Pentaho": "",
+      "Pentaho": "Mifos Reporting Plugin for Pentaho",
       "Periodic Accrual Accounting": "Periodische Periodenrechnung",
       "Pie": "Kuchen",
       "Please enter the OTP": "Bitte geben Sie das OTP ein",
