@@ -883,7 +883,11 @@
       "move to next working day": "hamisha kwa siku ya kazi ijayo",
       "move to next repayment meeting day": "hamisha kwa siku ya mkutano wa malipo ijayo",
       "move to previous working day": "hamisha kwa siku ya kazi iliyotangulia",
-      "move to next meeting day": "hamisha kwa siku ya mkutano ijayo"
+      "move to next meeting day": "hamisha kwa siku ya mkutano ijayo",
+      "Working Capital": "Mtaji wa Kufanya Kazi",
+      "DAYS": "SIKU",
+      "MONTHS": "MIEZI",
+      "YEARS": "MIAKA"
     },
     "commons": {
       "50 characters long": "Urefu wa herufi 50",
@@ -1151,6 +1155,7 @@
       "List of Users with their details": "Orodha ya Watumiaji na maelezo yao",
       "Loan Account OverView": "Muhtasari wa Akaunti ya Mkopo",
       "Loan Accounts": "Hesabu za Mikopo",
+      "Loan Amounts": "Kiasi za Mikopo",
       "Loan Delinquency Actions": "Vitendo vya upungufu wa mkopo",
       "Loan Delinquency Classification": "Uainishaji wa mkopo wa mkopo",
       "Loan Delinquency Tags": "Lebo za Uhalifu wa Mkopo",
@@ -1754,6 +1759,7 @@
       "Delinquency Action": "Kitendo cha Delinquency",
       "Delinquency Bucket": "Ndoo ya Uhalifu",
       "Delinquency Classification": "Uainishaji wa Uhalifu",
+      "Delinquency Payment Rule": "Sheria ya Malipo ya Uhalifu",
       "Delinquency Tags": "Lebo za Uhalifu",
       "Delinquent Days": "Siku za Uhalifu",
       "Delivery Method": "Njia ya Utoaji",
@@ -1788,6 +1794,7 @@
       "Disbursement Date": "Tarehe ya Utoaji",
       "Disbursement On": "Utoaji Umewashwa",
       "Disbursement on": "Ulipaji umewashwa",
+      "Discount": "Punguzo",
       "Display Name": "Jina la Kuonyesha",
       "Dividend Amount": "Kiasi cha Mgao",
       "Dividend Period End Date": "Tarehe ya Mwisho ya Kipindi cha Gawio",
@@ -2189,6 +2196,8 @@
       "Minimum Guarantee from Own Funds(%)": "Kiwango cha Chini cha Dhamana kutoka kwa Fedha Mwenyewe(%)",
       "Minimum Opening Balance": "Salio la chini la Ufunguzi",
       "Minimum Overdraft Required for Interest Calculation": "Kiwango cha Chini cha Overdrafti Inahitajika kwa Kukokotoa Riba",
+      "Minimum Payment": "Malipo ya Chini Zaidi",
+      "Minimum Payment Type": "Aina ya Malipo ya Chini Zaidi",
       "Minimum Required Balance": "Mizani ya chini inayohitajika",
       "Minimum Value": "Thamani ya chini",
       "Minimum days between disbursal and first repayment date": "Siku chache kati ya malipo na tarehe ya malipo ya kwanza",
@@ -2375,7 +2384,8 @@
       "Principal Threshold (%) for Last Instalment": "Kiwango Kikubwa (%) cha Awamu ya Mwisho",
       "Priority": "Kipaumbele",
       "Product": "Bidhaa",
-      "Product Name": "Jina la bidhaa",
+      "Product Name": "Jina la Bidhaa",
+      "Product Type": "Aina ya Bidhaa",
       "Products": "Bidhaa",
       "Profession": "Taaluma",
       "Proposed Amount": "Kiasi Kilichopendekezwa",
@@ -2635,6 +2645,7 @@
       "Total Interest Earned": "Jumla ya Riba Iliyopatikana",
       "Total No. of Shares": "Jumla ya Nambari ya Hisa",
       "Total Number of Shares": "Jumla ya Idadi ya Hisa",
+      "Total Payment": "Jumla ya Malipo",
       "Total Records": "Jumla ya Rekodi",
       "Total Savings": "Jumla ya Akiba",
       "Total Shares": "Jumla ya Hisa",
@@ -2705,6 +2716,7 @@
       "View Journal Entry": "Tazama Ingizo la Jarida",
       "View Report": "Tazama Ripoti",
       "View Signature": "Tazama Sahihi",
+      "Volume": "Kiasi",
       "Waived": "Imetolewa",
       "Website": "Tovuti",
       "Wednesday": "Jumatano",
@@ -3452,10 +3464,12 @@
       "No client was found": "Hakuna mteja aliyepatikana",
       "No data found": "Hakuna data iliyopatikana",
       "No permissions found": "Hakuna ruhusa iliyopatikana",
+      "NonTriggered": "Hazilizoletewa",
       "No penalties found": "Hakuna adhabu zilizopatikana",
       "NoDocuments": "Hakuna hati zinazopatikana.",
       "NoFileSelected": "Hakuna faili iliyochaguliwa",
       "NoNotesAvailable": "Hakuna noti zinazopatikana",
+      "No Loan Product was found": "Hakuna Bidhaa ya Mkopo Iliyopatikana",
       "No loan locked available": "Hakuna mkopo uliofungwa unaopatikana.",
       "No notifications": "Hakuna arifa",
       "No pending loan available for disbursal": "Hakuna mkopo unaosubiri kulipwa.",
@@ -3586,6 +3600,7 @@
       "View system version, server and licensing information": "Tazama toleo la mfumo, seva na maelezo ya leseni",
       "Table": "Meza",
       "Tax Components": "Vipengele vya Ushuru",
+      "Triggered": "Zilizoletewa",
       "tenant_app_key": "ufunguo_wa_programu_ya_mpangaji",
       "Email": "Barua pepe",
       "Tellers": "Watangazaji",
@@ -3829,7 +3844,11 @@
         "WAIVEINTERESTPORTION": "Ondoa sehemu ya riba",
         "WITHDRAW": "Ondoa",
         "WITHDRAWAL": "Kuondoleza",
-        "WRITEOFF": "Kuandika"
+        "WRITEOFF": "Kuandika",
+        "ALL": "Zote",
+        "BYPASS": "Pita",
+        "CHECKER": "Mkaguzi",
+        "REPORTING": "Ripoti"
       },
       "entities": {
         "ACCOUNTINGRULE": "Kanuni ya Uhasibu",
@@ -3937,7 +3956,10 @@
         "TELLER": "Mtoa Huduma",
         "TEMPLATE": "Muundo",
         "USER": "Mtumiaji",
-        "WORKINGDAYS": "Siku za Kazi"
+        "WORKINGDAYS": "Siku za Kazi",
+        "FUNCTIONS": "Kazi",
+        "TWOFACTOR": "Kipengele Mbili",
+        "SUPER_USER": "Mtumiaji Mkuu"
       }
     },
     "auditTrail": {
@@ -4356,5 +4378,7 @@
     "YE": "Yemen",
     "ZM": "Zambia",
     "ZW": "Zimbabwe"
-  }
+  },
+  "Deactivate Role": "Zima Jukumu",
+  "Delete Role": "Futa Jukumu"
 }

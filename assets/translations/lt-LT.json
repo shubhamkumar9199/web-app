@@ -310,7 +310,7 @@
     },
     "aboutUs": {
       "Introduction": "\\\"Mifos\\\" iniciatyva yra 501(c)(3) ne pelno organizacija ir pasauline kurejų, finansų institucijų ir socialinių verslininkų bendruomene. Tikime, kad prieiga prie finansinių paslaugų yra pagrindinė žmogaus teise, tačiau milijardai žmonių vis dar yra atskirti nuo formalios finansų sistemos.",
-      "Platform Description": "Mes užpildome šią spragą teikdami <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Mifos X platformą</a>\u2014pasaulyje pirmaujančią atvirojo kodo pagrindinę bankininkystės sistemą. Padarydami įmonės lygio bankininkystės technologiją nemokamą ir prieinamą, sumažiname patekimo barjerus Mikrofinansų institucijoms (MFI), Fintech įmonėms ir NVO, leisdami joms plėsti savo poveikį ir efektyviai aptarnauti \\\"paskutinę mylią\\\".",
+      "Platform Description": "Mes užpildome šią spragą teikdami <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Mifos X platformą</a>—pasaulyje pirmaujančią atvirojo kodo pagrindinę bankininkystės sistemą. Padarydami įmonės lygio bankininkystės technologiją nemokamą ir prieinamą, sumažiname patekimo barjerus Mikrofinansų institucijoms (MFI), Fintech įmonėms ir NVO, leisdami joms plėsti savo poveikį ir efektyviai aptarnauti \\\"paskutinę mylią\\\".",
       "Mission": "Paspartinti finansinę įtrauktį katalizuojant atvirojo kodo technologijų, bendruomenės ir žinių dalijimosi ekosistemą.",
       "Vision": "Pasaulis, kuriame kiekvienas asmuo ir smulkus verslas turi prieigą prie finansinių priemonių, reikalingų klestėti, nepriklausomai nuo jų vietos ar pajamų lygio.",
       "Why Open Source": "Pasirinkome atvirojo kodo modelį, nes tikime, kad finansinė infrastruktūra turėtų būti:",
@@ -883,7 +883,11 @@
       "move to next working day": "perkelti į kitą darbo dieną",
       "move to next repayment meeting day": "perkelti į kitą grąžinimo susitikimo dieną",
       "move to previous working day": "perkelti į ankstesnę darbo dieną",
-      "move to next meeting day": "perkelti į kitą susitikimo dieną"
+      "move to next meeting day": "perkelti į kitą susitikimo dieną",
+      "Working Capital": "Apyvartinis kapitalas",
+      "DAYS": "DIENOS",
+      "MONTHS": "MĖNESIŲ",
+      "YEARS": "METAI"
     },
     "commons": {
       "50 characters long": "50 simbolių ilgio",
@@ -1152,6 +1156,7 @@
       "List of Users with their details": "Vartotojų sąrašas su jų duomenimis",
       "Loan Account OverView": "Paskolos sąskaitos apžvalga",
       "Loan Accounts": "Paskolų sąskaitos",
+      "Loan Amounts": "Paskolų sumos",
       "Loan Delinquency Actions": "Paskolos nusikalstamumo veiksmai",
       "Loan Delinquency Classification": "Paskolos nusikalstamumo klasifikacija",
       "Loan Delinquency Tags": "Paskolų vėlavimo žymos",
@@ -1756,6 +1761,7 @@
       "Delinquency Action": "Deliktingumo veiksmas",
       "Delinquency Bucket": "Nusikaltimų kibiras",
       "Delinquency Classification": "Nusikaltimų klasifikacija",
+      "Delinquency Payment Rule": "Mokėjimo už delspinigius taisyklė",
       "Delinquency Tags": "Nusikaltimų žymos",
       "Delinquent Days": "Nusikaltėlių dienos",
       "Delivery Method": "Pristatymo būdas",
@@ -1790,6 +1796,7 @@
       "Disbursement Date": "Išmokėjimo data",
       "Disbursement On": "Išmokėjimas Įjungtas",
       "Disbursement on": "Išmokėjimas įjungtas",
+      "Discount": "Nuolaida",
       "Display Name": "Rodomas pavadinimas",
       "Dividend Amount": "Dividendų suma",
       "Dividend Period End Date": "Dividendų laikotarpio pabaigos data",
@@ -2191,6 +2198,8 @@
       "Minimum Guarantee from Own Funds(%)": "Minimali garantija iš nuosavų lėšų (%)",
       "Minimum Opening Balance": "Minimalus pradinis likutis",
       "Minimum Overdraft Required for Interest Calculation": "Palūkanoms apskaičiuoti reikalingas minimalus overdraftas",
+      "Minimum Payment": "Minimali įmoka",
+      "Minimum Payment Type": "Minimalus mokėjimo tipas",
       "Minimum Required Balance": "Minimalus reikiamas balansas",
       "Minimum Value": "Minimali vertė",
       "Minimum days between disbursal and first repayment date": "Minimalios dienos nuo išmokėjimo iki pirmojo grąžinimo datos",
@@ -2378,6 +2387,7 @@
       "Priority": "Pirmenybė",
       "Product": "Produktas",
       "Product Name": "produkto pavadinimas",
+      "Product Type": "Produkto tipas",
       "Products": "Produktai",
       "Profession": "Profesija",
       "Proposed Amount": "Siūloma suma",
@@ -2636,6 +2646,7 @@
       "Total Interest Earned": "Iš viso uždirbtos palūkanos",
       "Total No. of Shares": "Bendras akcijų skaičius",
       "Total Number of Shares": "Bendras akcijų skaičius",
+      "Total Payment": "Bendra mokėjimo suma",
       "Total Records": "Iš viso įrašų",
       "Total Savings": "Iš viso sutaupyta",
       "Total Shares": "Iš viso akcijų",
@@ -2706,6 +2717,7 @@
       "View Journal Entry": "Žiūrėti žurnalo įrašą",
       "View Report": "Peržiūrėti ataskaitą",
       "View Signature": "Žiūrėti parašą",
+      "Volume": "Tūris",
       "Waived": "Atsisakė",
       "Website": "Interneto svetainė",
       "Wednesday": "trečiadienį",
@@ -3457,10 +3469,12 @@
       "No client was found": "Klientas nerastas",
       "No data found": "Duomenų nerasta",
       "No permissions found": "Leidimų nerasta",
+      "NonTriggered": "Nesuaktyvinta",
       "No penalties found": "Delspinigiai nerasti",
       "NoDocuments": "Nėra dokumentų.",
       "NoFileSelected": "Failas nepasirinktas",
       "NoNotesAvailable": "Nėra prieinamų pastabų",
+      "No Loan Product was found": "Nerasta jokių paskolos produktų",
       "No loan locked available": "Nėra užblokuotos paskolos.",
       "No notifications": "Nėra pranešimų",
       "No pending loan available for disbursal": "Nėra laukiamos paskolos, kurią būtų galima išmokėti.",
@@ -3591,6 +3605,7 @@
       "View system version, server and licensing information": "Peržiūrėti sistemos versiją, serverio ir licencijavimo informaciją",
       "Table": "Lentelė",
       "Tax Components": "Mokesčių komponentai",
+      "Triggered": "Suaktyvinta",
       "tenant_app_key": "nuomininko_programos_raktas",
       "Email": "El. paštas",
       "Tellers": "Pasakotojai",
@@ -3834,7 +3849,11 @@
         "WAIVEINTERESTPORTION": "Atsisakyti palūkanų dalies",
         "WITHDRAW": "Išimti",
         "WITHDRAWAL": "Išėmimas",
-        "WRITEOFF": "Nurašymas"
+        "WRITEOFF": "Nurašymas",
+        "ALL": "Visi",
+        "BYPASS": "Apeiti",
+        "CHECKER": "Tikrintojas",
+        "REPORTING": "Ataskaitos"
       },
       "entities": {
         "ACCOUNTINGRULE": "Apskaitos taisyklė",
@@ -3942,7 +3961,10 @@
         "TELLER": "Kasininkas",
         "TEMPLATE": "Šablonas",
         "USER": "Vartotojas",
-        "WORKINGDAYS": "Darbo dienos"
+        "WORKINGDAYS": "Darbo dienos",
+        "FUNCTIONS": "Funkcijos",
+        "TWOFACTOR": "Dviejų veiksnių",
+        "SUPER_USER": "Supervartotojas"
       }
     },
     "auditTrail": {
@@ -4361,5 +4383,7 @@
     "YE": "Jemenas",
     "ZM": "Zambija",
     "ZW": "Zimbabvė"
-  }
+  },
+  "Deactivate Role": "Deaktyvuoti vaidmenį",
+  "Delete Role": "Ištrinti vaidmenį"
 }

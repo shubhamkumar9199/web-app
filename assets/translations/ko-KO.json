@@ -885,7 +885,11 @@
       "move to next working day": "다음 근무일로 이동",
       "move to next repayment meeting day": "다음 상환 회의일로 이동",
       "move to previous working day": "이전 근무일로 이동",
-      "move to next meeting day": "다음 회의일로 이동"
+      "move to next meeting day": "다음 회의일로 이동",
+      "Working Capital": "운전자본",
+      "DAYS": "날",
+      "MONTHS": "개월",
+      "YEARS": "연령"
     },
     "commons": {
       "50 characters long": "50자(영문 기준)",
@@ -1154,6 +1158,7 @@
       "List of Users with their details": "세부 정보가 포함된 사용자 목록",
       "Loan Account OverView": "대출계좌 개요",
       "Loan Accounts": "대출 계좌",
+      "Loan Amounts": "대출 금액",
       "Loan Delinquency Actions": "대출 연체 조치",
       "Loan Delinquency Classification": "대출 연체 분류",
       "Loan Delinquency Tags": "대출 연체 태그",
@@ -1759,6 +1764,7 @@
       "Delinquency Action": "연체 행동",
       "Delinquency Bucket": "연체 버킷",
       "Delinquency Classification": "연체 분류",
+      "Delinquency Payment Rule": "연체금 납부 규칙",
       "Delinquency Tags": "연체 태그",
       "Delinquent Days": "연체일수",
       "Delivery Method": "배달 방법",
@@ -1793,6 +1799,7 @@
       "Disbursement Date": "지급일",
       "Disbursement On": "지불 날짜",
       "Disbursement on": "지불 날짜",
+      "Discount": "할인",
       "Display Name": "이름 표시하기",
       "Dividend Amount": "배당금액",
       "Dividend Period End Date": "배당기간 종료일",
@@ -2194,6 +2201,8 @@
       "Minimum Guarantee from Own Funds(%)": "자기자금의 최소보증(%)",
       "Minimum Opening Balance": "최소 기초 잔액",
       "Minimum Overdraft Required for Interest Calculation": "이자 계산에 필요한 최소 초과인월",
+      "Minimum Payment": "최소 지불액",
+      "Minimum Payment Type": "최소 지불 유형",
       "Minimum Required Balance": "최소 필요한 잔액",
       "Minimum Value": "최소값",
       "Minimum days between disbursal and first repayment date": "지불 날짜와 첫 번째 상환 날짜 사이의 최소 일수",
@@ -2381,6 +2390,7 @@
       "Priority": "우선 사항",
       "Product": "제품",
       "Product Name": "상품명",
+      "Product Type": "제품 유형",
       "Products": "제품",
       "Profession": "직업",
       "Proposed Amount": "제안된 금액",
@@ -2640,6 +2650,7 @@
       "Total Interest Earned": "총 이자 수익",
       "Total No. of Shares": "총 주식수",
       "Total Number of Shares": "총 주식수",
+      "Total Payment": "총 결제 금액",
       "Total Records": "총 기록",
       "Total Savings": "총 절감액",
       "Total Shares": "총주식수",
@@ -2710,6 +2721,7 @@
       "View Journal Entry": "분개 항목 보기",
       "View Report": "보고서보기",
       "View Signature": "서명 보기",
+      "Volume": "볼륨",
       "Waived": "면제",
       "Website": "웹사이트",
       "Wednesday": "수요일",
@@ -3456,10 +3468,12 @@
       "No client was found": "클라이언트를 찾을 수 없습니다.",
       "No data found": "데이터가 없습니다",
       "No permissions found": "권한이 없습니다",
+      "NonTriggered": "트리거 안됨",
       "No penalties found": "패널티가 없습니다",
       "NoDocuments": "사용 가능한 문서가 없습니다.",
       "NoFileSelected": "선택된 파일 없음",
       "NoNotesAvailable": "사용 가능한 메모 없음",
+      "No Loan Product was found": "대출 상품을 찾을 수 없습니다.",
       "No loan locked available": "잠긴 대출이 없습니다.",
       "No notifications": "알림 없음",
       "No pending loan available for disbursal": "지급 가능한 보류 중인 대출이 없습니다.",
@@ -3590,6 +3604,7 @@
       "View system version, server and licensing information": "시스템 버전, 서버 및 라이선싱 정보 보기",
       "Table": "테이블",
       "Tax Components": "세금 구성요소",
+      "Triggered": "트리거됨",
       "tenant_app_key": "테넌트_앱_키",
       "Email": "이메일",
       "Tellers": "텔러",
@@ -3833,7 +3848,11 @@
         "WAIVEINTERESTPORTION": "이자 부분 포기",
         "WITHDRAW": "출금",
         "WITHDRAWAL": "출금",
-        "WRITEOFF": "상각"
+        "WRITEOFF": "상각",
+        "ALL": "전체",
+        "BYPASS": "우회",
+        "CHECKER": "검사자",
+        "REPORTING": "보고"
       },
       "entities": {
         "ACCOUNTINGRULE": "회계규칙",
@@ -3941,7 +3960,10 @@
         "TELLER": "창구직원",
         "TEMPLATE": "템플릿",
         "USER": "사용자",
-        "WORKINGDAYS": "근무일"
+        "WORKINGDAYS": "근무일",
+        "FUNCTIONS": "기능",
+        "TWOFACTOR": "이중인증",
+        "SUPER_USER": "슈퍼유저"
       }
     },
     "auditTrail": {
@@ -4360,5 +4382,7 @@
     "YE": "예멘",
     "ZM": "잠비아",
     "ZW": "짐바브웨"
-  }
+  },
+  "Deactivate Role": "역할 비활성화",
+  "Delete Role": "역할 삭제"
 }

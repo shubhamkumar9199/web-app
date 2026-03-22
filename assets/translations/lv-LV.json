@@ -310,7 +310,7 @@
     },
     "aboutUs": {
       "Introduction": "Mifos iniciatīva ir 501(c)(3) bezpeļņas organizācija un globāla izstrādātāju, finanšu iestāžu un sociālo uzņēmēju kopiena. Mēs ticam, ka piekļuve finanšu pakalpojumiem ir pamata cilvēktiesības, tomēr miljardiem cilvēku joprojām ir izslēgti no formālās finanšu sistēmas.",
-      "Platform Description": "Mēs pārvaramam šo plaisu, nodrošinot <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Mifos X platformu</a>\u2014pasaulē vadošo atvērtā koda pamata banku sistēmu. Padarot uzņēmuma līmeņa banku tehnoloģiju bezmaksas un pieejamu, mēs samazinām ieejas barjeras Mikrofinanšu iestādēm (MFI), Fintech un NVO, ļaujot tām paplašināt savu ietekmi un efektīvi apkalpot \"pēdējo jūdzi\".",
+      "Platform Description": "Mēs pārvaramam šo plaisu, nodrošinot <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Mifos X platformu</a>—pasaulē vadošo atvērtā koda pamata banku sistēmu. Padarot uzņēmuma līmeņa banku tehnoloģiju bezmaksas un pieejamu, mēs samazinām ieejas barjeras Mikrofinanšu iestādēm (MFI), Fintech un NVO, ļaujot tām paplašināt savu ietekmi un efektīvi apkalpot \"pēdējo jūdzi\".",
       "Mission": "Paātrināt finanšu iekļaušanu, katalizējot atvērtā koda tehnoloģiju, kopienas un zināšanu apmaiņas ekosistēmu.",
       "Vision": "Pasaule, kurā katram indivīdam un mazajam uzņēmumam ir pieejami finanšu instrumenti, kas nepieciešami, lai plauktu, neatkarīgi no to atrašanās vietas vai ienākumu līmeņa.",
       "Why Open Source": "Mēs izvēlējāmies atvērtā koda modeli, jo ticam, ka finanšu infrastruktūrai jābūt:",
@@ -885,7 +885,11 @@
       "move to next working day": "pārvietot uz nākamo darba dienu",
       "move to next repayment meeting day": "pārvietot uz nākamo atmaksas sanāksmes dienu",
       "move to previous working day": "pārvietot uz iepriekšējo darba dienu",
-      "move to next meeting day": "pārvietot uz nākamo sanāksmes dienu"
+      "move to next meeting day": "pārvietot uz nākamo sanāksmes dienu",
+      "Working Capital": "Apgrozāmie līdzekļi",
+      "DAYS": "DIENAS",
+      "MONTHS": "MĒNEŠI",
+      "YEARS": "GADI"
     },
     "commons": {
       "50 characters long": "50 rakstzīmes garš",
@@ -1154,6 +1158,7 @@
       "List of Users with their details": "Lietotāju saraksts ar viņu informāciju",
       "Loan Account OverView": "Aizdevuma konta pārskats",
       "Loan Accounts": "Aizdevuma konti",
+      "Loan Amounts": "Aizdevuma summas",
       "Loan Delinquency Actions": "Aizdevuma likumpārkāpumu darbības",
       "Loan Delinquency Classification": "Aizdevumu likumpārkāpumu klasifikācija",
       "Loan Delinquency Tags": "Aizdevuma kavējuma birkas",
@@ -1758,6 +1763,7 @@
       "Delinquency Action": "Likumpārkāpums",
       "Delinquency Bucket": "Noziedzības spainis",
       "Delinquency Classification": "Noziedzības klasifikācija",
+      "Delinquency Payment Rule": "Kavējuma maksājuma noteikums",
       "Delinquency Tags": "Noziedzības tagi",
       "Delinquent Days": "Noziedznieku dienas",
       "Delivery Method": "Piegāde metode",
@@ -1792,6 +1798,7 @@
       "Disbursement Date": "Izmaksas datums",
       "Disbursement On": "Izmaksa ieslēgta",
       "Disbursement on": "Izmaksa ieslēgta",
+      "Discount": "Atlaide",
       "Display Name": "Parādāmais nosaukums",
       "Dividend Amount": "Dividenžu summa",
       "Dividend Period End Date": "Dividenžu perioda beigu datums",
@@ -2193,6 +2200,8 @@
       "Minimum Guarantee from Own Funds(%)": "Minimālā garantija no pašu līdzekļiem (%)",
       "Minimum Opening Balance": "Minimālais sākuma atlikums",
       "Minimum Overdraft Required for Interest Calculation": "Nepieciešamais minimālais overdrafts procentu aprēķināšanai",
+      "Minimum Payment": "Minimālais maksājums",
+      "Minimum Payment Type": "Minimālā maksājuma veids",
       "Minimum Required Balance": "Minimālais nepieciešamais līdzsvars",
       "Minimum Value": "Minimālā vērtība",
       "Minimum days between disbursal and first repayment date": "Minimālās dienas starp izmaksu un pirmo atmaksas datumu",
@@ -2380,6 +2389,7 @@
       "Priority": "Prioritāte",
       "Product": "Produkts",
       "Product Name": "produkta nosaukums",
+      "Product Type": "Produkta veids",
       "Products": "Produkti",
       "Profession": "Profesija",
       "Proposed Amount": "Piedāvātā summa",
@@ -2639,6 +2649,7 @@
       "Total Interest Earned": "Kopējie nopelnītie procenti",
       "Total No. of Shares": "Kopējais akciju skaits",
       "Total Number of Shares": "Kopējais akciju skaits",
+      "Total Payment": "Kopējais maksājums",
       "Total Records": "Kopējie ieraksti",
       "Total Savings": "Kopējie ietaupījumi",
       "Total Shares": "Kopējās akcijas",
@@ -2709,6 +2720,7 @@
       "View Journal Entry": "Skatīt žurnāla ierakstu",
       "View Report": "Skatīt pārskatu",
       "View Signature": "Skatīt parakstu",
+      "Volume": "Apjomi",
       "Waived": "Atteicās",
       "Website": "Tīmekļa vietne",
       "Wednesday": "trešdiena",
@@ -3456,10 +3468,12 @@
       "No client was found": "Klients netika atrasts",
       "No data found": "Dati nav atrasti",
       "No permissions found": "Atļaujas nav atrastas",
+      "NonTriggered": "Nav izraisīts",
       "No penalties found": "Sodi nav atrasti",
       "NoDocuments": "Nav pieejamu dokumentu.",
       "NoFileSelected": "Nav izvēlēts fails",
       "NoNotesAvailable": "Nav pieejamas piezīmes",
+      "No Loan Product was found": "Nav atrasts neviens aizdevuma produkts",
       "No loan locked available": "Nav pieejams bloķēts aizdevums.",
       "No notifications": "Nav paziņojumu",
       "No pending loan available for disbursal": "Nav pieejams neizmaksāts aizdevums.",
@@ -3590,6 +3604,7 @@
       "View system version, server and licensing information": "Skatīt sistēmas versiju, servera un licencēšanas informāciju",
       "Table": "Tabula",
       "Tax Components": "Nodokļu sastāvdaļas",
+      "Triggered": "Izraisīts",
       "tenant_app_key": "rentant_app_key",
       "Email": "E-pasts",
       "Tellers": "Teicēji",
@@ -3833,7 +3848,11 @@
         "WAIVEINTERESTPORTION": "Atteikties no procentu daļas",
         "WITHDRAW": "Izņemt",
         "WITHDRAWAL": "Izņemšana",
-        "WRITEOFF": "Betona noslēgšana"
+        "WRITEOFF": "Betona noslēgšana",
+        "ALL": "Visi",
+        "BYPASS": "Apiet",
+        "CHECKER": "Pārbaudītājs",
+        "REPORTING": "Pārskati"
       },
       "entities": {
         "ACCOUNTINGRULE": "Grāmatvedības noteikums",
@@ -3941,7 +3960,10 @@
         "TELLER": "Kasiere",
         "TEMPLATE": "Veidne",
         "USER": "Lietotājs",
-        "WORKINGDAYS": "Darba dienas"
+        "WORKINGDAYS": "Darba dienas",
+        "FUNCTIONS": "Funkcijas",
+        "TWOFACTOR": "Divfaktoru",
+        "SUPER_USER": "Superlietotājs"
       }
     },
     "auditTrail": {
@@ -4360,5 +4382,7 @@
     "YE": "Jemena",
     "ZM": "Zambija",
     "ZW": "Zimbabve"
-  }
+  },
+  "Deactivate Role": "Deaktivēt lomu",
+  "Delete Role": "Dzēst lomu"
 }

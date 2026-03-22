@@ -310,7 +310,7 @@
     },
     "aboutUs": {
       "Introduction": "Die Mifos-Initiative ist eine gemeinnützige Organisation gemäß 501(c)(3) und eine globale Gemeinschaft von Entwicklern, Finanzinstitutionen und Sozialunternehmern. Wir glauben, dass der Zugang zu Finanzdienstleistungen ein grundlegendes Menschenrecht ist, doch Milliarden von Menschen bleiben vom formellen Finanzsystem ausgeschlossen.",
-      "Platform Description": "Wir überbrücken diese Lücke, indem wir die <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Mifos X Plattform</a>\u2014das weltweit führende Open-Source-Kernbankensystem bereitstellen. Indem wir unternehmenstaugliche Bankentechnologie kostenlos und zugänglich machen, senken wir die Eintrittsbarrieren für Mikrofinanzinstitutionen (MFIs), Fintechs und NGOs und ermöglichen es ihnen, ihre Wirkung zu skalieren und die \\\"letzte Meile\\\" effizient zu bedienen.",
+      "Platform Description": "Wir überbrücken diese Lücke, indem wir die <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Mifos X Plattform</a>—das weltweit führende Open-Source-Kernbankensystem bereitstellen. Indem wir unternehmenstaugliche Bankentechnologie kostenlos und zugänglich machen, senken wir die Eintrittsbarrieren für Mikrofinanzinstitutionen (MFIs), Fintechs und NGOs und ermöglichen es ihnen, ihre Wirkung zu skalieren und die \\\"letzte Meile\\\" effizient zu bedienen.",
       "Mission": "Die finanzielle Inklusion zu beschleunigen, indem wir ein Ökosystem aus Open-Source-Technologie, Gemeinschaft und Wissensaustausch katalysieren.",
       "Vision": "Eine Welt, in der jeder Einzelne und jedes kleine Unternehmen Zugang zu den Finanzwerkzeugen hat, die sie zum Gedeihen benötigen, unabhängig von ihrem Standort oder Einkommensniveau.",
       "Why Open Source": "Wir haben das Open-Source-Modell gewählt, weil wir glauben, dass Finanzinfrastruktur sein sollte:",
@@ -885,7 +885,11 @@
       "move to next working day": "zum nächsten Arbeitstag verschieben",
       "move to next repayment meeting day": "zum nächsten Rückzahlungstermin verschieben",
       "move to previous working day": "zum vorherigen Arbeitstag verschieben",
-      "move to next meeting day": "zum nächsten Termin verschieben"
+      "move to next meeting day": "zum nächsten Termin verschieben",
+      "Working Capital": "Betriebskapital",
+      "DAYS": "TAGE",
+      "MONTHS": "MONATE",
+      "YEARS": "JAHRE"
     },
     "commons": {
       "50 characters long": "50 Zeichen lang",
@@ -1154,6 +1158,7 @@
       "List of Users with their details": "Liste der Benutzer mit ihren Details",
       "Loan Account OverView": "Kreditkontoübersicht",
       "Loan Accounts": "Kreditkonten",
+      "Loan Amounts": "Darlehensbeträge",
       "Loan Delinquency Actions": "Darlehenskriminalitätsmaßnahmen",
       "Loan Delinquency Classification": "Kreditkriminalitätsklassifizierung",
       "Loan Delinquency Tags": "Tags für Kreditausfälle",
@@ -1758,6 +1763,7 @@
       "Delinquency Action": "Kriminalitätsaktion",
       "Delinquency Bucket": "Kriminalitätseimer",
       "Delinquency Classification": "Kriminalitätsklassifizierung",
+      "Delinquency Payment Rule": "Regelung zu Zahlungsverzug",
       "Delinquency Tags": "Kriminalitäts-Tags",
       "Delinquent Days": "Kriminelle Tage",
       "Delivery Method": "Versandart",
@@ -1792,6 +1798,7 @@
       "Disbursement Date": "Auszahlungsdatum",
       "Disbursement On": "Auszahlung erfolgt",
       "Disbursement on": "Auszahlung am",
+      "Discount": "Rabatt",
       "Display Name": "Anzeigename",
       "Dividend Amount": "Dividendenbetrag",
       "Dividend Period End Date": "Enddatum des Dividendenzeitraums",
@@ -2193,6 +2200,8 @@
       "Minimum Guarantee from Own Funds(%)": "Mindestgarantie aus Eigenmitteln (%)",
       "Minimum Opening Balance": "Mindesteröffnungssaldo",
       "Minimum Overdraft Required for Interest Calculation": "Für die Zinsberechnung erforderlicher Mindestüberziehungskredit",
+      "Minimum Payment": "Mindestzahlung",
+      "Minimum Payment Type": "Mindestzahlungsart",
       "Minimum Required Balance": "Mindestbetrag erforderlich",
       "Minimum Value": "Mindestwert",
       "Minimum days between disbursal and first repayment date": "Mindesttage zwischen Auszahlung und erstem Rückzahlungsdatum",
@@ -2380,6 +2389,7 @@
       "Priority": "Priorität",
       "Product": "Produkt",
       "Product Name": "Produktname",
+      "Product Type": "Produkttyp",
       "Products": "Produkte",
       "Profession": "Beruf",
       "Proposed Amount": "Vorgeschlagener Betrag",
@@ -2639,6 +2649,7 @@
       "Total Interest Earned": "Insgesamt verdiente Zinsen",
       "Total No. of Shares": "Gesamtzahl der Anteile",
       "Total Number of Shares": "Gesamtzahl der Aktien",
+      "Total Payment": "Gesamtbetrag",
       "Total Records": "Gesamtaufzeichnungen",
       "Total Savings": "Gesamtersparnis",
       "Total Shares": "Gesamtanteile",
@@ -2709,6 +2720,7 @@
       "View Journal Entry": "Journaleintrag anzeigen",
       "View Report": "Zeige Bericht",
       "View Signature": "Signatur anzeigen",
+      "Volume": "Volumen",
       "Waived": "Verzichtet",
       "Website": "Webseite",
       "Wednesday": "Mittwoch",
@@ -3457,10 +3469,12 @@
       "No client was found": "Es wurde kein Kunde gefunden",
       "No data found": "Keine Daten gefunden",
       "No permissions found": "Keine Berechtigungen gefunden",
+      "NonTriggered": "Nicht ausgelöst",
       "No penalties found": "Keine Strafen gefunden",
       "NoDocuments": "Keine Dokumente verfügbar.",
       "NoFileSelected": "Keine Datei ausgewählt",
       "NoNotesAvailable": "Keine Notizen verfügbar",
+      "No Loan Product was found": "Es wurde kein Kreditprodukt gefunden",
       "No loan locked available": "Kein gesperrter Kredit verfügbar.",
       "No notifications": "Keine benachrichtigungen",
       "No pending loan available for disbursal": "Kein ausstehendes Darlehen zur Auszahlung verfügbar.",
@@ -3591,6 +3605,7 @@
       "View system version, server and licensing information": "Systemversion, Server- und Lizenzinformationen anzeigen",
       "Table": "Tisch",
       "Tax Components": "Steuerkomponenten",
+      "Triggered": "Ausgelöst",
       "tenant_app_key": "mieter_app_key",
       "Email": "Email",
       "Tellers": "Kassierer",
@@ -3734,6 +3749,19 @@
       "Search and assign this beneficiary to an existing Mifos client account": "Suchen und weisen Sie diesen Begünstigten einem bestehenden Mifos-Kundenkonto zu",
       "Failed to search clients. Please try again.": "Kundensuche fehlgeschlagen. Bitte versuchen Sie es erneut.",
       "Process Remittance": "Überweisung bearbeiten"
+    },
+    "permissions": {
+      "actions": {
+        "ALL": "Alle",
+        "BYPASS": "Umgehen",
+        "CHECKER": "Prüfer",
+        "REPORTING": "Berichterstattung"
+      },
+      "entities": {
+        "FUNCTIONS": "Funktionen",
+        "TWOFACTOR": "Zwei-Faktor",
+        "SUPER_USER": "Superbenutzer"
+      }
     }
   },
   "permissions": {
@@ -4361,5 +4389,7 @@
     "YE": "Jemen",
     "ZM": "Sambia",
     "ZW": "Simbabwe"
-  }
+  },
+  "Deactivate Role": "Rolle deaktivieren",
+  "Delete Role": "Rolle löschen"
 }

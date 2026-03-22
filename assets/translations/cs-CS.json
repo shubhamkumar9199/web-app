@@ -309,7 +309,7 @@
     },
     "aboutUs": {
       "Introduction": "Iniciativa Mifos je nezisková organizace 501(c)(3) a globální komunita vývojářů, finančních institucí a sociálních podnikatelů. Věříme, že přístup k finančním službám je základní lidské právo, přesto miliardy lidí zůstávají vyloučeny z formálního finančního systému.",
-      "Platform Description": "Tuto mezeru překlenujeme poskytováním <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Platformy Mifos X</a>\u2014světově vedoucího open-source bankovního systému. Tím, že zpřístupňujeme podnikovou bankovní technologii zdarma, snižujeme bariéry vstupu pro Mikrofinanční instituce (MFI), Fintechy a nevládní organizace, což jim umožňuje rozšířit svůj dopad a efektivně obsluhovat \"poslední míli\".",
+      "Platform Description": "Tuto mezeru překlenujeme poskytováním <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Platformy Mifos X</a>—světově vedoucího open-source bankovního systému. Tím, že zpřístupňujeme podnikovou bankovní technologii zdarma, snižujeme bariéry vstupu pro Mikrofinanční instituce (MFI), Fintechy a nevládní organizace, což jim umožňuje rozšířit svůj dopad a efektivně obsluhovat \"poslední míli\".",
       "Mission": "Urychlit finanční inkluzi katalyzováním ekosystému open-source technologií, komunity a sdílení znalostí.",
       "Vision": "Svět, kde každý jednotlivec a malý podnik má přístup k finančním nástrojům, které potřebuje k prosperitě, bez ohledu na svou polohu nebo úroveň příjmů.",
       "Why Open Source": "Zvolili jsme model Open Source, protože věříme, že finanční infrastruktura by měla být:",
@@ -884,7 +884,11 @@
       "move to next working day": "přesunout na další pracovní den",
       "move to next repayment meeting day": "přesunout na další den schůzky o splácení",
       "move to previous working day": "přesunout na předchozí pracovní den",
-      "move to next meeting day": "přesunout na další den schůzky"
+      "move to next meeting day": "přesunout na další den schůzky",
+      "Working Capital": "Provozní kapitál",
+      "DAYS": "DNY",
+      "MONTHS": "MĚSÍCE",
+      "YEARS": "ROKY"
     },
     "commons": {
       "50 characters long": "50 znaků dlouhé",
@@ -1152,6 +1156,7 @@
       "List of Users with their details": "Seznam uživatelů s jejich podrobnostmi",
       "Loan Account OverView": "Přehled úvěrového účtu",
       "Loan Accounts": "Úvěrové účty",
+      "Loan Amounts": "Výše úvěru",
       "Loan Delinquency Actions": "Akce delikvence půjčky",
       "Loan Delinquency Classification": "Klasifikace delikvence půjčky",
       "Loan Delinquency Tags": "Značky proplácení úvěrů",
@@ -1755,6 +1760,7 @@
       "Delinquency Action": "Akce delikvence",
       "Delinquency Bucket": "Delikvence Bucket",
       "Delinquency Classification": "Klasifikace delikvence",
+      "Delinquency Payment Rule": "Pravidlo pro platbu v prodlení",
       "Delinquency Tags": "Štítky delikvence",
       "Delinquent Days": "Delikventní dny",
       "Delivery Method": "způsob doručení",
@@ -1789,6 +1795,7 @@
       "Disbursement Date": "Datum výplaty",
       "Disbursement On": "Vyplácení zapnuto",
       "Disbursement on": "Výplata zapnuta",
+      "Discount": "Sleva",
       "Display Name": "Zobrazovaný název",
       "Dividend Amount": "Částka dividendy",
       "Dividend Period End Date": "Datum ukončení dividendového období",
@@ -2191,6 +2198,8 @@
       "Minimum Guarantee from Own Funds(%)": "Minimální záruka z vlastních prostředků (%)",
       "Minimum Opening Balance": "Minimální počáteční zůstatek",
       "Minimum Overdraft Required for Interest Calculation": "Minimální přečerpání požadované pro výpočet úroku",
+      "Minimum Payment": "Minimální platba",
+      "Minimum Payment Type": "Typ minimální platby",
       "Minimum Required Balance": "Minimální požadovaný zůstatek",
       "Minimum Value": "Minimální hodnota",
       "Minimum days between disbursal and first repayment date": "Minimální dny mezi výplatou a datem první splátky",
@@ -2378,6 +2387,7 @@
       "Priority": "Přednost",
       "Product": "Produkt",
       "Product Name": "jméno výrobku",
+      "Product Type": "Typ produktu",
       "Products": "produkty",
       "Profession": "Profese",
       "Proposed Amount": "Navrhovaná částka",
@@ -2637,6 +2647,7 @@
       "Total Interest Earned": "Celkový získaný úrok",
       "Total No. of Shares": "Celkový počet akcií",
       "Total Number of Shares": "Celkový počet akcií",
+      "Total Payment": "Celková platba",
       "Total Records": "Celkové rekordy",
       "Total Savings": "Celková úspora",
       "Total Shares": "Celkový počet akcií",
@@ -2707,6 +2718,7 @@
       "View Journal Entry": "Zobrazit záznam deníku",
       "View Report": "Zobrazit hlášení",
       "View Signature": "Zobrazit podpis",
+      "Volume": "Objem",
       "Waived": "Prominutí",
       "Website": "webová stránka",
       "Wednesday": "středa",
@@ -3456,10 +3468,12 @@
       "No client was found": "Nebyl nalezen žádný klient",
       "No data found": "Nenalezena žádná data",
       "No permissions found": "Nenalezena žádná oprávnění",
+      "NonTriggered": "Nespuštěno",
       "No penalties found": "Nebyly nalezeny žádné pokuty",
       "NoDocuments": "Žádné dokumenty k dispozici.",
       "NoFileSelected": "Nevybrán žádný soubor",
       "NoNotesAvailable": "Žádné poznámky k dispozici",
+      "No Loan Product was found": "Nebyl nalezen žádný úvěrový produkt",
       "No loan locked available": "Žádná půjčka není k dispozici.",
       "No notifications": "Žádné oznámení",
       "No pending loan available for disbursal": "Není k dispozici žádná nevyřízená půjčka k vyplacení.",
@@ -3590,6 +3604,7 @@
       "View system version, server and licensing information": "Zobrazit informace o verzi systému, serveru a licenci",
       "Table": "Stůl",
       "Tax Components": "Složky daně",
+      "Triggered": "Spuštěno",
       "tenant_app_key": "tenant_app_key",
       "Email": "E-mailem",
       "Tellers": "Věštci",
@@ -3733,6 +3748,19 @@
       "Search and assign this beneficiary to an existing Mifos client account": "Vyhledejte a přiřaďte tohoto příjemce k existujícímu účtu klienta Mifos",
       "Failed to search clients. Please try again.": "Hledání klientů se nezdařilo. Zkuste to prosím znovu.",
       "Process Remittance": "Zpracovat remitenci"
+    },
+    "permissions": {
+      "actions": {
+        "ALL": "Vše",
+        "BYPASS": "Obejít",
+        "CHECKER": "Kontrolor",
+        "REPORTING": "Reporting"
+      },
+      "entities": {
+        "FUNCTIONS": "Funkce",
+        "TWOFACTOR": "Dvoufaktorové",
+        "SUPER_USER": "Superuživatel"
+      }
     }
   },
   "permissions": {
@@ -4360,5 +4388,7 @@
     "YE": "Jemen",
     "ZM": "Zambie",
     "ZW": "Zimbabwe"
-  }
+  },
+  "Deactivate Role": "Deaktivovat roli",
+  "Delete Role": "Smazat roli"
 }

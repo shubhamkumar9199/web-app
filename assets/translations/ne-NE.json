@@ -310,7 +310,7 @@
     },
     "aboutUs": {
       "Introduction": "Mifos पहल एक 501(c)(3) गैर-नाफामूलक संस्था र विकासकर्ताहरू, वित्तीय संस्थाहरू र सामाजिक उद्यमीहरूको विश्वव्यापी समुदाय हो। हामी विश्वास गर्छौं कि वित्तीय सेवाहरूमा पहुँच एक आधारभूत मानव अधिकार हो, तर अरबौं मानिसहरू अझै पनि औपचारिक वित्तीय प्रणालीबाट बाहिर छन्।",
-      "Platform Description": "हामी <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Mifos X प्लेटफर्म</a>\u2014विश्वको अग्रणी ओपन-सोर्स कोर बैंकिङ प्रणाली प्रदान गरेर यो अन्तर पूरा गर्छौं। इन्टरप्राइज-ग्रेड बैंकिङ प्रविधिलाई निःशुल्क र सुलभ बनाएर, हामी माइक्रोफाइनान्स संस्थाहरू (MFIs), फिनटेकहरू र गैर-सरकारी संस्थाहरूको लागि प्रवेश अवरोधहरू कम गर्छौं, जसले तिनीहरूलाई आफ्नो प्रभाव विस्तार गर्न र \"अन्तिम माइल\" कुशलतापूर्वक सेवा गर्न अनुमति दिन्छ।",
+      "Platform Description": "हामी <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Mifos X प्लेटफर्म</a>—विश्वको अग्रणी ओपन-सोर्स कोर बैंकिङ प्रणाली प्रदान गरेर यो अन्तर पूरा गर्छौं। इन्टरप्राइज-ग्रेड बैंकिङ प्रविधिलाई निःशुल्क र सुलभ बनाएर, हामी माइक्रोफाइनान्स संस्थाहरू (MFIs), फिनटेकहरू र गैर-सरकारी संस्थाहरूको लागि प्रवेश अवरोधहरू कम गर्छौं, जसले तिनीहरूलाई आफ्नो प्रभाव विस्तार गर्न र \"अन्तिम माइल\" कुशलतापूर्वक सेवा गर्न अनुमति दिन्छ।",
       "Mission": "ओपन-सोर्स प्रविधि, समुदाय र ज्ञान साझेदारीको इकोसिस्टमलाई उत्प्रेरित गरेर वित्तीय समावेशीकरणलाई तीव्र पार्ने।",
       "Vision": "एउटा संसार जहाँ प्रत्येक व्यक्ति र साना व्यवसायले आफ्नो स्थान वा आय स्तरको पर्वाह नगरी फलिफाप हुनका लागि आवश्यक वित्तीय उपकरणहरूमा पहुँच पाउँछन्।",
       "Why Open Source": "हामीले ओपन सोर्स मोडेल रोजेका छौं किनभने हामी विश्वास गर्छौं कि वित्तीय पूर्वाधार यस्तो हुनुपर्छ:",
@@ -883,7 +883,11 @@
       "move to next working day": "अर्को काम गर्ने दिनमा सार्नुहोस्",
       "move to next repayment meeting day": "अर्को भुक्तानी बैठक दिनमा सार्नुहोस्",
       "move to previous working day": "अघिल्लो काम गर्ने दिनमा सार्नुहोस्",
-      "move to next meeting day": "अर्को बैठक दिनमा सार्नुहोस्"
+      "move to next meeting day": "अर्को बैठक दिनमा सार्नुहोस्",
+      "Working Capital": "कार्यशील पूँजी",
+      "DAYS": "दिनहरू",
+      "MONTHS": "महिनाहरू",
+      "YEARS": "वर्षहरू"
     },
     "commons": {
       "50 characters long": "५० वर्ण लामो",
@@ -1152,6 +1156,7 @@
       "List of Users with their details": "तिनीहरूको विवरण सहित प्रयोगकर्ताहरूको सूची",
       "Loan Account OverView": "ऋण खाता अवलोकन",
       "Loan Accounts": "ऋण खाताहरू",
+      "Loan Amounts": "ऋण रकम",
       "Loan Delinquency Actions": "Dep ण दिक्विटी कार्यहरू",
       "Loan Delinquency Classification": "कर्जा दुस्तुरी वर्गीकरण",
       "Loan Delinquency Tags": "ऋण अपराध ट्यागहरू",
@@ -1755,6 +1760,7 @@
       "Delinquency Action": "अपराध कार्य",
       "Delinquency Bucket": "अपराध बाल्टी",
       "Delinquency Classification": "अपराध वर्गीकरण",
+      "Delinquency Payment Rule": "अपराध भुक्तानी नियम",
       "Delinquency Tags": "अपराध ट्यागहरू",
       "Delinquent Days": "अपराधी दिनहरू",
       "Delivery Method": "वितरण विधि",
@@ -1789,6 +1795,7 @@
       "Disbursement Date": "वितरण मिति",
       "Disbursement On": "वितरण सुरु",
       "Disbursement on": "वितरण जारी छ",
+      "Discount": "छुट",
       "Display Name": "प्रदर्शन नाम",
       "Dividend Amount": "लाभांश रकम",
       "Dividend Period End Date": "लाभांश अवधि समाप्ति मिति",
@@ -2190,6 +2197,8 @@
       "Minimum Guarantee from Own Funds(%)": "आफ्नै कोषबाट न्यूनतम ग्यारेन्टी (%)",
       "Minimum Opening Balance": "न्यूनतम ओपनिङ ब्यालेन्स",
       "Minimum Overdraft Required for Interest Calculation": "ब्याज गणनाको लागि न्यूनतम ओभरड्राफ्ट आवश्यक छ",
+      "Minimum Payment": "न्यूनतम भुक्तानी",
+      "Minimum Payment Type": "न्यूनतम भुक्तानी प्रकार",
       "Minimum Required Balance": "न्यूनतम आवश्यक ब्यालेन्स",
       "Minimum Value": "न्यूनतम मान",
       "Minimum days between disbursal and first repayment date": "भुक्तानी र पहिलो भुक्तानी मिति बीचको न्यूनतम दिन",
@@ -2377,6 +2386,7 @@
       "Priority": "प्राथमिकता",
       "Product": "उत्पादन",
       "Product Name": "उत्पादनको नाम",
+      "Product Type": "उत्पादन प्रकार",
       "Products": "उत्पादनहरू",
       "Profession": "पेशा",
       "Proposed Amount": "प्रस्तावित रकम",
@@ -2636,6 +2646,7 @@
       "Total Interest Earned": "कुल ब्याज कमाइयो",
       "Total No. of Shares": "शेयर को कुल संख्या",
       "Total Number of Shares": "शेयर को कुल संख्या",
+      "Total Payment": "कुल भुक्तानी",
       "Total Records": "कुल रेकर्डहरू",
       "Total Savings": "कुल बचत",
       "Total Shares": "कुल शेयर",
@@ -2706,6 +2717,7 @@
       "View Journal Entry": "जर्नल प्रविष्टि हेर्नुहोस्",
       "View Report": "रिपोर्ट हेर्नुहोस्",
       "View Signature": "हस्ताक्षर हेर्नुहोस्",
+      "Volume": "भोल्युमेन",
       "Waived": "माफ गरियो",
       "Website": "वेबसाइट",
       "Wednesday": "बुधबार",
@@ -3454,10 +3466,12 @@
       "No client was found": "कुनै ग्राहक भेटिएन",
       "No data found": "कुनै डाटा फेला परेन",
       "No permissions found": "कुनै अनुमतिहरू फेला परेन",
+      "NonTriggered": "ट्रिगर नगरिएको",
       "No penalties found": "कुनै दण्ड फेला परेन",
       "NoDocuments": "कुनै कागजात उपलब्ध छैन।",
       "NoFileSelected": "कुनै फाइल छानिएको छैन",
       "NoNotesAvailable": "कुनै नोटहरू उपलब्ध छैनन्",
+      "No Loan Product was found": "कुनै ऋण उत्पादन फेला परेन।",
       "No loan locked available": "कुनै ऋण उपलब्ध छैन।",
       "No notifications": "कुनै सूचना छैन",
       "No pending loan available for disbursal": "वितरणको लागि कुनै पेन्डिङ ऋण उपलब्ध छैन।",
@@ -3588,6 +3602,7 @@
       "View system version, server and licensing information": "प्रणाली संस्करण, सर्भर र इजाजतपत्र जानकारी हेर्नुहोस्",
       "Table": "तालिका",
       "Tax Components": "कर अवयवहरू",
+      "Triggered": "ट्रिगर गरिएको",
       "tenant_app_key": "tenant_app_key",
       "Email": "इमेल",
       "Tellers": "टेलरहरू",
@@ -3830,7 +3845,11 @@
         "WAIVEINTERESTPORTION": "ब्याज अंश माफ गर्नुहोस्",
         "WITHDRAW": "निकासी गर्नुहोस्",
         "WITHDRAWAL": "निकासी",
-        "WRITEOFF": "बेकार लेखन"
+        "WRITEOFF": "बेकार लेखन",
+        "ALL": "सबै",
+        "BYPASS": "बाइपास",
+        "CHECKER": "जाँचकर्ता",
+        "REPORTING": "रिपोर्टिङ"
       },
       "entities": {
         "ACCOUNTINGRULE": "लेखा नियम",
@@ -3934,7 +3953,10 @@
         "TEMPLATE": "टेम्पलेट",
         "USER": "प्रयोगकर्ता",
         "WORKINGDAYS": "कार्यदिवसहरू",
-        "STANDINGINSTRUCTION": "स्थायी निर्देशन"
+        "STANDINGINSTRUCTION": "स्थायी निर्देशन",
+        "FUNCTIONS": "कार्यहरू",
+        "TWOFACTOR": "दुई-कारक",
+        "SUPER_USER": "सुपर प्रयोगकर्ता"
       }
     },
     "auditTrail": {
@@ -4353,5 +4375,7 @@
     "YE": "यमन",
     "ZM": "जाम्बिया",
     "ZW": "जिम्बावे"
-  }
+  },
+  "Deactivate Role": "भूमिका निष्क्रिय गर्नुहोस्",
+  "Delete Role": "भूमिका मेटाउनुहोस्"
 }

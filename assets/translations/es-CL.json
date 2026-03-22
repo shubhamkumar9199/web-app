@@ -310,7 +310,7 @@
     },
     "aboutUs": {
       "Introduction": "La Iniciativa Mifos es una organización sin fines de lucro 501(c)(3) y una comunidad global de desarrolladores, instituciones financieras y emprendedores sociales. Creemos que el acceso a los servicios financieros es un derecho humano fundamental, sin embargo, miles de millones de personas siguen excluidas del sistema financiero formal.",
-      "Platform Description": "Cerramos esta brecha proporcionando la <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Plataforma Mifos X</a>\u2014el sistema bancario central de código abierto líder en el mundo. Al hacer que la tecnología bancaria de nivel empresarial sea gratuita y accesible, reducimos las barreras de entrada para las Instituciones de Microfinanzas (IMFs), Fintechs y ONGs, permitiéndoles escalar su impacto y atender la \"última milla\" de manera eficiente.",
+      "Platform Description": "Cerramos esta brecha proporcionando la <a href=\"https://mifos.org\" target=\"_blank\" rel=\"noopener noreferrer\">Plataforma Mifos X</a>—el sistema bancario central de código abierto líder en el mundo. Al hacer que la tecnología bancaria de nivel empresarial sea gratuita y accesible, reducimos las barreras de entrada para las Instituciones de Microfinanzas (IMFs), Fintechs y ONGs, permitiéndoles escalar su impacto y atender la \"última milla\" de manera eficiente.",
       "Mission": "Acelerar la inclusión financiera catalizando un ecosistema de tecnología de código abierto, comunidad e intercambio de conocimientos.",
       "Vision": "Un mundo donde cada individuo y pequeña empresa tenga acceso a las herramientas financieras que necesitan para prosperar, independientemente de su ubicación o nivel de ingresos.",
       "Why Open Source": "Elegimos el modelo de Código Abierto porque creemos que la infraestructura financiera debería ser:",
@@ -884,7 +884,11 @@
       "move to next working day": "mover al siguiente día laborable",
       "move to next repayment meeting day": "mover al siguiente día de reunión de pago",
       "move to previous working day": "mover al día laborable anterior",
-      "move to next meeting day": "mover al siguiente día de reunión"
+      "move to next meeting day": "mover al siguiente día de reunión",
+      "Working Capital": "Capital de Trabajo",
+      "DAYS": "DÍAS",
+      "MONTHS": "MESES",
+      "YEARS": "AÑOS"
     },
     "commons": {
       "50 characters long": "50 caracteres de largo",
@@ -1154,6 +1158,7 @@
       "List of Users with their details": "Listado de Usuarios con sus datos",
       "Loan Account OverView": "Resumen cuenta de Crédito",
       "Loan Accounts": "Cuentas de Crédito",
+      "Loan Amounts": "Montos del Crédito",
       "Loan Delinquency Actions": "Acciones de Morosidad de Crédito",
       "Loan Delinquency Classification": "Clasificación de morosidad de créditos",
       "Loan Delinquency Tags": "Etiquetas de morosidad de Créditos",
@@ -1758,6 +1763,7 @@
       "Delinquency Action": "Acción de morosidad",
       "Delinquency Bucket": "Clasificación de morosidad",
       "Delinquency Classification": "Clasificación de morosidad",
+      "Delinquency Payment Rule": "Regla de pago por mora",
       "Delinquency Tags": "Etiquetas de morosidad",
       "Delinquent Days": "Días morosos",
       "Delivery Method": "Método de entrega",
@@ -1792,6 +1798,7 @@
       "Disbursement Date": "Fecha de curso",
       "Disbursement On": "Curso en",
       "Disbursement on": "Curso en",
+      "Discount": "Descuento",
       "Display Name": "Nombre para mostrar",
       "Dividend Amount": "Monto del dividendo",
       "Dividend Period End Date": "Fecha de finalización del período de dividendos",
@@ -2193,6 +2200,8 @@
       "Minimum Guarantee from Own Funds(%)": "Garantía Mínima de Fondos Propios(%)",
       "Minimum Opening Balance": "Saldo mínimo de apertura",
       "Minimum Overdraft Required for Interest Calculation": "Sobregiro mínimo requerido para el cálculo de intereses",
+      "Minimum Payment": "Pago mínimo",
+      "Minimum Payment Type": "Tipo de pago mínimo",
       "Minimum Required Balance": "Balance mínimo requerido",
       "Minimum Value": "Valor mínimo",
       "Minimum days between disbursal and first repayment date": "Días mínimos entre el curso y la primera fecha de amortización",
@@ -2381,6 +2390,7 @@
       "Priority": "Prioridad",
       "Product": "Producto",
       "Product Name": "Nombre del Producto",
+      "Product Type": "Tipo de Producto",
       "Products": "Productos",
       "Profession": "Profesión",
       "Proposed Amount": "Monto propuesto",
@@ -2640,6 +2650,7 @@
       "Total Interest Earned": "Interés total ganado",
       "Total No. of Shares": "Número total de acciones",
       "Total Number of Shares": "Número total de acciones",
+      "Total Payment": "Pago total",
       "Total Records": "Registros totales",
       "Total Savings": "Ahorros totales",
       "Total Shares": "Acciones totales",
@@ -2710,6 +2721,7 @@
       "View Journal Entry": "Ver entrada de diario",
       "View Report": "Ver reporte",
       "View Signature": "Ver firma",
+      "Volume": "Volumen",
       "Waived": "Renunciado",
       "Website": "Sitio web",
       "Wednesday": "Miércoles",
@@ -3458,10 +3470,12 @@
       "No client was found": "No se encontró ningún cliente",
       "No data found": "Datos no encontrados",
       "No permissions found": "No se encontraron permisos",
+      "NonTriggered": "No disparado",
       "No penalties found": "No se encontraron penalizaciones",
       "NoDocuments": "No hay documentos disponibles.",
       "NoFileSelected": "No se ha seleccionado ningún archivo",
       "NoNotesAvailable": "No hay notas disponibles",
+      "No Loan Product was found": "No se encontró ningún producto de crédito",
       "No loan locked available": "No hay Crédito bloqueado disponible.",
       "No notifications": "Sin notificaciones",
       "No pending loan available for disbursal": "No hay Crédito pendiente disponible para curso.",
@@ -3592,6 +3606,7 @@
       "View system version, server and licensing information": "Ver información de versión del sistema, servidor y licenciamiento",
       "Table": "Tabla",
       "Tax Components": "Componentes tributarios",
+      "Triggered": "Disparado",
       "tenant_app_key": "clave_aplicación_inquilino",
       "Email": "Correo electrónico",
       "Tellers": "Cajeros",
@@ -3835,7 +3850,11 @@
         "WAIVEINTERESTPORTION": "Exonerar Porción de Interés",
         "WITHDRAW": "Retirar",
         "WITHDRAWAL": "Retiro",
-        "WRITEOFF": "Castigo por Incobrable"
+        "WRITEOFF": "Castigo por Incobrable",
+        "ALL": "Todas",
+        "BYPASS": "Omitir",
+        "CHECKER": "Verificador",
+        "REPORTING": "Reportes"
       },
       "entities": {
         "ACCOUNTINGRULE": "Regla Contable",
@@ -3943,7 +3962,10 @@
         "TELLER": "Caja",
         "TEMPLATE": "Plantilla",
         "USER": "Usuario",
-        "WORKINGDAYS": "Días Laborales"
+        "WORKINGDAYS": "Días Laborales",
+        "FUNCTIONS": "Funciones",
+        "TWOFACTOR": "Doble Factor",
+        "SUPER_USER": "Superusuario"
       }
     },
     "auditTrail": {
@@ -4362,5 +4384,7 @@
     "YE": "Yemen",
     "ZM": "Zambia",
     "ZW": "Zimbabue"
-  }
+  },
+  "Deactivate Role": "Desactivar Rol",
+  "Delete Role": "Borrar Rol"
 }
