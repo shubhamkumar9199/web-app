@@ -3404,6 +3404,7 @@
       "LoanAccountCustomSnapshotBusinessEvent": "PréstamoCuentaPersonalizadoInstantáneaNegocioEvento",
       "LoanAccountDelinquencyPauseChangedBusinessEvent": "PréstamoCuentaMorosidadPausaCambiadoNegocioEvento",
       "LoanAccountSnapshotBusinessEvent": "PréstamoCuentaInstantáneaNegocioEvento",
+      "Loan Account Details": "Detalles de la cuenta de Crédito",
       "Loan Account Actions": "Acciones de la cuenta de Crédito",
       "Loan Collateral Details": "Detalles de la garantía del Crédito",
       "Loan Disbursal": "Curso del Crédito",
@@ -3529,6 +3530,7 @@
       "Provisioning criteria definitions": "Complete todas las definiciones de criterios de aprovisionamiento.",
       "Precedes of": "Precede de",
       "Recurring Deposit Account Charges": "Comisiones recurrentes de la cuenta de depósito",
+      "Recurring Deposit Account Details": "Detalles de la cuenta de depósito recurrente",
       "Recurring Deposit Account Interest Rate Chart": "Tabla de tasas de interés de cuentas de Depósito Recurrentes",
       "Recurring Deposit Account Standing Instructions": "Instrucciones para la situación de la cuenta de Depósito Recurrente",
       "Recurring Deposit Account Transactions": "Transacciones recurrentes en cuentas de depósito",
@@ -3594,6 +3596,7 @@
       "Share Products Dividends": "Dividendos de Productos de Acciones",
       "Share products define the rules, default settings": "Los productos de acciones definen las reglas, la configuración predeterminada y las restricciones para las acciones y los dividendos de una institución financiera. Un producto de acciones proporciona una plantilla para múltiples cuentas que son o serán propiedad de los clientes de la institución financiera.",
       "Shares": "Acciones",
+      "Shares Account Details": "Detalles de la cuenta de acciones",
       "Shares Account Actions": "Acciones de la cuenta de acciones",
       "Shares Account Charges": "Comisiones de la cuenta de acciones",
       "Shares Account Dividends": "Dividendos de cuentas de acciones",
@@ -3761,7 +3764,8 @@
       "Failed to update payment type. Please try again.": "Error al actualizar el tipo de pago. Intente de nuevo.",
       "Search and assign this beneficiary to an existing Mifos client account": "Buscar y asignar este beneficiario a una cuenta de cliente Mifos existente",
       "Failed to search clients. Please try again.": "Error al buscar clientes. Intente de nuevo.",
-      "Process Remittance": "Procesar Remesa"
+      "Process Remittance": "Procesar Remesa",
+      "Loan Originators": "Originadores de créditos"
     },
     "permissions": {
       "actions": {

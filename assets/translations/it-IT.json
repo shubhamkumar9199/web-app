@@ -3401,6 +3401,7 @@
       "LoanAccountCustomSnapshotBusinessEvent": "LoanAccountCustomSnapshotBusinessEvent",
       "LoanAccountDelinquencyPauseChangedBusinessEvent": "LoanAccountDelinquencyPauseChangedBusinessEvent",
       "LoanAccountSnapshotBusinessEvent": "LoanAccountSnapshotBusinessEvent",
+      "Loan Account Details": "Dettagli del conto di prestito",
       "Loan Account Actions": "Azioni del conto di prestito",
       "Loan Collateral Details": "Dettagli della garanzia del prestito",
       "Loan Disbursal": "Erogazione del prestito",
@@ -3526,6 +3527,7 @@
       "Provisioning criteria definitions": "Compila tutte le definizioni dei criteri di provisioning.",
       "Precedes of": "Precede di",
       "Recurring Deposit Account Charges": "Spese ricorrenti sul conto di deposito",
+      "Recurring Deposit Account Details": "Dettagli del conto di deposito ricorrente",
       "Recurring Deposit Account Interest Rate Chart": "Grafico del tasso di interesse del conto di deposito ricorrente",
       "Recurring Deposit Account Standing Instructions": "Istruzioni per la permanenza del conto di deposito ricorrente",
       "Recurring Deposit Account Transactions": "Transazioni ricorrenti del conto di deposito",
@@ -3591,6 +3593,7 @@
       "Share Products Dividends": "Condividi i dividendi dei prodotti",
       "Share products define the rules, default settings": "I prodotti azionari definiscono le regole, le impostazioni predefinite e i vincoli per le azioni e i dividendi di un istituto finanziario. Un prodotto azionario fornisce un modello per più conti che sono o saranno detenuti dai clienti dell'istituto finanziario.",
       "Shares": "Azioni",
+      "Shares Account Details": "Dettagli del conto azioni",
       "Shares Account Actions": "Condivide le azioni dell'account",
       "Shares Account Charges": "Condivide le spese del conto",
       "Shares Account Dividends": "Dividendi del conto azionario",
@@ -3758,7 +3761,8 @@
       "Failed to update payment type. Please try again.": "Aggiornamento del tipo di pagamento non riuscito. Si prega di riprovare.",
       "Search and assign this beneficiary to an existing Mifos client account": "Cerca e assegna questo beneficiario a un conto cliente Mifos esistente",
       "Failed to search clients. Please try again.": "Ricerca clienti non riuscita. Si prega di riprovare.",
-      "Process Remittance": "Elabora rimessa"
+      "Process Remittance": "Elabora rimessa",
+      "Loan Originators": "Originatori di prestiti"
     },
     "permissions": {
       "actions": {

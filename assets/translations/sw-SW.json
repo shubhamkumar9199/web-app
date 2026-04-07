@@ -3398,6 +3398,7 @@
       "LoanAccountCustomSnapshotBusinessEvent": "LoanAccountCustomSnapshotBusinessEvent",
       "LoanAccountDelinquencyPauseChangedBusinessEvent": "LoanAccountDelinquencyPauseChangedBusinessEvent",
       "LoanAccountSnapshotBusinessEvent": "LoanAccountSnapshotBusinessEvent",
+      "Loan Account Details": "Maelezo ya Akaunti ya Mkopo",
       "Loan Account Actions": "Vitendo vya Akaunti ya Mkopo",
       "Loan Collateral Details": "Maelezo ya Dhamana ya Mkopo",
       "Loan Disbursal": "Utoaji wa mkopo",
@@ -3523,6 +3524,7 @@
       "Provisioning criteria definitions": "Tafadhali jaza ufafanuzi wa vigezo vyote vya utoaji.",
       "Precedes of": "Hutangulia",
       "Recurring Deposit Account Charges": "Malipo ya Akaunti ya Amana ya Mara kwa Mara",
+      "Recurring Deposit Account Details": "Maelezo ya Akaunti ya Amana Inayojirudia",
       "Recurring Deposit Account Interest Rate Chart": "Chati ya Kiwango cha Riba cha Akaunti ya Amana ya Mara kwa Mara",
       "Recurring Deposit Account Standing Instructions": "Maagizo ya Kudumu ya Akaunti ya Amana",
       "Recurring Deposit Account Transactions": "Miamala ya Akaunti ya Amana ya Mara kwa Mara",
@@ -3588,6 +3590,7 @@
       "Share Products Dividends": "Shiriki Gawio la Bidhaa",
       "Share products define the rules, default settings": "Bidhaa zinazoshirikiwa hufafanua sheria, mipangilio chaguo-msingi na vikwazo vya Hisa na gawio la taasisi ya fedha. Bidhaa inayoshirikiwa hutoa kiolezo cha akaunti nyingi ambazo zinashikiliwa au zitashikiliwa na wateja wa taasisi ya fedha.",
       "Shares": "Hisa",
+      "Shares Account Details": "Maelezo ya Akaunti ya Hisa",
       "Shares Account Actions": "Vitendo vya Akaunti ya Hisa",
       "Shares Account Charges": "Inashiriki Malipo ya Akaunti",
       "Shares Account Dividends": "Gawio la Akaunti ya Hisa",
@@ -3755,7 +3758,8 @@
       "Failed to update payment type. Please try again.": "Imeshindwa kusasisha aina ya malipo. Tafadhali jaribu tena.",
       "Search and assign this beneficiary to an existing Mifos client account": "Tafuta na uweke mpokeaji huyu kwenye akaunti ya mteja wa Mifos iliyopo",
       "Failed to search clients. Please try again.": "Imeshindwa kutafuta wateja. Tafadhali jaribu tena.",
-      "Process Remittance": "Chakata uhawilishaji"
+      "Process Remittance": "Chakata uhawilishaji",
+      "Loan Originators": "Waanzilishi wa Mikopo"
     },
     "permissions": {
       "actions": {

@@ -3402,6 +3402,7 @@
       "LoanAccountCustomSnapshotBusinessEvent": "LoanAccountCustomSnapshotBusinessEvent",
       "LoanAccountDelinquencyPauseChangedBusinessEvent": "LoanAccountDelinquencyPauseChangedBusinessEvent",
       "LoanAccountSnapshotBusinessEvent": "LoanAccountSnapshotBusinessEvent",
+      "Loan Account Details": "Detalhes da conta de empréstimo",
       "Loan Account Actions": "Ações de conta de empréstimo",
       "Loan Collateral Details": "Detalhes da garantia do empréstimo",
       "Loan Disbursal": "Desembolso de empréstimo",
@@ -3527,6 +3528,7 @@
       "Provisioning criteria definitions": "Preencha todas as definições de critérios de provisionamento.",
       "Precedes of": "Precede de",
       "Recurring Deposit Account Charges": "Cobranças recorrentes da conta de depósito",
+      "Recurring Deposit Account Details": "Detalhes da conta de depósito recorrente",
       "Recurring Deposit Account Interest Rate Chart": "Gráfico de taxas de juros de contas de depósito recorrente",
       "Recurring Deposit Account Standing Instructions": "Instruções sobre a situação da conta de depósito recorrente",
       "Recurring Deposit Account Transactions": "Transações recorrentes em contas de depósito",
@@ -3592,6 +3594,7 @@
       "Share Products Dividends": "Compartilhe dividendos de produtos",
       "Share products define the rules, default settings": "Os produtos de ações definem as regras, configurações padrão e restrições para as ações e dividendos de uma instituição financeira. Um produto de ações fornece um modelo para várias contas que são ou serão mantidas pelos clientes da instituição financeira.",
       "Shares": "Ações",
+      "Shares Account Details": "Detalhes da conta de ações",
       "Shares Account Actions": "Compartilha ações da conta",
       "Shares Account Charges": "Encargos da conta de ações",
       "Shares Account Dividends": "Dividendos da conta de ações",
@@ -3759,7 +3762,8 @@
       "Failed to update payment type. Please try again.": "Falha ao atualizar o tipo de pagamento. Tente novamente.",
       "Search and assign this beneficiary to an existing Mifos client account": "Pesquise e atribua este beneficiário a uma conta de cliente Mifos existente",
       "Failed to search clients. Please try again.": "Falha ao pesquisar clientes. Tente novamente.",
-      "Process Remittance": "Processar remessa"
+      "Process Remittance": "Processar remessa",
+      "Loan Originators": "Agentes de Crédito"
     },
     "permissions": {
       "actions": {

@@ -3403,6 +3403,7 @@
       "LoanAccountCustomSnapshotBusinessEvent": "LoanAccountCustomSnapshotBusinessEvent",
       "LoanAccountDelinquencyPauseChangedBusinessEvent": "LoanAccountDelinquencyPauseChangedBusinessEvent",
       "LoanAccountSnapshotBusinessEvent": "LoanAccountSnapshotBusinessEvent",
+      "Loan Account Details": "Paskolos sąskaitos rekvizitai",
       "Loan Account Actions": "Paskolos sąskaitos veiksmai",
       "Loan Collateral Details": "Paskolos užstato informacija",
       "Loan Disbursal": "Paskolos išmokėjimas",
@@ -3528,6 +3529,7 @@
       "Provisioning criteria definitions": "Užpildykite visus teikimo kriterijų apibrėžimus.",
       "Precedes of": "Prieštaravimai",
       "Recurring Deposit Account Charges": "Pasikartojantys indėlio sąskaitos mokesčiai",
+      "Recurring Deposit Account Details": "Reguliariųjų indėlių sąskaitos rekvizitai",
       "Recurring Deposit Account Interest Rate Chart": "Periodinio indėlio sąskaitos palūkanų normų diagrama",
       "Recurring Deposit Account Standing Instructions": "Periodinio indėlio sąskaitos nuolatinės instrukcijos",
       "Recurring Deposit Account Transactions": "Periodinės indėlio sąskaitos operacijos",
@@ -3593,6 +3595,7 @@
       "Share Products Dividends": "Dalintis produktais dividendais",
       "Share products define the rules, default settings": "Bendrinimo produktai apibrėžia taisykles, numatytuosius nustatymus ir apribojimus finansų įstaigos akcijoms ir dividendams. Dalijimosi produktas suteikia šabloną kelioms paskyroms, kurias turi arba turės finansų įstaigos klientai.",
       "Shares": "Akcijos",
+      "Shares Account Details": "Akcijų sąskaitos informacija",
       "Shares Account Actions": "Bendrina paskyros veiksmus",
       "Shares Account Charges": "Dalijasi sąskaitos mokesčiais",
       "Shares Account Dividends": "Dalina sąskaitos dividendus",
@@ -3760,7 +3763,8 @@
       "Failed to update payment type. Please try again.": "Nepavyko atnaujinti mokėjimo tipo. Bandykite dar kartą.",
       "Search and assign this beneficiary to an existing Mifos client account": "Ieškokite ir priskirkite šį gavėją esamai Mifos kliento paskyrai",
       "Failed to search clients. Please try again.": "Nepavyko ieškoti klientų. Bandykite dar kartą.",
-      "Process Remittance": "Apdoroti pervedimą"
+      "Process Remittance": "Apdoroti pervedimą",
+      "Loan Originators": "Paskolų teikėjai"
     },
     "permissions": {
       "actions": {

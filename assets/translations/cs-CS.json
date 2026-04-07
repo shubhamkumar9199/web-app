@@ -3403,6 +3403,7 @@
       "LoanAccountCustomSnapshotBusinessEvent": "LoanAccountCustomSnapshotBusinessEvent",
       "LoanAccountDelinquencyPauseChangedBusinessEvent": "LoanAccount DelikvencePauseChangedBusinessEvent",
       "LoanAccountSnapshotBusinessEvent": "LoanAccountSnapshotBusinessEvent",
+      "Loan Account Details": "Detaily úvěrového účtu",
       "Loan Account Actions": "Akce na úvěrovém účtu",
       "Loan Collateral Details": "Podrobnosti o zajištění úvěru",
       "Loan Disbursal": "Vyplacení půjčky",
@@ -3527,6 +3528,7 @@
       "Provisioning criteria definitions": "Vyplňte všechny definice kritérií poskytování.",
       "Precedes of": "Předchází",
       "Recurring Deposit Account Charges": "Opakované poplatky za vkladový účet",
+      "Recurring Deposit Account Details": "Detaily účtu opakovaného vkladu",
       "Recurring Deposit Account Interest Rate Chart": "Graf úrokových sazeb pro opakující se vkladový účet",
       "Recurring Deposit Account Standing Instructions": "Pokyny k trvalému vkladovému účtu",
       "Recurring Deposit Account Transactions": "Opakující se transakce na vkladovém účtu",
@@ -3592,6 +3594,7 @@
       "Share Products Dividends": "Sdílejte produkty Dividendy",
       "Share products define the rules, default settings": "Sdílené produkty definují pravidla, výchozí nastavení a omezení pro akcie a dividendy finanční instituce. Sdílený produkt poskytuje šablonu pro více účtů, které jsou nebo budou drženy klienty finanční instituce.",
       "Shares": "akcie",
+      "Shares Account Details": "Detaily účtu akcií",
       "Shares Account Actions": "Akce na účtu akcií",
       "Shares Account Charges": "Poplatky na účtu akcií",
       "Shares Account Dividends": "Akcie Účet Dividendy",
@@ -3757,7 +3760,8 @@
       "Failed to update payment type. Please try again.": "Aktualizace typu platby se nezdařila. Zkuste to prosím znovu.",
       "Search and assign this beneficiary to an existing Mifos client account": "Vyhledejte a přiřaďte tohoto příjemce k existujícímu účtu klienta Mifos",
       "Failed to search clients. Please try again.": "Hledání klientů se nezdařilo. Zkuste to prosím znovu.",
-      "Process Remittance": "Zpracovat remitenci"
+      "Process Remittance": "Zpracovat remitenci",
+      "Loan Originators": "Poskytovatelé úvěrů"
     },
     "permissions": {
       "actions": {

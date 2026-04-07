@@ -3437,6 +3437,7 @@
       "LoanAccountCustomSnapshotBusinessEvent": "PréstamoCuentaPersonalizadoInstantáneaNegocioEvento",
       "LoanAccountDelinquencyPauseChangedBusinessEvent": "PréstamoCuentaMorosidadPausaCambiadoNegocioEvento",
       "LoanAccountSnapshotBusinessEvent": "PréstamoCuentaInstantáneaNegocioEvento",
+      "Loan Account Details": "Detalles de la cuenta de préstamo",
       "Loan Account Actions": "Acciones de la cuenta de Crédito",
       "Loan Collateral Details": "Detalles de la garantía del Crédito",
       "Loan Disbursal": "Dispersión del Crédito",
@@ -3562,6 +3563,7 @@
       "Provisioning criteria definitions": "Complete todas las definiciones de criterios de aprovisionamiento.",
       "Precedes of": "Precede de",
       "Recurring Deposit Account Charges": "Comisiones recurrentes de la cuenta de depósito",
+      "Recurring Deposit Account Details": "Detalles de la cuenta de depósito recurrente",
       "Recurring Deposit Account Interest Rate Chart": "Tabla de tasas de interés de cuentas de Depósito Recurrentes",
       "Recurring Deposit Account Standing Instructions": "Instrucciones para la situación de la cuenta de Depósito Recurrente",
       "Recurring Deposit Account Transactions": "Transacciones recurrentes en cuentas de depósito",
@@ -3627,6 +3629,7 @@
       "Share Products Dividends": "Dividendos de Productos de Acciones",
       "Share products define the rules, default settings": "Los productos de acciones definen las reglas, la configuración predeterminada y las restricciones para las acciones y los dividendos de una institución financiera. Un producto de acciones proporciona una plantilla para múltiples cuentas que son o serán propiedad de los clientes de la institución financiera.",
       "Shares": "Acciones",
+      "Shares Account Details": "Detalles de la cuenta de acciones",
       "Shares Account Actions": "Acciones de la cuenta de acciones",
       "Shares Account Charges": "Comisiones de la cuenta de acciones",
       "Shares Account Dividends": "Dividendos de cuentas de acciones",
@@ -3777,7 +3780,8 @@
       "“Maker-Checker” principle requires every tasks": "El principio \"Maker-Checker\" requiere que dos personas completen cada tarea para reducir la posibilidad de errores y uso indebido. Una persona inicia el proceso y la segunda lo completa.",
       "Buy Down Fees": "Tarifas de compra",
       "UploadDocumentHint": "Suba un PDF o imagen para generar una vista previa.",
-      "Process Remittance": "Procesar Remesa"
+      "Process Remittance": "Procesar Remesa",
+      "Loan Originators": "Comisionistas de créditos"
     },
     "permissions": {
       "actions": {

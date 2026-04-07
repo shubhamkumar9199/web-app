@@ -3400,6 +3400,7 @@
       "LoanAccountCustomSnapshotBusinessEvent": "LoanAccountCustomSnapshotBusinessEvent",
       "LoanAccountDelinquencyPauseChangedBusinessEvent": "LoanAccountDelinquencyPauseChangedBusinessEvent",
       "LoanAccountSnapshotBusinessEvent": "LoanAccountSnapshotBusinessEvent",
+      "Loan Account Details": "ऋण खाता विवरण",
       "Loan Account Actions": "ऋण खाता कार्यहरू",
       "Loan Collateral Details": "ऋण संपार्श्विक विवरण",
       "Loan Disbursal": "ऋण वितरण",
@@ -3525,6 +3526,7 @@
       "Provisioning criteria definitions": "कृपया सबै प्रावधान मापदण्ड परिभाषाहरू भर्नुहोस्।",
       "Precedes of": "को पूर्ववर्ती",
       "Recurring Deposit Account Charges": "आवर्ती जम्मा खाता शुल्कहरू",
+      "Recurring Deposit Account Details": "आवर्ती निक्षेप खाता विवरण",
       "Recurring Deposit Account Interest Rate Chart": "आवर्ती जम्मा खाता ब्याज दर चार्ट",
       "Recurring Deposit Account Standing Instructions": "आवर्ती जम्मा खाता स्थायी निर्देशनहरू",
       "Recurring Deposit Account Transactions": "आवर्ती जम्मा खाता लेनदेन",
@@ -3590,6 +3592,7 @@
       "Share Products Dividends": "शेयर उत्पादन लाभांश",
       "Share products define the rules, default settings": "शेयर उत्पादनहरूले वित्तीय संस्थाको शेयर र लाभांशका लागि नियमहरू, पूर्वनिर्धारित सेटिङहरू, र अवरोधहरू परिभाषित गर्दछ। एक सेयर उत्पादनले वित्तीय संस्थाका ग्राहकहरूद्वारा आयोजित वा राख्ने बहु खाताहरूको लागि टेम्प्लेट प्रदान गर्दछ।",
       "Shares": "सेयरहरू",
+      "Shares Account Details": "सेयर खाता विवरण",
       "Shares Account Actions": "साझेदारी खाता कार्यहरू",
       "Shares Account Charges": "शेयर खाता शुल्कहरू",
       "Shares Account Dividends": "शेयर खाता लाभांश",
@@ -3757,7 +3760,8 @@
       "Failed to update payment type. Please try again.": "भुक्तानी प्रकार अद्यावधिक गर्न असफल भयो। कृपया पुनः प्रयास गर्नुहोस्।",
       "Search and assign this beneficiary to an existing Mifos client account": "यो लाभग्राहीलाई खोजेर अवस्थित Mifos ग्राहक खातामा तोक्नुहोस्",
       "Failed to search clients. Please try again.": "ग्राहकहरू खोज्न असफल भयो। कृपया पुनः प्रयास गर्नुहोस्।",
-      "Process Remittance": "रेमिट्यान्स प्रक्रिया गर्नुहोस्"
+      "Process Remittance": "रेमिट्यान्स प्रक्रिया गर्नुहोस्",
+      "Loan Originators": "ऋण सुरुवातकर्ताहरू"
     },
     "permissions": {
       "actions": {
