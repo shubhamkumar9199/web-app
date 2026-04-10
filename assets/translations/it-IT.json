@@ -937,6 +937,7 @@
       "on": "SU",
       "every": "ogni",
       "Password validation": "La password deve contenere almeno {{minchar}} caratteri, di cui 1 carattere maiuscolo, minuscolo e speciale e non deve essere composta da caratteri ripetuti o spazi bianchi",
+      "Must be a positive integer": "Deve essere un numero intero positivo",
       "Must be at least": "Deve essere almeno",
       "Must be less or equal to": "Deve essere minore o uguale a",
       "must be after or equal to start date": "deve essere successiva o uguale alla data di inizio",
@@ -997,6 +998,7 @@
       "Beneficiary": "Beneficiario",
       "Beneficiary Selection": "Selezione del beneficiario",
       "Block Savings Account": "Bloccare il conto di risparmio",
+      "Breach Configuration": "Configurazione della violazione",
       "Bulk Import": "Importazione in blocco",
       "Bulk Loan Reassignment": "Riassegnazione del prestito in blocco",
       "Business Rule Parameters": "Parametri delle regole aziendali",
@@ -1557,6 +1559,7 @@
       "Beneficiary": "Beneficiario",
       "Branch": "Ramo",
       "Branch Office": "Filiale",
+      "Breach": "Violazione",
       "Breakdown": "Guasto",
       "Boolean": "Booleano",
       "Business Date": "Data lavorativa",
@@ -1837,6 +1840,7 @@
       "Enable Down Payment": "Abilita l'acconto",
       "Enable Lock-in Period": "Abilita periodo di blocco",
       "Enable Multiple Disbursals": "Abilita esborsi multipli",
+      "Enable Near Breach": "Abilita violazione prossima",
       "Enabled": "Abilitato",
       "End Date": "Data di fine",
       "End Point": "Punto finale",
@@ -2227,6 +2231,9 @@
       "Name": "Nome",
       "Name Decorated": "Nome decorato",
       "Name of the Organization": "Nome dell'organizzazione",
+      "Near Breach Evaluation Frequency": "Frequenza di valutazione della violazione prossima",
+      "Near Breach Evaluation Frequency Type": "Tipo di frequenza di valutazione della violazione prossima",
+      "Near Breach Threshold": "Soglia di violazione prossima",
       "Net Cash": "Contanti netti",
       "New Interest Rate": "Nuovo tasso di interesse",
       "Next Meeting Date": "Data del prossimo incontro",
@@ -3247,6 +3254,7 @@
       "Define Tax Groups": "Definire i gruppi fiscali",
       "Define Tax components": "Definire le componenti fiscali",
       "Define Tax components and Tax groups": "Definire i componenti fiscali e i gruppi fiscali",
+      "Define breaches for working capital products": "Definire le violazioni per i prodotti di capitale circolante",
       "Define charges/penalties for loan products, savings and deposit products": "Definire oneri/penalità per prodotti di prestito, di risparmio e di deposito",
       "Define collaterals for Collateral Management": "Definire le garanzie per la gestione delle garanzie",
       "Define delinquency bucket as set of ranges": "Definire l'intervallo di insolvenza come insieme di intervalli",
@@ -3762,7 +3770,8 @@
       "Search and assign this beneficiary to an existing Mifos client account": "Cerca e assegna questo beneficiario a un conto cliente Mifos esistente",
       "Failed to search clients. Please try again.": "Ricerca clienti non riuscita. Si prega di riprovare.",
       "Process Remittance": "Elabora rimessa",
-      "Loan Originators": "Originatori di prestiti"
+      "Loan Originators": "Originatori di prestiti",
+      "Loan Reschedules": "Riprogrammazioni dei prestiti"
     },
     "permissions": {
       "actions": {
@@ -4399,5 +4408,59 @@
     "ZW": "Zimbabwe"
   },
   "Deactivate Role": "Disattiva ruolo",
-  "Delete Role": "Elimina ruolo"
+  "Delete Role": "Elimina ruolo",
+  "clients": {
+    "actions": {
+      "close": {
+        "success": "Cliente chiuso con successo."
+      },
+      "reject": {
+        "success": "Cliente rifiutato con successo."
+      },
+      "withdraw": {
+        "success": "Cliente ritirato con successo."
+      },
+      "reactivate": {
+        "success": "Cliente riattivato con successo.",
+        "failure": "Impossibile riattivare il cliente."
+      },
+      "activate": {
+        "success": "Cliente attivato con successo.",
+        "failure": "Impossibile attivare il cliente."
+      },
+      "acceptTransfer": {
+        "success": "Trasferimento cliente accettato con successo."
+      },
+      "rejectTransfer": {
+        "success": "Trasferimento cliente rifiutato con successo."
+      },
+      "undoTransfer": {
+        "success": "Trasferimento cliente annullato con successo."
+      },
+      "undoRejection": {
+        "success": "Rifiuto cliente annullato con successo."
+      },
+      "transfer": {
+        "success": "Trasferimento cliente proposto con successo.",
+        "failure": "Impossibile proporre il trasferimento del cliente."
+      },
+      "addCharge": {
+        "success": "Addebito cliente aggiunto con successo."
+      },
+      "addCollateral": {
+        "success": "Garanzia cliente aggiunta con successo."
+      },
+      "assignStaff": {
+        "success": "Personale assegnato al cliente con successo.",
+        "failure": "Impossibile assegnare il personale al cliente."
+      },
+      "updateSavingsAccount": {
+        "success": "Conto di risparmio del cliente aggiornato con successo."
+      },
+      "takeSurvey": {
+        "success": "Sondaggio inviato con successo.",
+        "failure": "Impossibile inviare il sondaggio."
+      }
+    }
+  }
 }

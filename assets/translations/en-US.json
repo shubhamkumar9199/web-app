@@ -942,6 +942,7 @@
       "on": "on",
       "every": "every",
       "Password validation": "The password should contain a minimum of {{minchar}} characters, including 1 uppercase, 1 lowercase and a special character and should not include repeated characters or spaces.",
+      "Must be a positive integer": "Must be a positive integer",
       "Must be at least": "Must be at least",
       "Must be less or equal to": "Must be less or equal to",
       "must be after or equal to start date": "must be after or equal to start date",
@@ -1003,6 +1004,7 @@
       "Beneficiary": "Beneficiary",
       "Beneficiary Selection": "Beneficiary Selection",
       "Block Savings Account": "Block Savings Account",
+      "Breach Configuration": "Breach Configuration",
       "Bulk Import": "Bulk Import",
       "Bulk Loan Reassignment": "Bulk Loan Reassignment",
       "Business Rule Parameters": "Business Rule Parameters",
@@ -1564,6 +1566,7 @@
       "Beneficiary Selection": "Beneficiary Selection",
       "Branch": "Branch",
       "Branch Office": "Branch Office",
+      "Breach": "Breach",
       "Breakdown": "Breakdown",
       "Boolean": "Boolean",
       "Business Date": "Business Date",
@@ -1848,6 +1851,7 @@
       "Enable Down Payment": "Enable Down Payment",
       "Enable Lock-in Period": "Enable Lock-in Period",
       "Enable Multiple Disbursals": "Enable Multiple Disbursals",
+      "Enable Near Breach": "Enable Near Breach",
       "Allow full term for each tranche": "Allow full term for each tranche",
       "Enabled": "Enabled",
       "End Date": "End Date",
@@ -2246,6 +2250,9 @@
       "Name": "Name",
       "Name Decorated": "Name Decorated",
       "Name of the Organization": "Name of the Organization",
+      "Near Breach Evaluation Frequency": "Near Breach Evaluation Frequency",
+      "Near Breach Evaluation Frequency Type": "Near Breach Evaluation Frequency Type",
+      "Near Breach Threshold": "Near Breach Threshold",
       "Net Cash": "Net Cash",
       "New Interest Rate": "New Interest Rate",
       "Next Meeting Date": "Next Meeting Date",
@@ -3287,6 +3294,7 @@
       "Define Tax Groups": "Define Tax Groups",
       "Define Tax components": "Define Tax components",
       "Define Tax components and Tax groups": "Define Tax components and Tax groups",
+      "Define breaches for working capital products": "Define breaches for working capital products",
       "Define charges/penalties for loan products, savings and deposit products": "Define charges/penalties for loan products, savings and deposit products",
       "Define collaterals for Collateral Management": "Define collaterals for Collateral Management",
       "Define delinquency bucket as set of ranges": "Define delinquency bucket as set of ranges",
@@ -3549,6 +3557,7 @@
       "Loan Term Variations": "Loan Term Variations",
       "Loan View": "Loan View",
       "Loan Originators": "Loan Originators",
+      "Loan Reschedules": "Loan Reschedules",
       "Loan products define the rules, default settings": "Loan products define the rules, default settings, and constraints for a financial institution's lending offerings. A loan product provides a template for multiple loan accounts for the financial institution's clients.",
       "Loan": "Loan",
       "Loans": "Loans",
@@ -4533,5 +4542,59 @@
     "YE": "Yemen",
     "ZM": "Zambia",
     "ZW": "Zimbabwe"
+  },
+  "clients": {
+    "actions": {
+      "close": {
+        "success": "Client closed successfully."
+      },
+      "reject": {
+        "success": "Client rejected successfully."
+      },
+      "withdraw": {
+        "success": "Client withdrawn successfully."
+      },
+      "reactivate": {
+        "success": "Client reactivated successfully.",
+        "failure": "Failed to reactivate client."
+      },
+      "activate": {
+        "success": "Client activated successfully.",
+        "failure": "Failed to activate client."
+      },
+      "acceptTransfer": {
+        "success": "Client transfer accepted successfully."
+      },
+      "rejectTransfer": {
+        "success": "Client transfer rejected successfully."
+      },
+      "undoTransfer": {
+        "success": "Client transfer undone successfully."
+      },
+      "undoRejection": {
+        "success": "Client rejection undone successfully."
+      },
+      "transfer": {
+        "success": "Client transfer proposed successfully.",
+        "failure": "Failed to propose client transfer."
+      },
+      "addCharge": {
+        "success": "Client charge added successfully."
+      },
+      "addCollateral": {
+        "success": "Client collateral added successfully."
+      },
+      "assignStaff": {
+        "success": "Staff assigned to client successfully.",
+        "failure": "Failed to assign staff to client."
+      },
+      "updateSavingsAccount": {
+        "success": "Client savings account updated successfully."
+      },
+      "takeSurvey": {
+        "success": "Survey submitted successfully.",
+        "failure": "Failed to submit survey."
+      }
+    }
   }
 }
