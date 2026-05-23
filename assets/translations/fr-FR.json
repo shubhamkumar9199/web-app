@@ -756,7 +756,8 @@
       "PRINT": "Imprimer",
       "DONE": "Terminer",
       "Submitting": "Envoi en cours",
-      "OK": "OK"
+      "OK": "OK",
+      "undo_account_transfer": "Annuler le transfert de compte"
     },
     "catalogs": {
       "Interest payment waiver": "Renonciation au paiement des intérêts",
@@ -1025,6 +1026,7 @@
       "move to previous working day": "déplacer au jour ouvrable précédent",
       "move to next meeting day": "déplacer au jour de réunion suivant",
       "Working Capital": "Fonds de roulement",
+      "Working Capital Loan": "Prêt en fonds de roulement",
       "DAYS": "JOURS",
       "MONTHS": "MOIS",
       "YEARS": "ANNÉES",
@@ -1551,7 +1553,8 @@
       "You have created": "Vous avez créé",
       "identifier id": "identifiant",
       "savings-transaction-datatable-tab works": "l'onglet datatable-transaction-d'épargne fonctionne",
-      "successfully select option": "avec succès. Veuillez sélectionner parmi les options ci-dessous pour continuer."
+      "successfully select option": "avec succès. Veuillez sélectionner parmi les options ci-dessous pour continuer.",
+      "undo_account_transfer": "Annuler le transfert de compte"
     },
     "inputs": {
       "# Remittance": "# Transfert",
@@ -1639,7 +1642,7 @@
       "Amount Range": "Fourchette de montant",
       "Amount Range From": "Fourchette de montant",
       "Amount Range To": "Fourchette de montant à",
-      "Amount Recieved/Returned": "Montant reçu/retourné",
+      "Amount Received/Returned": "Montant reçu/retourné",
       "Amount to be Reserved": "Montant à réserver",
       "Annual Fees Transaction Date": "Date de transaction des frais annuels",
       "Applicable From Date": "Applicable à partir de la date",
@@ -2660,7 +2663,6 @@
       "Provisioning Criteria": "Critères d'approvisionnement",
       "Purchase Price Ratio": "Ratio du prix d'achat",
       "Purchased/Redeemed Price": "Prix ​​d'achat/de rachat",
-      "Purhcased/Redeemed Price": "Prix ​​d'achat/de rachat",
       "Qualification": "Qualification",
       "Quantity": "Quantité",
       "Quantity can not be more than": "La quantité ne peut pas dépasser",
@@ -3273,7 +3275,8 @@
       "Are you sure you want to": "Êtes-vous sûr de vouloir",
       "the productmix component with id": "le composant productmix avec l'identifiant",
       "the Reschedule Loan": "la révision du prêt",
-      "the Transaction Type": "le type de transaction"
+      "the Transaction Type": "le type de transaction",
+      "undo_account_transfer": "Êtes-vous sûr de vouloir annuler ce transfert de compte ?"
     },
     "text": {
       "A": "UN",

@@ -756,7 +756,8 @@
       "PRINT": "인쇄",
       "DONE": "완료",
       "Submitting": "제출 중",
-      "OK": "확인"
+      "OK": "확인",
+      "undo_account_transfer": "계좌 이체 취소"
     },
     "catalogs": {
       "Interest payment waiver": "이자 지급 면제",
@@ -1025,6 +1026,7 @@
       "move to previous working day": "이전 근무일로 이동",
       "move to next meeting day": "다음 회의일로 이동",
       "Working Capital": "운전자본",
+      "Working Capital Loan": "운전자본 대출",
       "DAYS": "날",
       "MONTHS": "개월",
       "YEARS": "연령",
@@ -1549,7 +1551,8 @@
       "You have created": "당신이 창조했습니다",
       "identifier id": "식별자 ID",
       "savings-transaction-datatable-tab works": "저축 거래 데이터 테이블 탭이 작동합니다.",
-      "successfully select option": "성공적으로. 계속 진행하려면 아래 옵션 중에서 선택하세요."
+      "successfully select option": "성공적으로. 계속 진행하려면 아래 옵션 중에서 선택하세요.",
+      "undo_account_transfer": "계좌 이체 취소"
     },
     "inputs": {
       "# Remittance": "# 송금",
@@ -1637,7 +1640,7 @@
       "Amount Range": "금액 범위",
       "Amount Range From": "금액 범위: 부터",
       "Amount Range To": "금액 범위:",
-      "Amount Recieved/Returned": "수령/반품 금액",
+      "Amount Received/Returned": "수령/반품 금액",
       "Amount to be Reserved": "예약 금액",
       "Annual Fees Transaction Date": "연회비 거래일",
       "Applicable From Date": "적용일자부터",
@@ -2658,7 +2661,6 @@
       "Provisioning Criteria": "프로비저닝 기준",
       "Purchase Price Ratio": "구매 가격 비율",
       "Purchased/Redeemed Price": "구매/상환 가격",
-      "Purhcased/Redeemed Price": "구매/상환 가격",
       "Qualification": "자격",
       "Quantity": "수량",
       "Quantity can not be more than": "수량은 다음을 초과할 수 없습니다.",
@@ -3269,7 +3271,8 @@
       "Are you sure you want to": "확실하게 원하시나요?",
       "the productmix component with id": "ID가 있는 productmix 구성요소",
       "the Reschedule Loan": "대출 재일정",
-      "the Transaction Type": "거래 유형"
+      "the Transaction Type": "거래 유형",
+      "undo_account_transfer": "이 계좌 이체를 취소하시겠습니까?"
     },
     "text": {
       "A": "ㅏ",

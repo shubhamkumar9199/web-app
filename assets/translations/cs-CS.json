@@ -757,7 +757,8 @@
       "PRINT": "Tisk",
       "DONE": "Hotovo",
       "Submitting": "Odesílání",
-      "OK": "OK"
+      "OK": "OK",
+      "undo_account_transfer": "Vrátit převod účtu"
     },
     "catalogs": {
       "Interest payment waiver": "Prominutí platby úroků",
@@ -1026,6 +1027,7 @@
       "move to previous working day": "přesunout na předchozí pracovní den",
       "move to next meeting day": "přesunout na další den schůzky",
       "Working Capital": "Provozní kapitál",
+      "Working Capital Loan": "Úvěr provozního kapitálu",
       "DAYS": "DNY",
       "MONTHS": "MĚSÍCE",
       "YEARS": "ROKY",
@@ -1548,7 +1550,8 @@
       "You have created": "Vytvořili jste",
       "identifier id": "identifikátor id",
       "savings-transaction-datatable-tab works": "spořicí-transakční-datatable-tab funguje",
-      "successfully select option": "úspěšně. Chcete-li pokračovat dále, vyberte si z níže uvedených možností."
+      "successfully select option": "úspěšně. Chcete-li pokračovat dále, vyberte si z níže uvedených možností.",
+      "undo_account_transfer": "Vrátit převod účtu"
     },
     "inputs": {
       "# Remittance": "# Remitence",
@@ -1637,7 +1640,7 @@
       "Amount Range": "Rozsah množství",
       "Amount Range From": "Rozsah částky Od",
       "Amount Range To": "Rozsah částky do",
-      "Amount Recieved/Returned": "Částka přijatá/vrácená",
+      "Amount Received/Returned": "Částka přijatá/vrácená",
       "Amount to be Reserved": "Částka, která má být rezervována",
       "Annual Fees Transaction Date": "Roční poplatky Datum transakce",
       "Applicable From Date": "Platné od data",
@@ -2657,7 +2660,6 @@
       "Provisioning Criteria": "Kritéria poskytování",
       "Purchase Price Ratio": "Poměr kupní ceny",
       "Purchased/Redeemed Price": "Kupovaná/uplatněná cena",
-      "Purhcased/Redeemed Price": "Kupovaná/uplatněná cena",
       "Qualification": "Kvalifikace",
       "Quantity": "Množství",
       "Quantity can not be more than": "Množství nemůže být větší než",
@@ -3270,7 +3272,8 @@
       "Are you sure you want to": "Jste si jisti, že chcete",
       "the productmix component with id": "komponenta productmix s id",
       "the Reschedule Loan": "přeplánovat půjčku",
-      "the Transaction Type": "typ transakce"
+      "the Transaction Type": "typ transakce",
+      "undo_account_transfer": "Opravdu chcete vrátit tento převod účtu?"
     },
     "text": {
       "A": "A",

@@ -756,7 +756,8 @@
       "PRINT": "Drukāt",
       "DONE": "Gatavs",
       "Submitting": "Iesniedz",
-      "OK": "Labi"
+      "OK": "Labi",
+      "undo_account_transfer": "Atcelt konta pārskaitījumu"
     },
     "catalogs": {
       "Interest payment waiver": "Atteikšanās no procentu maksājumiem",
@@ -1025,6 +1026,7 @@
       "move to previous working day": "pārvietot uz iepriekšējo darba dienu",
       "move to next meeting day": "pārvietot uz nākamo sanāksmes dienu",
       "Working Capital": "Apgrozāmie līdzekļi",
+      "Working Capital Loan": "Apgrozāmā kapitāla aizdevums",
       "DAYS": "DIENAS",
       "MONTHS": "MĒNEŠI",
       "YEARS": "GADI",
@@ -1548,7 +1550,8 @@
       "You have created": "Jūs esat izveidojis",
       "identifier id": "identifikatora id",
       "savings-transaction-datatable-tab works": "ietaupījums-transaction-datatable-tab darbojas",
-      "successfully select option": "veiksmīgi. Lūdzu, atlasiet kādu no tālāk norādītajām opcijām, lai turpinātu."
+      "successfully select option": "veiksmīgi. Lūdzu, atlasiet kādu no tālāk norādītajām opcijām, lai turpinātu.",
+      "undo_account_transfer": "Atcelt konta pārskaitījumu"
     },
     "inputs": {
       "# Remittance": "# Pārvedums",
@@ -1636,7 +1639,7 @@
       "Amount Range": "Summa diapazons",
       "Amount Range From": "Summa diapazons no",
       "Amount Range To": "Summa diapazons Līdz",
-      "Amount Recieved/Returned": "Saņemtā/atgrieztā summa",
+      "Amount Received/Returned": "Saņemtā/atgrieztā summa",
       "Amount to be Reserved": "Rezervējamā summa",
       "Annual Fees Transaction Date": "Gada maksas darījuma datums",
       "Applicable From Date": "Piemērojams no datuma",
@@ -2657,7 +2660,6 @@
       "Provisioning Criteria": "Nodrošinājuma kritēriji",
       "Purchase Price Ratio": "Pirkuma cenu attiecība",
       "Purchased/Redeemed Price": "Pirktā/izpirktā cena",
-      "Purhcased/Redeemed Price": "Pirktā/izpirktā cena",
       "Qualification": "Kvalifikācija",
       "Quantity": "Daudzums",
       "Quantity can not be more than": "Daudzums nevar būt lielāks par",
@@ -3269,7 +3271,8 @@
       "Are you sure you want to": "Vai tiešām vēlaties",
       "the productmix component with id": "Productmix komponents ar id",
       "the Reschedule Loan": "aizdevuma pārkārtošanu",
-      "the Transaction Type": "Darījuma veids"
+      "the Transaction Type": "Darījuma veids",
+      "undo_account_transfer": "Vai tiešām vēlaties atcelt šo konta pārskaitījumu?"
     },
     "text": {
       "A": "A",

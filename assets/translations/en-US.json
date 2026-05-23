@@ -1,4 +1,4 @@
-﻿{
+{
   "APP_NAME": "Mifos® X WebApp",
   "Logged in as": "Logged in as",
   "Remember me": "Remember me",
@@ -518,6 +518,7 @@
       "Adjustment": "Adjustment",
       "Advanced Options": "Advanced Options",
       "Advanced Search": "Advanced Search",
+      "undo_account_transfer": "Undo Account Transfer",
       "Show advanced search": "Show advanced search",
       "Hide advanced search": "Hide advanced search",
       "Allocate Cash": "Allocate Cash",
@@ -1030,6 +1031,7 @@
       "move to previous working day": "move to previous working day",
       "move to next meeting day": "move to next meeting day",
       "Working Capital": "Working Capital",
+      "Working Capital Loan": "Working Capital Loan",
       "DAYS": "DAYS",
       "MONTHS": "MONTHS",
       "YEARS": "YEARS",
@@ -1554,7 +1556,8 @@
       "You have created": "You have created",
       "identifier id": "identifier id",
       "savings-transaction-datatable-tab works": "savings-transaction-datatable-tab works",
-      "successfully select option": "successfully. Please select from the options below to proceed further."
+      "successfully select option": "successfully. Please select from the options below to proceed further.",
+      "undo_account_transfer": "Undo Account Transfer"
     },
     "inputs": {
       "# Remittance": "# Remittance",
@@ -1642,7 +1645,7 @@
       "Amount Range": "Amount Range",
       "Amount Range From": "Amount Range From",
       "Amount Range To": "Amount Range To",
-      "Amount Recieved/Returned": "Amount Received/Returned",
+      "Amount Received/Returned": "Amount Received/Returned",
       "Amount to be Reserved": "Amount to be Reserved",
       "Annual Fees Transaction Date": "Annual Fees Transaction Date",
       "Applicable From Date": "Applicable From Date",
@@ -2655,7 +2658,6 @@
       "Provisioning Criteria": "Provisioning Criteria",
       "Purchase Price Ratio": "Purchase Price Ratio",
       "Purchased/Redeemed Price": "Purchased/Redeemed Price",
-      "Purhcased/Redeemed Price": "Purchased/Redeemed Price",
       "Qualification": "Qualification",
       "Quantity": "Quantity",
       "Quantity can not be more than": "Quantity can not be more than",
@@ -3263,6 +3265,7 @@
       "Are you sure you want to delete checker": "Are you sure you want to delete checker",
       "Are you sure you want to Approve Loan": "Are you sure you want to Approve Loan",
       "Are you sure you want to Disburse Loan": "Are you sure you want to Disburse Loan",
+      "undo_account_transfer": "Are you sure you want to undo this account transfer?",
       "Are you sure you want to": "Are you sure you want to ",
       "the productmix component with id": "the productmix component with id",
       "the Reschedule Loan": " the Reschedule Loan",

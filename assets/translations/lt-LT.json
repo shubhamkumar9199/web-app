@@ -756,7 +756,8 @@
       "PRINT": "Spausdinti",
       "DONE": "Atlikta",
       "Submitting": "Pateikiama",
-      "OK": "Gerai"
+      "OK": "Gerai",
+      "undo_account_transfer": "Atšaukti sąskaitos pervedimą"
     },
     "catalogs": {
       "Interest payment waiver": "Palūkanų mokėjimo atsisakymas",
@@ -1023,6 +1024,7 @@
       "move to previous working day": "perkelti į ankstesnę darbo dieną",
       "move to next meeting day": "perkelti į kitą susitikimo dieną",
       "Working Capital": "Apyvartinis kapitalas",
+      "Working Capital Loan": "Apyvartinio kapitalo paskola",
       "DAYS": "DIENOS",
       "MONTHS": "MĖNESIŲ",
       "YEARS": "METAI",
@@ -1547,7 +1549,8 @@
       "You have created": "Jūs sukūrėte",
       "identifier id": "identifikatoriaus id",
       "savings-transaction-datatable-tab works": "taupymo-operacijų-duomenų lentelės-skirtukas veikia",
-      "successfully select option": "sėkmingai. Jei norite tęsti, pasirinkite iš toliau pateiktų parinkčių."
+      "successfully select option": "sėkmingai. Jei norite tęsti, pasirinkite iš toliau pateiktų parinkčių.",
+      "undo_account_transfer": "Atšaukti sąskaitos pervedimą"
     },
     "inputs": {
       "# Remittance": "# Pervedimas",
@@ -1635,7 +1638,7 @@
       "Amount Range": "Sumų diapazonas",
       "Amount Range From": "Sumos diapazonas nuo",
       "Amount Range To": "Sumos diapazonas Iki",
-      "Amount Recieved/Returned": "Gauta/grąžinta suma",
+      "Amount Received/Returned": "Gauta/grąžinta suma",
       "Amount to be Reserved": "Rezervuojama suma",
       "Annual Fees Transaction Date": "Metinių mokesčių operacijos data",
       "Applicable From Date": "Taikoma nuo datos",
@@ -2656,7 +2659,6 @@
       "Provisioning Criteria": "Aprūpinimo kriterijai",
       "Purchase Price Ratio": "Pirkimo kainos santykis",
       "Purchased/Redeemed Price": "Nupirkta/išpirkta kaina",
-      "Purhcased/Redeemed Price": "Nupirkta/išpirkta kaina",
       "Qualification": "Kvalifikacija",
       "Quantity": "Kiekis",
       "Quantity can not be more than": "Kiekis negali būti didesnis nei",
@@ -3269,7 +3271,8 @@
       "Are you sure you want to": "Ar tikrai norite",
       "the productmix component with id": "Productmix komponentas su id",
       "the Reschedule Loan": "skolos tvarkaraštį iš naujo",
-      "the Transaction Type": "operacijos tipas"
+      "the Transaction Type": "operacijos tipas",
+      "undo_account_transfer": "Ar tikrai norite atšaukti šį sąskaitos pervedimą?"
     },
     "text": {
       "A": "A",

@@ -756,7 +756,8 @@
       "PRINT": "Imprimir",
       "DONE": "Concluir",
       "Submitting": "Enviando",
-      "OK": "OK"
+      "OK": "OK",
+      "undo_account_transfer": "Reverter transferência de conta"
     },
     "catalogs": {
       "Interest payment waiver": "Isenção de pagamento de juros",
@@ -1025,6 +1026,7 @@
       "move to previous working day": "mover para o dia útil anterior",
       "move to next meeting day": "mover para o próximo dia de reunião",
       "Working Capital": "Capital de giro",
+      "Working Capital Loan": "Empréstimo de Capital de Giro",
       "DAYS": "DIAS",
       "MONTHS": "MESES",
       "YEARS": "ANOS",
@@ -1547,7 +1549,8 @@
       "You have created": "Você criou",
       "identifier id": "ID do identificador",
       "savings-transaction-datatable-tab works": "poupança-transação-datatable-tab funciona",
-      "successfully select option": "com sucesso. Selecione uma das opções abaixo para prosseguir."
+      "successfully select option": "com sucesso. Selecione uma das opções abaixo para prosseguir.",
+      "undo_account_transfer": "Reverter transferência de conta"
     },
     "inputs": {
       "# Remittance": "# Remessa",
@@ -1635,7 +1638,7 @@
       "Amount Range": "Faixa de valor",
       "Amount Range From": "Faixa de valor de",
       "Amount Range To": "Faixa de valor até",
-      "Amount Recieved/Returned": "Valor recebido/devolvido",
+      "Amount Received/Returned": "Valor recebido/devolvido",
       "Amount to be Reserved": "Valor a ser reservado",
       "Annual Fees Transaction Date": "Data de transação de taxas anuais",
       "Applicable From Date": "Aplicável a partir da data",
@@ -2656,7 +2659,6 @@
       "Provisioning Criteria": "Critérios de provisionamento",
       "Purchase Price Ratio": "Relação de preço de compra",
       "Purchased/Redeemed Price": "Preço comprado/resgatado",
-      "Purhcased/Redeemed Price": "Preço comprado/resgatado",
       "Qualification": "Qualificação",
       "Quantity": "Quantidade",
       "Quantity can not be more than": "A quantidade não pode ser superior",
@@ -3269,7 +3271,8 @@
       "Are you sure you want to": "Tem a certeza que deseja",
       "the productmix component with id": "o componente productmix com id",
       "the Reschedule Loan": "o Empréstimo Reagendado",
-      "the Transaction Type": "o tipo de transação"
+      "the Transaction Type": "o tipo de transação",
+      "undo_account_transfer": "Tem a certeza de que pretende reverter esta transferência de conta?"
     },
     "text": {
       "A": "A",

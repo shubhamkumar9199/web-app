@@ -756,7 +756,8 @@
       "PRINT": "Chapisha",
       "DONE": "Imekamilika",
       "Submitting": "Inatuma",
-      "OK": "Sawa"
+      "OK": "Sawa",
+      "undo_account_transfer": "Futa uhamisho wa akaunti"
     },
     "catalogs": {
       "Interest payment waiver": "Msamaha wa Malipo ya Riba",
@@ -1023,6 +1024,7 @@
       "move to previous working day": "hamisha kwa siku ya kazi iliyotangulia",
       "move to next meeting day": "hamisha kwa siku ya mkutano ijayo",
       "Working Capital": "Mtaji wa Kufanya Kazi",
+      "Working Capital Loan": "Mkopo wa Mtaji wa Kufanya Kazi",
       "DAYS": "SIKU",
       "MONTHS": "MIEZI",
       "YEARS": "MIAKA",
@@ -1545,7 +1547,8 @@
       "You have created": "Umeunda",
       "identifier id": "kitambulisho",
       "savings-transaction-datatable-tab works": "Savings-transaction-datatable-tab inafanya kazi",
-      "successfully select option": "kwa mafanikio. Tafadhali chagua kutoka kwa chaguo zilizo hapa chini ili kuendelea zaidi."
+      "successfully select option": "kwa mafanikio. Tafadhali chagua kutoka kwa chaguo zilizo hapa chini ili kuendelea zaidi.",
+      "undo_account_transfer": "Futa uhamisho wa akaunti"
     },
     "inputs": {
       "# Remittance": "# Uhawilishaji",
@@ -1633,7 +1636,7 @@
       "Amount Range": "Kiwango cha Kiasi",
       "Amount Range From": "Kiwango cha kuanzia",
       "Amount Range To": "Kiasi cha Masafa Kwa",
-      "Amount Recieved/Returned": "Kiasi Kilichopokelewa/Kurejeshwa",
+      "Amount Received/Returned": "Kiasi Kilichopokelewa/Kurejeshwa",
       "Amount to be Reserved": "Kiasi cha Kuhifadhiwa",
       "Annual Fees Transaction Date": "Tarehe ya Muamala wa Ada ya Mwaka",
       "Applicable From Date": "Inatumika Kuanzia Tarehe",
@@ -2654,7 +2657,6 @@
       "Provisioning Criteria": "Vigezo vya Utoaji",
       "Purchase Price Ratio": "Uwiano wa Bei ya Ununuzi",
       "Purchased/Redeemed Price": "Bei Iliyonunuliwa/Imekombolewa",
-      "Purhcased/Redeemed Price": "Bei Iliyonunuliwa/Imekombolewa",
       "Qualification": "Sifa",
       "Quantity": "Kiasi",
       "Quantity can not be more than": "Wingi hauwezi kuwa zaidi ya",
@@ -3266,7 +3268,8 @@
       "Are you sure you want to": "Je, una uhakika unataka",
       "the productmix component with id": "sehemu ya mchanganyiko wa bidhaa na kitambulisho",
       "the Reschedule Loan": "kupanga upya mkopo",
-      "the Transaction Type": "Aina ya Muamala"
+      "the Transaction Type": "Aina ya Muamala",
+      "undo_account_transfer": "Una uhakika unataka kufuta uhamisho huu wa akaunti?"
     },
     "text": {
       "A": "A",
