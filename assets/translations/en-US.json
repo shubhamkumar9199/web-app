@@ -1,4 +1,4 @@
-{
+﻿{
   "APP_NAME": "Mifos® X WebApp",
   "Logged in as": "Logged in as",
   "Remember me": "Remember me",
@@ -375,7 +375,8 @@
     "report": {
       "type": "Report generation",
       "generated": "Report: {{reportName}} data generated",
-      "generatedNoData": "Report: {{reportName}} without data generated"
+      "generatedNoData": "Report: {{reportName}} without data generated",
+      "loadFailed": "Failed to load report data. Please try again."
     },
     "clipboard": {
       "type": "Clipboard",
@@ -400,7 +401,11 @@
       "buyDownFeeAdjusted": "Buy Down Fee amount already adjusted",
       "buyDownFeeLimit": "Buy Down Fee Adjustment amount must be lower or equal to",
       "businessRule": "Business Rule",
-      "alertWithAmount": "{{label}}: {{amount}}"
+      "alertWithAmount": "{{label}}: {{amount}}",
+      "bulkWaiveCharge": {
+        "type": "Waive Charge Error",
+        "message": "{{count}} charge(s) could not be waived."
+      }
     },
     "error.auth.type": "Authentication Error",
     "error.auth.message": "Your session has expired or the credentials are invalid.",
@@ -518,6 +523,7 @@
       "Adjustment": "Adjustment",
       "Advanced Options": "Advanced Options",
       "Advanced Search": "Advanced Search",
+      "Pay Charge": "Pay Charge",
       "undo_account_transfer": "Undo Account Transfer",
       "Show advanced search": "Show advanced search",
       "Hide advanced search": "Hide advanced search",
@@ -744,6 +750,7 @@
       "View Transactions": "View Transactions",
       "Waive": "Waive",
       "Waive Charge": "Waive Charge",
+      "Waive Selected": "Waive Selected",
       "Week": "Week",
       "Withdraw": "Withdraw",
       "View Active Charges": "View Active Charges",
@@ -843,6 +850,7 @@
       "% Interest": "% Interest",
       "% Loan Amount + Interest": "% Loan Amount + Interest",
       "Disbursement": "Disbursement",
+      "Discount Fee": "Discount Fee",
       "Specified due date": "Specified due date",
       "Installment Fee": "Installment Fee",
       "Overdue Fees": "Overdue Fees",
@@ -1017,6 +1025,7 @@
       "Full Leap Year": "Full Leap Year",
       "Feb 29 Period Only": "Feb 29 Period Only",
       "Waive Interest": "Waive Interest",
+      "Waive loan charges": "Waive loan charges",
       "Equal Amortization of Outstanding amount": "Equal Amortization of Outstanding amount",
       "Monday": "Monday",
       "Tuesday": "Tuesday",
@@ -1538,6 +1547,7 @@
       "Upload": "Upload",
       "Upload Client Image": "Upload Client Image",
       "Upload Client Signature": "Upload Client Signature",
+      "User Profile": "User Profile",
       "Users": "Users",
       "Validated Recipient Information": "Validated Recipient Information",
       "View Checker Inbox": "View Checker Inbox",
@@ -1557,7 +1567,8 @@
       "identifier id": "identifier id",
       "savings-transaction-datatable-tab works": "savings-transaction-datatable-tab works",
       "successfully select option": "successfully. Please select from the options below to proceed further.",
-      "undo_account_transfer": "Undo Account Transfer"
+      "undo_account_transfer": "Undo Account Transfer",
+      "Quick Access": "Quick Access"
     },
     "inputs": {
       "# Remittance": "# Remittance",
@@ -1599,7 +1610,11 @@
       "Active Overdue Client Loans": "Active Overdue Client Loans",
       "Active Overdue Group Loans": "Active Overdue Group Loans",
       "Active Status": "Active Status",
+      "Actual Amortization": "Actual Amortization",
       "Actual Available Balance": "Actual Available Balance",
+      "Actual Balance": "Actual Balance",
+      "Actual Discount Fee Balance": "Actual Discount Fee Balance",
+      "Actual Payment": "Actual Payment",
       "Add Clients": "Add Clients",
       "Add Fee Frequency": "Add Fee Frequency",
       "Add Groups": "Add Groups",
@@ -1638,7 +1653,9 @@
       "Amortization Schedule": "Amortization Schedule",
       "Amortization Type": "Amortization Type",
       "Amortized Amount": "Amortized Amount",
+      "Amortized Income": "Amortized Income",
       "Amount": "Amount",
+      "Amount Breakdown": "Amount Breakdown",
       "Amount Collected": "Amount Collected",
       "Amount Paid": "Amount Paid",
       "Amount Pending / Disbursed": "Amount Pending / Disbursed",
@@ -1647,6 +1664,7 @@
       "Amount Range To": "Amount Range To",
       "Amount Received/Returned": "Amount Received/Returned",
       "Amount to be Reserved": "Amount to be Reserved",
+      "Annual EIR": "Annual EIR",
       "Annual Fees Transaction Date": "Annual Fees Transaction Date",
       "Applicable From Date": "Applicable From Date",
       "Applicant": "Applicant",
@@ -1875,6 +1893,7 @@
       "DEFERRED INCOME RECOGNITION": "DEFERRED INCOME RECOGNITION",
       "DETAILS": "DETAILS",
       "Daily": "Daily",
+      "Daily EIR": "Daily EIR",
       "Dashboard": "Dashboard",
       "Data": "Data",
       "Data Table": "Data Table",
@@ -1914,7 +1933,6 @@
       "Default Savings Account": "Default Savings Account",
       "Default Shares per Client": "Default Shares per Client",
       "Default Theme": "Default Theme",
-      "Deferred Balance": "Deferred Balance",
       "Deferred income": "Deferred income",
       "Deleted": "Deleted",
       "Delinquency Action": "Delinquency Action",
@@ -1963,7 +1981,10 @@
       "Disbursement on": "Disbursement on",
       "Discount": "Discount",
       "Discount Default": "Discount Default",
+      "Discount External Id": "Discount External Id",
+      "Discount External Id must differ from External Id": "Discount External Id must differ from External Id",
       "Discount Factor": "Discount Factor",
+      "Discount Fee": "Discount Fee",
       "Discount must be greater than or equal to 0": "Discount must be greater than or equal to 0",
       "Display Name": "Display Name",
       "Dividend Amount": "Dividend Amount",
@@ -2035,8 +2056,10 @@
       "Existing Meeting Date": "Existing Meeting Date",
       "Expected Amortization Amount": "Expected Amortization Amount",
       "Expected Amount": "Expected Amount",
+      "Expected Balance": "Expected Balance",
       "Expected Disbursement Date": "Expected Disbursement Date",
       "Expected Disbursement On": "Expected Disbursement On",
+      "Expected Discount Fee Balance": "Expected Discount Fee Balance",
       "Expected Payment Amount": "Expected Payment Amount",
       "Expected disbursement on": "Expected disbursement on",
       "Expense Account": "Expense Account",
@@ -2054,6 +2077,7 @@
       "External ID not found": "External ID not found",
       "External ID verified successfully": "External ID verified successfully",
       "External Id": "External Id",
+      "External Id is too long": "External Id is too long",
       "External Reference ID": "External Reference ID",
       "External id": "External id",
       "FAMILY MEMBERS": "FAMILY MEMBERS",
@@ -2075,6 +2099,7 @@
       "Filter": "Filter",
       "Filter By Version": "Filter By Version",
       "Financial Activity": "Financial Activity",
+      "Financial Summary": "Financial Summary",
       "First Name": "First Name",
       "First name is required": "First name is required",
       "First repayment on": "First repayment on",
@@ -2095,7 +2120,6 @@
       "Floating Rate Periods": "Floating Rate Periods",
       "Floating rate": "Floating Rate",
       "Follow": "Follow",
-      "Forecast Payment Amount": "Forecast Payment Amount",
       "Frequency": "Frequency",
       "Frequency Interval": "Frequency Interval",
       "Frequency Interval for compounding": "Frequency Interval for compounding",
@@ -2296,6 +2320,7 @@
       "Liability Account (CR)": "Liability Account (CR)",
       "Lifted On": "Lifted On",
       "Link savings": "Link savings",
+      "Linked": "Linked",
       "Linked Savings Account": "Linked Savings Account",
       "Linked Savings Account(Dividend Posting)": "Linked Savings Account(Dividend Posting)",
       "Linked to floating interest rates": "Linked to floating interest rates",
@@ -2435,7 +2460,6 @@
       "Municipality": "Municipality",
       "N/A": "N/A",
       "NID": "NID",
-      "NPV Value": "NPV Value",
       "Name": "Name",
       "Name Decorated": "Name Decorated",
       "Name of the Organization": "Name of the Organization",
@@ -2446,7 +2470,6 @@
       "Near Breach Evaluation Frequency": "Near Breach Evaluation Frequency",
       "Near Breach Evaluation Frequency Type": "Near Breach Evaluation Frequency Type",
       "Near Breach Threshold": "Near Breach Threshold",
-      "Net Amortization Amount": "Net Amortization Amount",
       "Net Cash": "Net Cash",
       "Net Present Value day count": "Net Present Value Day Count",
       "New Interest Rate": "New Interest Rate",
@@ -2611,6 +2634,7 @@
       "Period": "Period",
       "Period From": "Period From",
       "Period Number": "Period Number",
+      "Period Payment Amount": "Period Payment Amount",
       "Period Payment Frequency": "Period Payment Frequency",
       "Period Payment Frequency Type": "Period Payment Frequency Type",
       "Period Payment Rate": "Period Payment Rate",
@@ -2803,6 +2827,7 @@
       "Select and Add groups": "Select and Add groups",
       "Select applicable offices": "Select applicable offices",
       "Select entity": "Select entity",
+      "Selected": "Selected",
       "Selected Products": "Selected Products",
       "Send": "Send",
       "Send Amount": "Send Amount",
@@ -2922,6 +2947,7 @@
       "Total Interest Earned": "Total Interest Earned",
       "Total No. of Shares": "Total No. of Shares",
       "Total Number of Shares": "Total Number of Shares",
+      "Total Paid": "Total Paid",
       "Total Paid Principal": "Total Paid Principal",
       "Total Payment": "Total Payment",
       "Total Records": "Total Records",
@@ -3132,6 +3158,7 @@
       "Deposit": "Deposit",
       "Disburse": "Disburse",
       "Disburse to Savings": "Disburse to Savings",
+      "Discount Fee": "Discount Fee",
       "Edit Repayment Schedule": "Edit Repayment Schedule",
       "Foreclosure": "Foreclosure",
       "Frequent Postings": "Frequent Postings",
@@ -3179,6 +3206,8 @@
       "Reports": "Reports",
       "Reschedule": "Reschedule",
       "Savings": "Savings",
+      "Select All": "Select All",
+      "Select Item": "Select Item",
       "Self Service": "Self Service",
       "Sell Loan": "Sell Loan",
       "Settings": "Settings",
@@ -3248,6 +3277,7 @@
       "Enable withhold tax for this account ?": "Enable withhold tax for this account ?",
       "Disable withhold tax for this account ?": "Disable withhold tax for this account ?",
       "Are you sure you want to waive charge with id:": "Are you sure you want to waive charge with id:",
+      "Are you sure you want to waive charges": "Are you sure you want to waive {{ count }} charges",
       "Are you sure you want to undo this transaction ?": "Are you sure you want to undo this transaction ?",
       "Are you sure you want recover from Guarantor": "Are you sure you want recover from Guarantor",
       "Are you sure you want recover the Original Schedule": "Are you sure you want recover the Original Schedule",
@@ -4102,7 +4132,16 @@
       "username": "username",
       "withhold tax for this account": "withhold tax for this account",
       "withoutCategory": "Without Category",
-      "“Maker-Checker” principle requires every tasks": "The “Maker-Checker” principle requires every tasks to be completed by two people to reduce the chance of errors and misuse. One person initiates the process and the second completes it."
+      "“Maker-Checker” principle requires every tasks": "The “Maker-Checker” principle requires every task to be completed by two people to reduce the chance of errors and misuse. One person initiates the process and the second completes it.",
+      "Navigate directly to any platform area": "Navigate directly to any platform area",
+      "Profiles and accounts": "Profiles & accounts",
+      "Group lending": "Group lending",
+      "Center banking": "Center banking",
+      "Journals and ledger": "Journals & ledger",
+      "Configure offerings": "Configure offerings",
+      "Savings accounts": "Savings accounts",
+      "Offices and staff": "Offices & staff",
+      "System configuration": "Configuration"
     },
     "permissions": {
       "actions": {
@@ -4401,6 +4440,45 @@
       "validationSaved": "Validation data saved successfully.",
       "workingCapitalDiscountUpdated": "Working capital discount was updated successfully.",
       "unableToUpdateDiscount": "Unable to update discount."
+    },
+    "selections": {
+      "standingInstructions": {
+        "accountTransferType": {
+          "account.transfer": "Savings Transfer",
+          "loan.repayment": "Loan Repayment"
+        },
+        "standingInstructionPriority": {
+          "urgent": "Urgent",
+          "high": "High",
+          "medium": "Medium",
+          "low": "Low"
+        },
+        "standingInstructionStatus": {
+          "active": "Active",
+          "disabled": "Disabled",
+          "deleted": "Deleted"
+        },
+        "accountType": {
+          "savings": "Savings Account",
+          "loan": "Loan Account"
+        },
+        "standingInstructionType": {
+          "fixed": "Fixed Amount",
+          "dues": "Dues Amount"
+        },
+        "accountTransferRecurrenceType": {
+          "periodic": "Periodic",
+          "as.per.dues": "As Per Dues"
+        },
+        "frequencyperiodFrequencyType": {
+          "days": "Days",
+          "weeks": "Weeks",
+          "months": "Months",
+          "years": "Years"
+        },
+        "own.account": "Own Account",
+        "other.bank": "Other Bank"
+      }
     }
   },
   "languages": {

@@ -374,7 +374,8 @@
     "report": {
       "type": "Generación de reporte",
       "generated": "Reporte: datos de {{reportName}} generados",
-      "generatedNoData": "Reporte: {{reportName}} generado sin datos"
+      "generatedNoData": "Reporte: {{reportName}} generado sin datos",
+      "loadFailed": "Error al cargar los datos del reporte. Por favor, inténtelo de nuevo."
     },
     "clipboard": {
       "type": "Portapapeles",
@@ -399,7 +400,11 @@
       "buyDownFeeAdjusted": "Monto de tarifa Buy Down ya ajustado",
       "buyDownFeeLimit": "El monto de ajuste de tarifa Buy Down debe ser menor o igual a",
       "businessRule": "Regla de negocio",
-      "alertWithAmount": "{{label}}: {{amount}}"
+      "alertWithAmount": "{{label}}: {{amount}}",
+      "bulkWaiveCharge": {
+        "type": "Error al condonar cargo",
+        "message": "{{count}} cargo(s) no pudieron ser condonados."
+      }
     },
     "error.auth.type": "Error de autenticación",
     "error.auth.message": "Su sesión ha expirado o las credenciales son inválidas.",
@@ -535,7 +540,7 @@
       "Change Password": "Cambiar la contraseña",
       "Chargeback": "Contracargo",
       "Charges Overview": "Resumen de cargos",
-      "Clear": "Borrar",
+      "Clear": "Limpiar",
       "Client Screen Reports": "Reportes de pantalla del cliente",
       "Close": "Cerrar",
       "Close Config. Wizard": "Cerrar",
@@ -617,6 +622,7 @@
       "Export XLS": "Exportar XLS",
       "Export to PDF": "Exportar a PDF",
       "Export KYC": "Exportar KYC",
+      "Pay Charge": "Pagar Cargo",
       "Validate Documentation": "Validar Documentación",
       "INCOMPLETE": "INCOMPLETO",
       "COMPLETE": "COMPLETO",
@@ -736,6 +742,7 @@
       "View Transactions": "Ver transacciones",
       "Waive": "Renunciar",
       "Waive Charge": "Renunciar a Comisión",
+      "Waive Selected": "Renunciar seleccionados",
       "Week": "Semana",
       "Withdraw": "Retirar",
       "View Active Charges": "Ver Comisiones Activas",
@@ -757,7 +764,8 @@
       "DONE": "Hecho",
       "Submitting": "Enviando",
       "OK": "OK",
-      "undo_account_transfer": "Revertir transferencia de cuenta"
+      "undo_account_transfer": "Revertir transferencia de cuenta",
+      "Quick Access": "Acceso Rápido"
     },
     "catalogs": {
       "Interest payment waiver": "Exención de pago de intereses",
@@ -839,7 +847,8 @@
       "% Amount": "% Monto",
       "% Interest": "% Interés",
       "% Loan Amount + Interest": "% Monto del Crédito + Interés",
-      "Disbursement": "desembolso",
+      "Disbursement": "Desembolso",
+      "Discount Fee": "Tarifa de descuento",
       "Specified due date": "Fecha de Vencimiento",
       "Installment Fee": "Cuota de pago",
       "Overdue Fees": "Cuotas vencidas",
@@ -1014,6 +1023,7 @@
       "Full Leap Year": "Año bisiesto completo",
       "Feb 29 Period Only": "Solo periodo del 29 de febrero",
       "Waive Interest": "Renunciar a los intereses",
+      "Waive loan charges": "Condonar cargos del préstamo",
       "Equal Amortization of Outstanding amount": "Amortización igual del importe pendiente",
       "Monday": "Lunes",
       "Tuesday": "Martes",
@@ -1534,6 +1544,7 @@
       "Upload": "Subir",
       "Upload Client Image": "Cargar imagen del cliente",
       "Upload Client Signature": "Cargar firma del cliente",
+      "User Profile": "Perfil de Usuario",
       "Users": "Usuarios",
       "Validated Recipient Information": "Información del Beneficiario Validada",
       "View Checker Inbox": "Ver la bandeja de entrada del revisor",
@@ -1553,7 +1564,8 @@
       "identifier id": "número de identificación",
       "savings-transaction-datatable-tab works": "La pestaña de tabla de datos de transacciones de ahorro funciona",
       "successfully select option": "exitosamente. Seleccione una de las opciones siguientes para continuar.",
-      "undo_account_transfer": "Revertir transferencia de cuenta"
+      "undo_account_transfer": "Revertir transferencia de cuenta",
+      "Quick Access": "Quick Access"
     },
     "inputs": {
       "# Remittance": "# Remesa",
@@ -1595,7 +1607,11 @@
       "Active Overdue Client Loans": "Créditos activos para clientes vencidos",
       "Active Overdue Group Loans": "Créditos grupales vencidos activos",
       "Active Status": "Estado activo",
+      "Actual Amortization": "Amortización real",
       "Actual Available Balance": "Saldo disponible real",
+      "Actual Balance": "Saldo real",
+      "Actual Discount Fee Balance": "Saldo real de comisión de descuento",
+      "Actual Payment": "Pago real",
       "Add Clients": "Agregar Clientes",
       "Add Fee Frequency": "Agregar frecuencia de comisión",
       "Add Groups": "Agregar grupos",
@@ -1634,7 +1650,9 @@
       "Amortization Schedule": "Tabla de Amortización",
       "Amortization Type": "Tipo de amortización",
       "Amortized Amount": "Monto amortizado",
+      "Amortized Income": "Ingreso amortizado",
       "Amount": "Monto",
+      "Amount Breakdown": "Desglose de montos",
       "Amount Collected": "Monto recaudado",
       "Amount Paid": "Monto pagado",
       "Amount Pending / Disbursed": "Monto Pendiente / Desembolsado",
@@ -1643,6 +1661,7 @@
       "Amount Range To": "Monto hasta",
       "Amount Received/Returned": "Monto recibido/devuelto",
       "Amount to be Reserved": "Monto a reservar",
+      "Annual EIR": "TIE Anual",
       "Annual Fees Transaction Date": "Fecha de transacción de comisiones anuales",
       "Applicable From Date": "Aplicable desde la fecha",
       "Applicant": "Solicitante",
@@ -1872,6 +1891,7 @@
       "DEFERRED INCOME RECOGNITION": "INGRESOS DIFERIDOS",
       "DETAILS": "DETALLES",
       "Daily": "Diario",
+      "Daily EIR": "TIE Diaria",
       "Dashboard": "Tableros",
       "Data": "Datos",
       "Data Table": "Tabla de datos",
@@ -1911,7 +1931,7 @@
       "Default Savings Account": "Cuenta de Ahorros predeterminada",
       "Default Shares per Client": "Acciones predeterminadas por cliente",
       "Default Theme": "Tema predeterminado",
-      "Deferred Balance": "Deferred Balance",
+      "Deferred Balance": "Saldo diferido",
       "Deferred income": "Ingresos diferidos",
       "Deleted": "Eliminado",
       "Delinquency Action": "Acción de morosidad",
@@ -1960,7 +1980,10 @@
       "Disbursement on": "Fecha de Desembolso",
       "Discount": "Descuento",
       "Discount Default": "Descuento predeterminado",
-      "Discount Factor": "Discount Factor",
+      "Discount Factor": "Factor de descuento",
+      "Discount Fee": "Tarifa de descuento",
+      "Discount External Id": "Id externo del descuento",
+      "Discount External Id must differ from External Id": "El Id externo del descuento debe ser distinto del Id externo",
       "Discount must be greater than or equal to 0": "El descuento debe ser mayor o igual a 0",
       "Display Name": "Nombre para mostrar",
       "Dividend Amount": "Monto del dividendo",
@@ -2029,11 +2052,13 @@
       "Execution Time": "Tiempo de ejecución",
       "Existing Client": "Cliente existente",
       "Existing Meeting Date": "Fecha de reunión existente",
-      "Expected Amortization Amount": "Expected Amortization Amount",
+      "Expected Amortization Amount": "Monto de amortización esperado",
       "Expected Amount": "Monto Esperado",
+      "Expected Balance": "Saldo esperado",
       "Expected Disbursement Date": "Fecha de desembolso esperada",
       "Expected Disbursement On": "Fecha esperada de Desembolso",
-      "Expected Payment Amount": "Expected Payment Amount",
+      "Expected Payment Amount": "Monto de pago esperado",
+      "Expected Discount Fee Balance": "Saldo esperado de comisión de descuento",
       "Expected disbursement on": "Fecha esperada de Desembolso",
       "Expense Account": "Cuenta de gastos",
       "Expense Account (DR)": "Cuenta de gastos (DR)",
@@ -2050,6 +2075,7 @@
       "External ID not found": "Id externo no encontrado",
       "External ID verified successfully": "Id externo verificado exitosamente",
       "External Id": "Id externo",
+      "External Id is too long": "El Id externo es demasiado largo",
       "External Reference ID": "ID de Referencia Externa",
       "External id": "Id externo",
       "FAMILY MEMBERS": "REFERENCIAS PERSONALES",
@@ -2072,6 +2098,7 @@
       "Filter": "Filtrar",
       "Filter By Version": "Filtrar por versión",
       "Financial Activity": "Actividad financiera",
+      "Financial Summary": "Resumen Financiero",
       "First Name": "Nombre",
       "First name is required": "Se requiere nombre",
       "First repayment on": "Primer pago",
@@ -2092,7 +2119,7 @@
       "Floating Rate Periods": "Períodos de tasa variable",
       "Floating rate": "Tasa flotante",
       "Follow": "Seguir",
-      "Forecast Payment Amount": "Forecast Payment Amount",
+      "Forecast Payment Amount": "Monto de pago proyectado",
       "Frequency": "Frecuencia",
       "Frequency Interval": "Intervalo de frecuencia",
       "Frequency Interval for compounding": "Intervalo de frecuencia para la contabilización",
@@ -2169,7 +2196,7 @@
       "Include in Customer Loan Counter": "Incluir en el contador de Créditos al cliente",
       "Income Account": "Cuenta de Ingresos",
       "Income From Discount Fee": "Ingresos por tarifa de descuento",
-      "Income Modification": "Income Modification",
+      "Income Modification": "Modificación de ingreso",
       "Income capitalization": "Capitalización de ingresos",
       "Income capitalization calculation type": "Tipo de cálculo de capitalización de ingresos",
       "Income capitalization strategy": "Estrategia de capitalización de ingresos",
@@ -2293,6 +2320,7 @@
       "Liability Account (CR)": "Cuenta de Pasivo (CR)",
       "Lifted On": "levantado",
       "Link savings": "Cuenta de Ahorro",
+      "Linked": "Vinculado",
       "Linked Savings Account": "Cuenta de Ahorros vinculada",
       "Linked Savings Account(Dividend Posting)": "Cuenta de Ahorros vinculada (publicación de dividendos)",
       "Linked to floating interest rates": "Vinculado a tasa de interés variable",
@@ -2432,7 +2460,7 @@
       "Municipality": "Municipio",
       "N/A": "N / A",
       "NID": "NID",
-      "NPV Value": "NPV Value",
+      "NPV Value": "Valor Actual Neto",
       "Name": "Nombre",
       "Name Decorated": "Nombre decorado",
       "Name of the Organization": "Nombre de la organización",
@@ -2443,7 +2471,7 @@
       "Near Breach Evaluation Frequency": "Frecuencia de evaluación de incumplimiento inminente",
       "Near Breach Evaluation Frequency Type": "Tipo de frecuencia de evaluación de incumplimiento inminente",
       "Near Breach Threshold": "Umbral de incumplimiento inminente",
-      "Net Amortization Amount": "Net Amortization Amount",
+      "Net Amortization Amount": "Monto neto de amortización",
       "Net Cash": "Efectivo neto",
       "Net Present Value day count": "Recuento de días del valor presente neto",
       "New Interest Rate": "Nueva tasa de interés",
@@ -2580,7 +2608,7 @@
       "Payment Allocation Order": "Orden de asignación de pagos",
       "Payment Allocation Rule": "Regla de asignación de pagos",
       "Payment Allocation Transactions": "Transacciones de asignación de pagos",
-      "Payment Date": "Payment Date",
+      "Payment Date": "Fecha de pago",
       "Payment Details": "Detalles del pago",
       "Payment Due At": "Pago vencido en",
       "Payment Type": "Tipo de pago",
@@ -2607,6 +2635,7 @@
       "Period": "Período",
       "Period From": "Periodo desde",
       "Period Number": "Número de Período",
+      "Period Payment Amount": "Monto de Pago del Período",
       "Period Payment Frequency": "Frecuencia de pago por período",
       "Period Payment Frequency Type": "Tipo de frecuencia de pago por período",
       "Period Payment Rate": "Tasa de pago del período",
@@ -2799,6 +2828,7 @@
       "Select and Add groups": "Seleccionar y agregar grupos",
       "Select applicable offices": "Seleccionar las sucursales que aplican",
       "Select entity": "Seleccionar entidad",
+      "Selected": "Seleccionado(s)",
       "Selected Products": "Productos seleccionados",
       "SemiWeeks": "Quincenal",
       "Send": "Enviar",
@@ -2898,7 +2928,7 @@
       "Time": "Tiempo",
       "To": "A",
       "To Account": "A la cuenta",
-      "To Account Type": "Al tipo de cuenta",
+      "To Account Type": "Tipo de Cuenta Destino",
       "To Client": "Al cliente",
       "To Date": "Hasta la fecha",
       "To Loan Officer": "Al Promotor de Crédito",
@@ -2919,6 +2949,7 @@
       "Total Interest Earned": "Interés total ganado",
       "Total No. of Shares": "Número total de acciones",
       "Total Number of Shares": "Número total de acciones",
+      "Total Paid": "Total Pagado",
       "Total Paid Principal": "Principal Total Pagado",
       "Total Payment": "Pago total",
       "Total Records": "Registros totales",
@@ -3129,6 +3160,7 @@
       "Deposit": "Depósito",
       "Disburse": "Desembolsar",
       "Disburse to Savings": "Desembolsar a Ahorros",
+      "Discount Fee": "Tarifa de Descuento",
       "Edit Repayment Schedule": "Editar calendario de pagos",
       "Foreclosure": "Juicio hipotecario",
       "Frequent Postings": "Publicaciones frecuentes",
@@ -3172,6 +3204,8 @@
       "Remittances": "Remesas",
       "Reschedule": "Reprogramar",
       "Savings": "Ahorros",
+      "Select All": "Seleccionar todo",
+      "Select Item": "Seleccionar elemento",
       "Self Service": "Autoservicio",
       "Sell Loan": "Vender Crédito",
       "Settings": "Ajustes",
@@ -3244,6 +3278,7 @@
       "Enable withhold tax for this account ?": "¿Quieres habilitar la retención de impuestos para esta cuenta?",
       "Disable withhold tax for this account ?": "¿Quieres deshabilitar la retención de impuestos para esta cuenta?",
       "Are you sure you want to waive charge with id:": "¿Estás seguro de que deseas eximir el cargo con ID:",
+      "Are you sure you want to waive charges": "¿Está seguro de que desea renunciar a {{ count }} cargos",
       "Are you sure you want to undo this transaction ?": "¿Estás seguro de que deseas reversar esta transacción?",
       "Are you sure you want recover from Guarantor": "¿Estás seguro de que deseas recuperar del aval?",
       "Are you sure you want recover the Original Schedule": "¿Estás seguro de que deseas recuperar el Calendario Original?",
@@ -4004,7 +4039,16 @@
       "username": "nombre de usuario",
       "withhold tax for this account": "retener impuestos para esta cuenta",
       "withoutCategory": "Sin categoría",
-      "“Maker-Checker” principle requires every tasks": "El principio \"Maker-Checker\" requiere que dos personas completen cada tarea para reducir la posibilidad de errores y uso indebido. Una persona inicia el proceso y la segunda lo completa."
+      "“Maker-Checker” principle requires every tasks": "El principio \"Maker-Checker\" requiere que dos personas completen cada tarea para reducir la posibilidad de errores y uso indebido. Una persona inicia el proceso y la segunda lo completa.",
+      "Navigate directly to any platform area": "Navigate directly to any platform area",
+      "Profiles and accounts": "Profiles & accounts",
+      "Group lending": "Group lending",
+      "Center banking": "Center banking",
+      "Journals and ledger": "Journals & ledger",
+      "Configure offerings": "Configure offerings",
+      "Savings accounts": "Savings accounts",
+      "Offices and staff": "Offices & staff",
+      "System configuration": "Configuration"
     },
     "permissions": {
       "actions": {
@@ -4303,6 +4347,45 @@
       "validationSaved": "Datos de validación guardados exitosamente.",
       "workingCapitalDiscountUpdated": "El descuento del préstamo de capital de trabajo se actualizó correctamente.",
       "unableToUpdateDiscount": "No se pudo actualizar el descuento."
+    },
+    "selections": {
+      "standingInstructions": {
+        "accountTransferType": {
+          "account.transfer": "Transferencia entre Cuentas",
+          "loan.repayment": "Pago de Préstamo"
+        },
+        "standingInstructionPriority": {
+          "urgent": "Urgente",
+          "high": "Alta",
+          "medium": "Media",
+          "low": "Baja"
+        },
+        "standingInstructionStatus": {
+          "active": "Activa",
+          "disabled": "No Activa",
+          "deleted": "Eliminada"
+        },
+        "accountType": {
+          "savings": "Cuenta de Ahorros",
+          "loan": "Cuenta de Préstamo"
+        },
+        "standingInstructionType": {
+          "fixed": "Monto Fijo",
+          "dues": "Monto basado en Cuotas"
+        },
+        "accountTransferRecurrenceType": {
+          "periodic": "Periódica",
+          "as.per.dues": "Según Calendario de Cuotas"
+        },
+        "frequencyperiodFrequencyType": {
+          "days": "Días",
+          "weeks": "Semanas",
+          "months": "Meses",
+          "years": "Años"
+        },
+        "own.account": "Cuenta Propia",
+        "other.bank": "Otro Banco"
+      }
     }
   },
   "languages": {
