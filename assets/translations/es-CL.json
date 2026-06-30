@@ -475,6 +475,7 @@
     "accounting": {
       "Accrual (periodic)": "Devengo (periódico)",
       "Accrual (upfront)": "Devengo (adelantado)",
+      "ACC_DEF_REV_AM": "Provisión con amortización de ingresos diferidos",
       "CASH_BASED": "Efectivo",
       "Cash": "Efectivo",
       "NONE": "Ninguno",
@@ -771,7 +772,8 @@
       "Yes": "Sí",
       "undo_account_transfer": "Revertir transferencia de cuenta",
       "All": "Todos",
-      "Pause Breach": "Pausar Incumplimiento"
+      "Pause Breach": "Pausar Incumplimiento",
+      "Resume Breach": "Reanudar Incumplimiento"
     },
     "catalogs": {
       "% Amount": "% Monto",
@@ -1118,6 +1120,8 @@
       "NotEqual": "No igual"
     },
     "heading": {
+      "Breach Actions": "Acciones de Incumplimiento",
+      "Near Breach Actions": "Acciones de Incumplimiento inminente",
       "About Us": "Sobre Nosotros",
       "Account Information": "Información de la Cuenta",
       "Account Linked Financial": "Listado de cuentas vinculadas a diferentes actividades financieras. Para saber más haga clic en:",
@@ -1407,6 +1411,7 @@
       "Minimum Deposit Term": "Plazo mínimo de depósito",
       "Moratorium": "Moratoria",
       "Near Breach Configuration": "Configuración de Incumplimiento Cercano",
+      "Near Breach History": "Historial de incumplimiento inminente",
       "Nominal Interest Rate by loan cycle": "Tasa de Interés Nominal por ciclo de Crédito",
       "Not Yet Amortized Amount": "Monto aun no amortizado",
       "Notes": "Notas",
@@ -1584,6 +1589,7 @@
       "Pause Timeline": "Línea de Tiempo de Pausas"
     },
     "inputs": {
+      "Breach Actions": "Acciones de Incumplimiento",
       "# Remittance": "# Remesa",
       "# Senders": "# Remitentes",
       "ACCOUNTING": "CONTABILIDAD",
@@ -2492,6 +2498,7 @@
       "Multiple Debit Entries Allowed": "Se permiten múltiples asientos de débito",
       "Municipality": "Municipio",
       "N/A": "N / A",
+      "New": "Nuevo",
       "NID": "NID",
       "Name": "Nombre",
       "Name Decorated": "Nombre decorado",
@@ -2690,6 +2697,7 @@
       "Prefix Type": "Tipo de prefijo",
       "Premature Close Date": "Fecha de cierre prematuro",
       "Present": "Presente",
+      "Previous": "Anterior",
       "Previous Run": "Ejecución anterior",
       "Previous Run Status": "Estado de ejecución anterior",
       "Primary Grouping by Amount": "Agrupación primaria por monto",
@@ -3174,6 +3182,7 @@
       "Working with Code": "Trabajar con código"
     },
     "menus": {
+      "Update Breach": "Actualizar Incumplimiento",
       "Unassign Staff": "Desasignar Asesor",
       "Accounting": "Contabilidad",
       "Account Overview": "Descripción de cuenta",
@@ -3294,6 +3303,7 @@
       "Withdrawn by Client": "Retirado por el cliente",
       "Write Off": "Cancelar crédito",
       "Update discount": "Actualizar descuento",
+      "Update Near Breach": "Actualizar Incumplimiento Cercano",
       "Apply Additional Shares": "Adicionar Acciones",
       "Redeem Shares": "Canjear acciones",
       "Approve Additional Shares": "Aprobar acciones adicionales",
@@ -3332,6 +3342,7 @@
       "Withdrawn": "Retirado"
     },
     "dialogContext": {
+      "Are you sure you want to resume the breach pause": "¿Estás seguro de que quieres reanudar la pausa del incumplimiento?",
       "Are you sure you want Unassign Staff": "¿Estás seguro de que deseas desasignar al asesor?",
       "Are you sure you want to calculate interest ?": "¿Estás seguro de que deseas calcular los intereses?",
       "Are you sure you want to post interest ?": "¿Estás seguro de que deseas contabilizar los intereses?",
@@ -3363,6 +3374,8 @@
       "undo_account_transfer": "¿Está seguro de que desea revertir esta transferencia de cuenta?"
     },
     "text": {
+      "No Breach Actions": "Sin acciones de incumplimiento",
+      "No Near Breach Actions": "Sin acciones de incumplimiento inminente",
       "A": "Una",
       "Ability to manage holidays for individual offices": "La capacidad de gestionar días festivos para oficinas individuales es una herramienta muy útil para una organización que abarca varias ubicaciones. Utilice esta opción para personalizar los días festivos para cada oficina de su organización.",
       "About Us": "Sobre Nosotros",
