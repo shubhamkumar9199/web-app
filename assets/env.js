@@ -89,6 +89,8 @@
   window['env']['mifosInterbankTransfersApiProvider'] = '';
   window['env']['mifosInterbankTransfersApiVersion'] = '';
   window['env']['mifosInterbankTransfersEnabled'] = 'true';
+  window['env']['cbIldEnabled'] = 'false';
+  window['env']['pluginBaseUrl'] = 'http://localhost:8084';
 
   // Remittance Module Environment variables
   window['env']['mifosRemittanceApiClientUrl'] = '';
@@ -120,6 +122,9 @@
   // Postal Code Lookup (auto-fill address from postal code via external API)
   // Set to 'true' to enable, 'false' (default) to disable
   window['env']['enablePostalCodeLookup'] = 'false';
+
+  // Client Address Location (latitude, longitude, and map)
+  window['env']['enableClientAddressLocation'] = false;
 
   // Password Configuration
   window['env']['minPasswordLength'] = 8;
