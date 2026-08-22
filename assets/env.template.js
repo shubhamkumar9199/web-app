@@ -49,6 +49,10 @@
 
   // Show minimal production hero on login page
   window['env']['productionMode'] = '$MIFOS_PRODUCTION_MODE';
+  window['env']['enableGlobalDashboard'] = '$MIFOS_ENABLE_GLOBAL_DASHBOARD';
+
+  // Enable Global Dashboard feature
+  window['env']['enableGlobalDashboard'] = '$MIFOS_ENABLE_GLOBAL_DASHBOARD';
 
   // Display or not the Tenant Selector
   window['env']['displayTenantSelector'] = '$MIFOS_DISPLAY_TENANT_SELECTOR';
@@ -119,6 +123,8 @@
   // Mifos Copilot AI assistant
   // Set MIFOS_ENABLE_COPILOT=true to load the Copilot panel for this deployment (off by default)
   window['env']['enableCopilot'] = '$MIFOS_ENABLE_COPILOT';
+  // Base URL of the Copilot gateway, which holds the LLM key server-side and runs banking
+  // tools as the logged-in officer. Leave unset to use the built-in mock responses.
   window['env']['copilotMcpBaseUrl'] = '$MIFOS_COPILOT_MCP_BASE_URL';
 
   // Enable Role-Based Access Control (RBAC) for menu/button permissions
